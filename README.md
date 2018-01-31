@@ -1,12 +1,12 @@
 CRAN Task View: Numerical Mathematics
 -------------------------------------
 
-|                 |                                                        |
-|-----------------|--------------------------------------------------------|
-| **Maintainer:** | Hans W. Borchers                                       |
-| **Contact:**    | hwb at mailbox.org                                     |
-| **Version:**    | 2017-11-04                                             |
-| **URL:**        | <https://CRAN.R-project.org/view=NumericalMathematics> |
+|                 |                                                          
+|-----------------|--------------------------------------------------------  
+| **Maintainer:** | Hans W. Borchers                                         
+| **Contact:**    | hwb at mailbox.org                                       
+| **Version:**    | 2018-01-30                                               
+| **URL:**        | <https://CRAN.R-project.org/view=NumericalMathematics>   
 
 This task view on numerical mathematics lists R packages and functions that are useful for solving numerical problems in linear algebra and analysis. It shows that R is a viable computing environment for implementing and applying numerical methods, also outside the realm of statistics.
 
@@ -23,6 +23,7 @@ As statistics is based to a large extent on linear algebra, many numerical linea
 -   [expm](https://cran.r-project.org/package=expm/index.html) computes the exponential, logarithm, and square root of square matrices, but also powers of matrices or the Frechet derivative. `expm()` is to be preferred to the function with the same name in [Matrix](../packages/Matrix).
 -   [SparseM](https://cran.r-project.org/package=SparseM) provides classes and methods for sparse matrices and for solving linear and least-squares problems in sparse linear algebra
 -   Package [rmumps](https://cran.r-project.org/package=rmumps) provides a wrapper for the MUMPS library, solving large linear systems of equations applying a parallel sparse direct solver
+-   [Rlinsolve](https://cran.r-project.org/package=Rlinsolve) is a collection of iterative solvers for sparse linear system of equations. Stationary iterative solvers such as Jacobi or Gauss-Seidel, as well as nonstationary (Krylov subspace) methods are provided.
 -   [svd](https://cran.r-project.org/package=svd/index.html) provides R bindings to state-of-the-art implementations of singular value decomposition (SVD) and eigenvalue/eigenvector computations. Package [ssvd](../packages/ssvd/index.html) will obtain sparse SVDs using an iterative thresholding method, while [irlba](../packages/irlba) will compute approximate singular values/vectors of large matrices.
 -   The packages [geigen](https://cran.r-project.org/package=geigen/index.html) and [QZ](../packages/QZ) compute generalized eigenvalues and -vectors for pairs of matrices, and QZ (generalized Schur) decompositions.
 -   [eigeninv](https://cran.r-project.org/package=eigeninv) generates matrices with a given set of eigenvalues ('inverse eigenvalue problem').
@@ -104,16 +105,20 @@ Not so many functions are available for computational number theory. Note that i
 
 -   Package [numbers](https://cran.r-project.org/package=numbers) provides functions for factorization, prime numbers, twin primes, primitive roots, modular inverses, extended GCD, etc. Included are some number-theoretic functions like divisor functions or Euler's Phi function.
 -   [contfrac](https://cran.r-project.org/package=contfrac) contains various utilities for evaluating continued fractions and partial convergents.
+-   [magic](https://cran.r-project.org/package=magic) creates and investigates magical squares and hypercubes, including functions for the manipulation and analysis of arbitrarily dimensioned arrays.
 -   The [partitions](https://cran.r-project.org/package=partitions) package enumerates additive partitions of integers, including restricted and unequal partitions.
 -   [permutations](https://cran.r-project.org/package=permutations) treats permutations as invertible functions of finite sets and includes several mathematical operations on them.
 -   Package [combinat](https://cran.r-project.org/package=combinat) generates all permutations or all combinations of a certain length of a set of elements (i.e. a vector); it also computes binomial coefficients.
--   [magic](https://cran.r-project.org/package=magic) creates and investigates magical squares.
+-   Package [arrangements](https://cran.r-project.org/package=arrangements) provides generators and iterators for permutations, combinations and partitions. The iterators allow users to generate arrangements in a fast and memory efficient manner. Permutations and combinations can be drawn with/without replacement and support multisets.
+-   [RcppAlgos](https://cran.r-project.org/package=RcppAlgos) provides optimized functions for generating all combinations or permutations of a vector with or without constraints. Additionally, a sieving function is available for listing prime factors or divisors of integers.
+-   Package [Zseq](https://cran.r-project.org/package=Zseq) generates some well-known integer sequences, computing very large Bell, Catalan, Fibonacci etc. numbers with user-specified bit precision. There are hyperlinks to corresponding items in the On-Line Encyclopedia of Integer Sequences (OEIS).
 
 #### Multi-Precision Arithmetic and Symbolic Mathematics
 
 -   Multiple precision arithmetic is available in R through package [gmp](https://cran.r-project.org/package=gmp) that interfaces to the GMP C library. Examples are factorization of integers, a probabilistic prime number test, or operations on big rationals -- for which linear systems of equations can be solved.
 -   Multiple precision floating point operations and functions are provided through package [Rmpfr](https://cran.r-project.org/package=Rmpfr) using the MPFR and GMP libraries. Special numbers and some special functions are included, as well as routines for root finding, integration, and optimization in arbitrary precision.
 -   [Brobdingnag](https://cran.r-project.org/package=Brobdingnag) handles very large numbers by holding their logarithm plus a flag indicating their sign. (An excellent vignette explains how this is done using S4 methods.)
+-   [VeryLargeIntegers](https://cran.r-project.org/package=VeryLargeIntegers) implements a multi-precision library that allows to store and manage arbitrarily big integers; it includes probabilistic primality tests and factorization algorithms.
 -   Package [rSymPy](https://cran.r-project.org/package=rSymPy) accesses the symbolic algebra system 'SymPy' (written in Python) from R. It supports arbitrary precision computations, linear algebra and calculus, solving equations, discrete mathematics, and much more.
 -   Package [Ryacas](https://cran.r-project.org/package=Ryacas) interfaces the computer algebra system 'Yacas'. It supports symbolic and arbitrary precision computations in calculus and linear algebra.
 
@@ -138,6 +143,7 @@ Python, through its modules 'NumPy', 'SciPy', 'Matplotlib', 'SymPy', and 'pandas
 
 -   [akima](https://cran.r-project.org/package=akima)
 -   [appell](https://cran.r-project.org/package=appell)
+-   [arrangements](https://cran.r-project.org/package=arrangements)
 -   [BB](https://cran.r-project.org/package=BB)
 -   [Bessel](https://cran.r-project.org/package=Bessel)
 -   [Brobdingnag](https://cran.r-project.org/package=Brobdingnag)
@@ -194,9 +200,11 @@ Python, through its modules 'NumPy', 'SciPy', 'Matplotlib', 'SymPy', and 'pandas
 -   [R2Cuba](https://cran.r-project.org/package=R2Cuba)
 -   [rARPACK](https://cran.r-project.org/package=rARPACK)
 -   [Rcpp](https://cran.r-project.org/package=Rcpp)
+-   [RcppAlgos](https://cran.r-project.org/package=RcppAlgos)
 -   [RcppArmadillo](https://cran.r-project.org/package=RcppArmadillo)
 -   [RcppEigen](https://cran.r-project.org/package=RcppEigen)
 -   [reticulate](https://cran.r-project.org/package=reticulate)
+-   [Rlinsolve](https://cran.r-project.org/package=Rlinsolve)
 -   [Rmpfr](https://cran.r-project.org/package=Rmpfr)
 -   [rmumps](https://cran.r-project.org/package=rmumps)
 -   [RootsExtremaInflections](https://cran.r-project.org/package=RootsExtremaInflections)
@@ -217,9 +225,11 @@ Python, through its modules 'NumPy', 'SciPy', 'Matplotlib', 'SymPy', and 'pandas
 -   [stinepack](https://cran.r-project.org/package=stinepack)
 -   [svd](https://cran.r-project.org/package=svd)
 -   [tripack](https://cran.r-project.org/package=tripack)
+-   [VeryLargeIntegers](https://cran.r-project.org/package=VeryLargeIntegers)
 -   [XR](https://cran.r-project.org/package=XR)
 -   [XRJulia](https://cran.r-project.org/package=XRJulia)
 -   [XRPython](https://cran.r-project.org/package=XRPython)
+-   [Zseq](https://cran.r-project.org/package=Zseq)
 
 ### Related links:
 

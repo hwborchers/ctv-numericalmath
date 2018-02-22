@@ -24,7 +24,7 @@ As statistics is based to a large extent on linear algebra, many numerical linea
 -   [SparseM](https://cran.r-project.org/package=SparseM) provides classes and methods for sparse matrices and for solving linear and least-squares problems in sparse linear algebra
 -   Package [rmumps](https://cran.r-project.org/package=rmumps) provides a wrapper for the MUMPS library, solving large linear systems of equations applying a parallel sparse direct solver
 -   [Rlinsolve](https://cran.r-project.org/package=Rlinsolve) is a collection of iterative solvers for sparse linear system of equations. Stationary iterative solvers such as Jacobi or Gauss-Seidel, as well as nonstationary (Krylov subspace) methods are provided.
--   Package [SolveLS]((https://cran.r-project.org/package=SolveLS) provides basic stationary iterative solvers such as Jacobi, Gauss-Seidel, Successive Over-Relaxation and SSOR methods. Nonstationary, also known as Krylov subspace, methods are provided. Sparse matrix computation is supported through the 'Matrix' and 'RcppArmadillo' packages.
+-   Package [SolveLS](https://cran.r-project.org/package=SolveLS) provides basic stationary iterative solvers such as Jacobi, Gauss-Seidel, Successive Over-Relaxation and SSOR methods. Nonstationary, also known as Krylov subspace, methods are provided. Sparse matrix computation is supported through the 'Matrix' and 'RcppArmadillo' packages.
 -   [svd](https://cran.r-project.org/package=svd/index.html) provides R bindings to state-of-the-art implementations of singular value decomposition (SVD) and eigenvalue/eigenvector computations. Package [ssvd](../packages/ssvd/index.html) will obtain sparse SVDs using an iterative thresholding method, while [irlba](../packages/irlba) will compute approximate singular values/vectors of large matrices.
 -   Package [PRIMME](https://cran.r-project.org/package=PRIMME) interfaces PRIMME, a C library for computing eigenvalues and corresponding eigenvectors of real symmetric or complex Hermitian matrices. It can find largest, smallest, or interior eigen-/singular values and will apply preconditioning to accelerate convergence.
 -   The packages [geigen](https://cran.r-project.org/package=geigen/index.html) and [QZ](../packages/QZ) compute generalized eigenvalues and -vectors for pairs of matrices, and QZ (generalized Schur) decompositions.
@@ -113,6 +113,7 @@ Not so many functions are available for computational number theory. Note that i
 -   Package [combinat](https://cran.r-project.org/package=combinat) generates all permutations or all combinations of a certain length of a set of elements (i.e. a vector); it also computes binomial coefficients.
 -   Package [arrangements](https://cran.r-project.org/package=arrangements) provides generators and iterators for permutations, combinations and partitions. The iterators allow users to generate arrangements in a fast and memory efficient manner. Permutations and combinations can be drawn with/without replacement and support multisets.
 -   [RcppAlgos](https://cran.r-project.org/package=RcppAlgos) provides optimized functions for generating all combinations or permutations of a vector with or without constraints. Additionally, a sieving function is available for listing prime factors or divisors of integers.
+-   Package [Zseq](https://cran.r-project.org/package=Zseq) generates well-known integer sequences; the 'gmp' package is adopted for computing with arbitrarily large numbers. Every function has on its help page a hyperlink to the corresponding entry in the On-Line Encyclopedia of Integer Sequences ([OEIS](https://oeis.org/)).
 
 #### Multi-Precision Arithmetic and Symbolic Mathematics
 
@@ -232,6 +233,7 @@ Python, through its modules 'NumPy', 'SciPy', 'Matplotlib', 'SymPy', and 'pandas
 -   [XR](https://cran.r-project.org/package=XR)
 -   [XRJulia](https://cran.r-project.org/package=XRJulia)
 -   [XRPython](https://cran.r-project.org/package=XRPython)
+-   [Zseq](https://cran.r-project.org/package=Zseq)
 
 ### Related links:
 

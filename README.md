@@ -25,6 +25,7 @@ As statistics is based to a large extent on linear algebra, many numerical linea
 -   Package [rmumps](https://cran.r-project.org/package=rmumps) provides a wrapper for the MUMPS library, solving large linear systems of equations applying a parallel sparse direct solver
 -   [Rlinsolve](https://cran.r-project.org/package=Rlinsolve) is a collection of iterative solvers for sparse linear system of equations. Stationary iterative solvers such as Jacobi or Gauss-Seidel, as well as nonstationary (Krylov subspace) methods are provided.
 -   [svd](https://cran.r-project.org/package=svd/index.html) provides R bindings to state-of-the-art implementations of singular value decomposition (SVD) and eigenvalue/eigenvector computations. Package [ssvd](../packages/ssvd/index.html) will obtain sparse SVDs using an iterative thresholding method, while [irlba](../packages/irlba) will compute approximate singular values/vectors of large matrices.
+-   Package [PRIMME](https://cran.r-project.org/package=PRIMME) interfaces PRIMME, a C library for computing eigenvalues and corresponding eigenvectors of real symmetric or complex Hermitian matrices. It can find largest, smallest, or interior eigen-/singular values and will apply preconditioning to accelerate convergence.
 -   The packages [geigen](https://cran.r-project.org/package=geigen/index.html) and [QZ](../packages/QZ) compute generalized eigenvalues and -vectors for pairs of matrices, and QZ (generalized Schur) decompositions.
 -   [eigeninv](https://cran.r-project.org/package=eigeninv) generates matrices with a given set of eigenvalues ('inverse eigenvalue problem').
 -   Package [rARPACK](https://cran.r-project.org/package=rARPACK), a wrapper for the ARPACK library, is typically used to compute only a few eigenvalues/vectors, e.g., a small number of largest eigenvalues.
@@ -191,6 +192,7 @@ Python, through its modules 'NumPy', 'SciPy', 'Matplotlib', 'SymPy', and 'pandas
 -   [polynom](https://cran.r-project.org/package=polynom) (core)
 -   [PolynomF](https://cran.r-project.org/package=PolynomF)
 -   [pracma](https://cran.r-project.org/package=pracma) (core)
+-   [PRIMME](https://cran.r-project.org/package=PRIMME)
 -   [PythonInR](https://cran.r-project.org/package=PythonInR)
 -   [QZ](https://cran.r-project.org/package=QZ)
 -   [R.matlab](https://cran.r-project.org/package=R.matlab)

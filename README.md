@@ -5,7 +5,7 @@ CRAN Task View: Numerical Mathematics
 |-----------------|--------------------------------------------------------| 
 | **Maintainer:** | Hans W. Borchers                                       | 
 | **Contact:**    | hwb at mailbox.org                                     | 
-| **Version:**    | 2018-01-31                                             | 
+| **Version:**    | 2018-02-22                                             | 
 | **URL:**        | <https://CRAN.R-project.org/view=NumericalMathematics> | 
 
 This task view on numerical mathematics lists R packages and functions that are useful for solving numerical problems in linear algebra and analysis. It shows that R is a viable computing environment for implementing and applying numerical methods, also outside the realm of statistics.
@@ -75,7 +75,6 @@ Function polyroot() in base R determines all zeros of a polynomial, based on the
 -   Package [SphericalCubature](https://cran.r-project.org/package=SphericalCubature/index.html) employs [cubature](../packages/cubature/index.html) to integrate functions over unit spheres and balls in n-dimensional space; [SimplicialCubature](../packages/SimplicialCubature) provides methods to integrate functions over m-dimensional simplices in n-dimensional space. Both packages comprise exact methods for polynomials.
 -   Package [polyCub](https://cran.r-project.org/package=polyCub) holds some routines for numerical integration over polygonal domains in two dimensions.
 -   Package [Pade](https://cran.r-project.org/package=Pade) calculates the numerator and denominator coefficients of the Pade approximation, given the Taylor series coefficients of sufficient length.
--   [madness](https://cran.r-project.org/package=madness) allows to compute derivatives of multivariate functions, defined by matrix operations, via forward differentiation and the chain rule.
 -   [features](https://cran.r-project.org/package=features/index.html) extracts features from functional data, such as first and second derivatives, or curvature at critical points, while [RootsExtremaInflections](../packages/RootsExtremaInflections) finds roots, extrema and inflection points of curves defined by discrete points.
 
 #### Interpolation and Approximation
@@ -170,7 +169,6 @@ Python, through its modules 'NumPy', 'SciPy', 'Matplotlib', 'SymPy', and 'pandas
 -   [ktsolve](https://cran.r-project.org/package=ktsolve)
 -   [lamW](https://cran.r-project.org/package=lamW)
 -   [logOfGamma](https://cran.r-project.org/package=logOfGamma)
--   [madness](https://cran.r-project.org/package=madness)
 -   [magic](https://cran.r-project.org/package=magic)
 -   [MASS](https://cran.r-project.org/package=MASS)
 -   [matlab](https://cran.r-project.org/package=matlab)

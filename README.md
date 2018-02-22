@@ -24,6 +24,7 @@ As statistics is based to a large extent on linear algebra, many numerical linea
 -   [SparseM](https://cran.r-project.org/package=SparseM) provides classes and methods for sparse matrices and for solving linear and least-squares problems in sparse linear algebra
 -   Package [rmumps](https://cran.r-project.org/package=rmumps) provides a wrapper for the MUMPS library, solving large linear systems of equations applying a parallel sparse direct solver
 -   [Rlinsolve](https://cran.r-project.org/package=Rlinsolve) is a collection of iterative solvers for sparse linear system of equations. Stationary iterative solvers such as Jacobi or Gauss-Seidel, as well as nonstationary (Krylov subspace) methods are provided.
+-   Package [SolveLS]((https://cran.r-project.org/package=SolveLS) provides basic stationary iterative solvers such as Jacobi, Gauss-Seidel, Successive Over-Relaxation and SSOR methods. Nonstationary, also known as Krylov subspace, methods are provided. Sparse matrix computation is supported through the 'Matrix' and 'RcppArmadillo' packages.
 -   [svd](https://cran.r-project.org/package=svd/index.html) provides R bindings to state-of-the-art implementations of singular value decomposition (SVD) and eigenvalue/eigenvector computations. Package [ssvd](../packages/ssvd/index.html) will obtain sparse SVDs using an iterative thresholding method, while [irlba](../packages/irlba) will compute approximate singular values/vectors of large matrices.
 -   Package [PRIMME](https://cran.r-project.org/package=PRIMME) interfaces PRIMME, a C library for computing eigenvalues and corresponding eigenvectors of real symmetric or complex Hermitian matrices. It can find largest, smallest, or interior eigen-/singular values and will apply preconditioning to accelerate convergence.
 -   The packages [geigen](https://cran.r-project.org/package=geigen/index.html) and [QZ](../packages/QZ) compute generalized eigenvalues and -vectors for pairs of matrices, and QZ (generalized Schur) decompositions.
@@ -91,13 +92,14 @@ Base R provides functions `approx()` for constant and linear interpolation, and 
 -   `Schumaker()` in package [schumaker](https://cran.r-project.org/package=schumaker) implements shape-preserving splines, guaranteed to be monotonic resp. concave or convex if the data is monotonic, concave, or convex.
 -   Package [conicfit](https://cran.r-project.org/package=conicfit) provides several (geometric and algebraic) algorithms for fitting circles, ellipses, and conics in general.
 
-#### Root Finding
+#### Root Finding and Fixed Points
 
 `uniroot()`, implementing the Brent-Decker algorithm, is the basic routine in R to find roots of univariate functions. There are implementations of the bisection algorithm in several contributed packages. For root finding with higher precision there is function `unirootR()` in the multi-precision package [Rmpfr](https://cran.r-project.org/package=Rmpfr). And for finding roots of multivariate functions see the following two packages:
 
 -   For solving nonlinear systems of equations the [BB](https://cran.r-project.org/package=BB) package provides (non-monotone) Barzilai-Borwein spectral methods in `sane()`, including a derivative-free variant in `dfsane()`, and multi-start features with sensitivity analysis.
 -   Package [nleqslv](https://cran.r-project.org/package=nleqslv) solves nonlinear systems of equations using alternatively the Broyden or Newton method, supported by strategies such as line searches or trust regions.
 -   [ktsolve](https://cran.r-project.org/package=ktsolve) defines a common interface for solving a set of equations with `BB` or `nleqslv`.
+-   Package [FixedPoint](https://cran.r-project.org/package=FixedPoint) provides algorithms for finding fixed point vectors. These algorithms include Anderson acceleration, epsilon extrapolation methods, and minimal polynomial methods.
 
 #### Discrete Mathematics and Number Theory
 
@@ -159,6 +161,7 @@ Python, through its modules 'NumPy', 'SciPy', 'Matplotlib', 'SymPy', and 'pandas
 -   [feather](https://cran.r-project.org/package=feather)
 -   [features](https://cran.r-project.org/package=features)
 -   [findpython](https://cran.r-project.org/package=findpython)
+-   [FixedPoint](https://cran.r-project.org/package=FixedPoint)
 -   [fourierin](https://cran.r-project.org/package=fourierin)
 -   [gaussquad](https://cran.r-project.org/package=gaussquad)
 -   [geigen](https://cran.r-project.org/package=geigen)
@@ -216,6 +219,7 @@ Python, through its modules 'NumPy', 'SciPy', 'Matplotlib', 'SymPy', and 'pandas
 -   [signal](https://cran.r-project.org/package=signal)
 -   [SimplicialCubature](https://cran.r-project.org/package=SimplicialCubature)
 -   [SnakeCharmR](https://cran.r-project.org/package=SnakeCharmR)
+-   [SolveLS]((https://cran.r-project.org/package=SolveLS)
 -   [SparseGrid](https://cran.r-project.org/package=SparseGrid)
 -   [SparseM](https://cran.r-project.org/package=SparseM)
 -   [SphericalCubature](https://cran.r-project.org/package=SphericalCubature)

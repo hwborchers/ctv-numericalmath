@@ -5,8 +5,9 @@ CRAN Task View: Numerical Mathematics
 |-----------------|--------------------------------------------------------| 
 | **Maintainer:** | Hans W. Borchers                                       | 
 | **Contact:**    | hwb at mailbox.org                                     | 
-| **Version:**    | 2018-02-22                                             | 
+| **Version:**    | 2018-04-26                                             | 
 | **URL:**        | <https://CRAN.R-project.org/view=NumericalMathematics> | 
+
 
 This task view on numerical mathematics lists R packages and functions that are useful for solving numerical problems in linear algebra and analysis. It shows that R is a viable computing environment for implementing and applying numerical methods, also outside the realm of statistics.
 
@@ -24,7 +25,7 @@ As statistics is based to a large extent on linear algebra, many numerical linea
 -   [SparseM](https://cran.r-project.org/package=SparseM) provides classes and methods for sparse matrices and for solving linear and least-squares problems in sparse linear algebra
 -   Package [rmumps](https://cran.r-project.org/package=rmumps) provides a wrapper for the MUMPS library, solving large linear systems of equations applying a parallel sparse direct solver
 -   [Rlinsolve](https://cran.r-project.org/package=Rlinsolve) is a collection of iterative solvers for sparse linear system of equations. Stationary iterative solvers such as Jacobi or Gauss-Seidel, as well as nonstationary (Krylov subspace) methods are provided.
--   Package [SolveLS](https://cran.r-project.org/package=SolveLS) provides basic stationary iterative solvers such as Jacobi, Gauss-Seidel, Successive Over-Relaxation and SSOR methods. Nonstationary, also known as Krylov subspace, methods are provided. Sparse matrix computation is supported through the 'Matrix' and 'RcppArmadillo' packages.
+-   [SolveLS](https://cran.r-project.org/package=SolveLS) provides basic stationary iterative solvers such as Jacobi, Gauss-Seidel, Successive Over-Relaxation and SSOR methods. Nonstationary, also known as Krylov subspace, methods are provided. Sparse matrix computation is supported through the 'Matrix' and 'RcppArmadillo' packages.
 -   [svd](https://cran.r-project.org/package=svd/index.html) provides R bindings to state-of-the-art implementations of singular value decomposition (SVD) and eigenvalue/eigenvector computations. Package [ssvd](../packages/ssvd/index.html) will obtain sparse SVDs using an iterative thresholding method, while [irlba](../packages/irlba) will compute approximate singular values/vectors of large matrices.
 -   Package [PRIMME](https://cran.r-project.org/package=PRIMME) interfaces PRIMME, a C library for computing eigenvalues and corresponding eigenvectors of real symmetric or complex Hermitian matrices. It can find largest, smallest, or interior eigen-/singular values and will apply preconditioning to accelerate convergence.
 -   The packages [geigen](https://cran.r-project.org/package=geigen/index.html) and [QZ](../packages/QZ) compute generalized eigenvalues and -vectors for pairs of matrices, and QZ (generalized Schur) decompositions.
@@ -90,6 +91,7 @@ Base R provides functions `approx()` for constant and linear interpolation, and 
 -   [tripack](https://cran.r-project.org/package=tripack) for triangulation of irregularly spaced data is a constrained two-dimensional Delaunay triangulation package providing both triangulation and generation of Voronoi mosaics of irregular spaced data.
 -   `sinterp()` in package [stinepack](https://cran.r-project.org/package=stinepack) realizes interpolation based on piecewise rational functions by applying Stineman's algorithm. The interpolating function will be monotone in regions where the specified points change monotonically.
 -   `Schumaker()` in package [schumaker](https://cran.r-project.org/package=schumaker) implements shape-preserving splines, guaranteed to be monotonic resp. concave or convex if the data is monotonic, concave, or convex.
+-   [ADPF](https://cran.r-project.org/package=ADPF) uses least-squares polynomial regression and statistical testing to improve Savitzky-Golay smoothing.
 -   Package [conicfit](https://cran.r-project.org/package=conicfit) provides several (geometric and algebraic) algorithms for fitting circles, ellipses, and conics in general.
 
 #### Root Finding and Fixed Points
@@ -112,8 +114,8 @@ Not so many functions are available for computational number theory. Note that i
 -   [permutations](https://cran.r-project.org/package=permutations) treats permutations as invertible functions of finite sets and includes several mathematical operations on them.
 -   Package [combinat](https://cran.r-project.org/package=combinat) generates all permutations or all combinations of a certain length of a set of elements (i.e. a vector); it also computes binomial coefficients.
 -   Package [arrangements](https://cran.r-project.org/package=arrangements) provides generators and iterators for permutations, combinations and partitions. The iterators allow users to generate arrangements in a fast and memory efficient manner. Permutations and combinations can be drawn with/without replacement and support multisets.
--   [RcppAlgos](https://cran.r-project.org/package=RcppAlgos) provides optimized functions for generating all combinations or permutations of a vector with or without constraints. Additionally, a sieving function is available for listing prime factors or divisors of integers.
--   Package [Zseq](https://cran.r-project.org/package=Zseq) generates well-known integer sequences; the 'gmp' package is adopted for computing with arbitrarily large numbers. Every function has on its help page a hyperlink to the corresponding entry in the On-Line Encyclopedia of Integer Sequences ([OEIS](https://oeis.org/)).
+-   [RcppAlgos](https://cran.r-project.org/package=RcppAlgos/index.html) provides flexible functions for generating combinations or permutations of a vector with or without constraints. The extension package [bigIntegerAlgos](../packages/bigIntegerAlgos) features a quadratic sieve algorithm for completely factoring large integers.
+-   Package [Zseq](https://cran.r-project.org/package=Zseq) generates well-known integer sequences; the 'gmp' package is adopted for computing with arbitrarily large numbers. Every function has on its help page a hyperlink to the corresponding entry in the On-Line Encyclopedia of Integer Sequences (\[OEIS\](https://oeis.org/)).
 
 #### Multi-Precision Arithmetic and Symbolic Mathematics
 
@@ -140,14 +142,17 @@ Python, through its modules 'NumPy', 'SciPy', 'Matplotlib', 'SymPy', and 'pandas
 -   [findpython](https://cran.r-project.org/package=findpython) is a package designed to find an acceptable Python binary in the path, incl. minimum version or required modules.
 -   'pyRserve' is a Python module for connecting Python to an R process running [Rserve](https://cran.r-project.org/package=Rserve) as an RPC gateway. This R process can run on a remote machine, variable access and function calls will be delegated through the network.
 -   [XRPython](https://cran.r-project.org/package=XRPython/index.html) and [XRJulia](../packages/XRJulia/index.html) are based on John Chambers' [XR](../packages/XR) package and allow for structured integration of R with Python resp. Julia. Especially the Julia interface is interesting and provides direct analogues to Julia function calls. A 'juliaExamples' package is available on Github.
+-   [JuliaCall](https://cran.r-project.org/package=JuliaCall) provides seamless integration between R and Julia. Using the high-level interface, the user can call any Julia function just like an R function with automatic type conversion. With the low-level interface the user interfaces directly with C-level SEXPs while enjoying the convenience of using a high-level programming language like Julia.
 
 ### CRAN packages:
 
+-   [ADPF](https://cran.r-project.org/package=ADPF)
 -   [akima](https://cran.r-project.org/package=akima)
 -   [appell](https://cran.r-project.org/package=appell)
 -   [arrangements](https://cran.r-project.org/package=arrangements)
 -   [BB](https://cran.r-project.org/package=BB)
 -   [Bessel](https://cran.r-project.org/package=Bessel)
+-   [bigIntegerAlgos](https://cran.r-project.org/package=bigIntegerAlgos)
 -   [Brobdingnag](https://cran.r-project.org/package=Brobdingnag)
 -   [combinat](https://cran.r-project.org/package=combinat)
 -   [conicfit](https://cran.r-project.org/package=conicfit)
@@ -171,6 +176,7 @@ Python, through its modules 'NumPy', 'SciPy', 'Matplotlib', 'SymPy', and 'pandas
 -   [hypergeo](https://cran.r-project.org/package=hypergeo)
 -   [interp](https://cran.r-project.org/package=interp)
 -   [irlba](https://cran.r-project.org/package=irlba)
+-   [JuliaCall](https://cran.r-project.org/package=JuliaCall)
 -   [ktsolve](https://cran.r-project.org/package=ktsolve)
 -   [lamW](https://cran.r-project.org/package=lamW)
 -   [logOfGamma](https://cran.r-project.org/package=logOfGamma)
@@ -220,7 +226,7 @@ Python, through its modules 'NumPy', 'SciPy', 'Matplotlib', 'SymPy', and 'pandas
 -   [signal](https://cran.r-project.org/package=signal)
 -   [SimplicialCubature](https://cran.r-project.org/package=SimplicialCubature)
 -   [SnakeCharmR](https://cran.r-project.org/package=SnakeCharmR)
--   [SolveLS]((https://cran.r-project.org/package=SolveLS)
+-   [SolveLS](https://cran.r-project.org/package=SolveLS)
 -   [SparseGrid](https://cran.r-project.org/package=SparseGrid)
 -   [SparseM](https://cran.r-project.org/package=SparseM)
 -   [SphericalCubature](https://cran.r-project.org/package=SphericalCubature)

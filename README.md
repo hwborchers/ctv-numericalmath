@@ -5,7 +5,7 @@ CRAN Task View: Numerical Mathematics
 |-----------------|--------------------------------------------------------| 
 | **Maintainer:** | Hans W. Borchers                                       | 
 | **Contact:**    | hwb at mailbox.org                                     | 
-| **Version:**    | 2018-04-26                                             | 
+| **Version:**    | 2018-05-19                                             | 
 | **URL:**        | <https://CRAN.R-project.org/view=NumericalMathematics> | 
 
 
@@ -15,7 +15,7 @@ The task view will *not* cover differential equations, optimization problems and
 
 The task view has been created to provide an overview of the topic. If some packages are missing or certain topics in numerical math should be treated in more detail, please let the maintainer know.
 
-#### Numerical Linear Algebra
+**Numerical Linear Algebra**
 
 As statistics is based to a large extent on linear algebra, many numerical linear algebra routines are present in R, and some only implicitly. Examples of explicitly available functions are vector and matrix operations, matrix (QR) decompositions, solving linear equations, eigenvalues/-vectors, singular value decomposition, or least-squares approximation.
 
@@ -37,7 +37,7 @@ As statistics is based to a large extent on linear algebra, many numerical linea
 -   Package [onion](https://cran.r-project.org/package=onion) contains routines for manipulating quaternions and octonians (normed division algebras over the real numbers); quaternions can be useful for handling rotations in three-dimensional space.
 -   Packages [RcppArmadillo](https://cran.r-project.org/package=RcppArmadillo/index.html) and [RcppEigen](../packages/RcppEigen/index.html) enable the integration of the C++ template libraries 'Armadillo' resp. 'Eigen' for linear algebra applications written in C++ and integrated in R using [Rcpp](../packages/Rcpp) for performance and ease of use.
 
-#### Special Functions
+**Special Functions**
 
 Many special mathematical functions are present in R, especially logarithms and exponentials, trigonometric and hyperbolic functions, or Bessel and Gamma functions. Many more special functions are available in contributed packages.
 
@@ -52,7 +52,7 @@ Many special mathematical functions are present in R, especially logarithms and 
 -   [logOfGamma](https://cran.r-project.org/package=logOfGamma) uses approximations to compute the natural logarithms of the Gamma function for large values.
 -   Package [lamW](https://cran.r-project.org/package=lamW) implements both real-valued branches of the Lambert W function (using Rcpp).
 
-#### Polynomials
+**Polynomials**
 
 Function polyroot() in base R determines all zeros of a polynomial, based on the Jenkins-Traub algorithm. Linear regression function lm() can perform polynomial fitting when using `poly()` in the model formula (with option `raw = TRUE`).
 
@@ -62,7 +62,7 @@ Function polyroot() in base R determines all zeros of a polynomial, based on the
 -   Package [mpoly](https://cran.r-project.org/package=mpoly) facilitates symbolic manipulations on multivariate polynomials, including basic differential calculus operations on polynomials, plus some Groebner basis calculations.
 -   Package [orthopolynom](https://cran.r-project.org/package=orthopolynom) consists of a collection of functions to construct orthogonal polynomials and their recurrence relations, among them Chebyshev, Hermite, and Legendre polynomials, as well as spherical and ultraspherical polynomials. There are functions to operate on these polynomials.
 
-#### Differentiation and Integration
+**Differentiation and Integration**
 
 `D()` and `deriv()` in base R compute derivatives of simple expressions symbolically. Function `integrate()` implements an approach for numerically integrating univariate functions in R. It applies adaptive Gauss-Kronrod quadrature and can handle singularities and unbounded domains to a certain extent.
 
@@ -80,7 +80,7 @@ Function polyroot() in base R determines all zeros of a polynomial, based on the
 -   Package [Pade](https://cran.r-project.org/package=Pade) calculates the numerator and denominator coefficients of the Pade approximation, given the Taylor series coefficients of sufficient length.
 -   [features](https://cran.r-project.org/package=features/index.html) extracts features from functional data, such as first and second derivatives, or curvature at critical points, while [RootsExtremaInflections](../packages/RootsExtremaInflections) finds roots, extrema and inflection points of curves defined by discrete points.
 
-#### Interpolation and Approximation
+**Interpolation and Approximation**
 
 Base R provides functions `approx()` for constant and linear interpolation, and `spline()` for cubic (Hermite) spline interpolation, while `smooth.spline()` performs cubic spline approximation. Base package splines creates periodic interpolation splines in function `periodicSpline()`.
 
@@ -94,7 +94,7 @@ Base R provides functions `approx()` for constant and linear interpolation, and 
 -   [ADPF](https://cran.r-project.org/package=ADPF) uses least-squares polynomial regression and statistical testing to improve Savitzky-Golay smoothing.
 -   Package [conicfit](https://cran.r-project.org/package=conicfit) provides several (geometric and algebraic) algorithms for fitting circles, ellipses, and conics in general.
 
-#### Root Finding and Fixed Points
+**Root Finding and Fixed Points**
 
 `uniroot()`, implementing the Brent-Decker algorithm, is the basic routine in R to find roots of univariate functions. There are implementations of the bisection algorithm in several contributed packages. For root finding with higher precision there is function `unirootR()` in the multi-precision package [Rmpfr](https://cran.r-project.org/package=Rmpfr). And for finding roots of multivariate functions see the following two packages:
 
@@ -103,7 +103,7 @@ Base R provides functions `approx()` for constant and linear interpolation, and 
 -   [ktsolve](https://cran.r-project.org/package=ktsolve) defines a common interface for solving a set of equations with `BB` or `nleqslv`.
 -   Package [FixedPoint](https://cran.r-project.org/package=FixedPoint) provides algorithms for finding fixed point vectors. These algorithms include Anderson acceleration, epsilon extrapolation methods, and minimal polynomial methods.
 
-#### Discrete Mathematics and Number Theory
+**Discrete Mathematics and Number Theory**
 
 Not so many functions are available for computational number theory. Note that integers in double precision can be represented exactly up to `2^53 - 1`, above that limit a multi-precision package such as [gmp](https://cran.r-project.org/package=gmp) is needed, see below.
 
@@ -117,7 +117,7 @@ Not so many functions are available for computational number theory. Note that i
 -   [RcppAlgos](https://cran.r-project.org/package=RcppAlgos/index.html) provides flexible functions for generating combinations or permutations of a vector with or without constraints. The extension package [bigIntegerAlgos](../packages/bigIntegerAlgos) features a quadratic sieve algorithm for completely factoring large integers.
 -   Package [Zseq](https://cran.r-project.org/package=Zseq) generates well-known integer sequences; the 'gmp' package is adopted for computing with arbitrarily large numbers. Every function has on its help page a hyperlink to the corresponding entry in the On-Line Encyclopedia of Integer Sequences (\[OEIS\](https://oeis.org/)).
 
-#### Multi-Precision Arithmetic and Symbolic Mathematics
+**Multi-Precision Arithmetic and Symbolic Mathematics**
 
 -   Multiple precision arithmetic is available in R through package [gmp](https://cran.r-project.org/package=gmp) that interfaces to the GMP C library. Examples are factorization of integers, a probabilistic prime number test, or operations on big rationals -- for which linear systems of equations can be solved.
 -   Multiple precision floating point operations and functions are provided through package [Rmpfr](https://cran.r-project.org/package=Rmpfr) using the MPFR and GMP libraries. Special numbers and some special functions are included, as well as routines for root finding, integration, and optimization in arbitrary precision.
@@ -126,14 +126,9 @@ Not so many functions are available for computational number theory. Note that i
 -   Package [rSymPy](https://cran.r-project.org/package=rSymPy) accesses the symbolic algebra system 'SymPy' (written in Python) from R. It supports arbitrary precision computations, linear algebra and calculus, solving equations, discrete mathematics, and much more.
 -   Package [Ryacas](https://cran.r-project.org/package=Ryacas) interfaces the computer algebra system 'Yacas'. It supports symbolic and arbitrary precision computations in calculus and linear algebra.
 
-#### MATLAB, Octave, Julia, and Python Interfaces
+**Python Interfaces**
 
-Interfaces to numerical computation software such as MATLAB (commercial) or Octave (free) will be important when solving difficult numerical problems. (Please note that the commercial programs SAS and Mathematica do have facilities to call R functions.)
-
--   The [matlab](https://cran.r-project.org/package=matlab) emulation package contains about 30 simple functions, replicating MATLAB functions, using the respective MATLAB names and being implemented in pure R.
--   Package [R.matlab](https://cran.r-project.org/package=R.matlab) provides tools to read and write MAT files, which is the MATLAB data format. It also enables a one-directional interface with a MATLAB process, sending and retrieving objects through a TCP/IP connection.
-
-Python, through its modules 'NumPy', 'SciPy', 'Matplotlib', 'SymPy', and 'pandas', has elaborate and efficient numerical and graphical tools available. And Julia is "a high-level, high-performance dynamic programming language for numerical computing", which makes it interesting for optimization problems and demanding scientific computations in R.
+Python, through its modules 'NumPy', 'SciPy', 'Matplotlib', 'SymPy', and 'pandas', has elaborate and efficient numerical and graphical tools available.
 
 -   [reticulate](https://cran.r-project.org/package=reticulate) is an R interface to Python modules, classes, and functions. When calling Python in R data types are automatically converted to their equivalent Python types; when values are returned from Python to R they are converted back to R types. This package from the RStudio team is a kind of standard for calling Python from R.
 -   R package [rPython](https://cran.r-project.org/package=rPython/index.html) permits calls from R to Python, while [RPy](http://sourceforge.net/projects/rpy/) (with Python module 'rpy2') interfaces R from Python. [SnakeCharmR](../packages/SnakeCharmR) is a fork of 'rPython' with several fixes and improvements.
@@ -141,8 +136,27 @@ Python, through its modules 'NumPy', 'SciPy', 'Matplotlib', 'SymPy', and 'pandas
 -   [feather](https://cran.r-project.org/package=feather) provides bindings to read and write feather files, a lightweight binary data store designed for maximum speed. This storage format can also be accessed in Python, Julia, or Scala.
 -   [findpython](https://cran.r-project.org/package=findpython) is a package designed to find an acceptable Python binary in the path, incl. minimum version or required modules.
 -   'pyRserve' is a Python module for connecting Python to an R process running [Rserve](https://cran.r-project.org/package=Rserve) as an RPC gateway. This R process can run on a remote machine, variable access and function calls will be delegated through the network.
--   [XRPython](https://cran.r-project.org/package=XRPython/index.html) and [XRJulia](../packages/XRJulia/index.html) are based on John Chambers' [XR](../packages/XR) package and allow for structured integration of R with Python resp. Julia. Especially the Julia interface is interesting and provides direct analogues to Julia function calls. A 'juliaExamples' package is available on Github.
+-   [XRPython](https://cran.r-project.org/package=XRPython/index.html) (and 'XRJulia') are based on John Chambers' [XR](../packages/XR) package and his "Extending R" book and allow for a very structured integration of R with Python resp. Julia.
+
+<!-- -->
+
+-   Note that [SageMath](http://www.sagemath.org/) is a free open source mathematics system based on Python, allowing to run R functions, but also providing access to Maxima, GAP, FLINT, and many more math programs. SageMath can be downloaded or used through a Web interface (CoCalc).
+
+**MATLAB, Octave, Julia, and other Interfaces**
+
+Interfaces to numerical computation software such as MATLAB (commercial) or Octave (free) will be important when solving difficult numerical problems.
+
+-   The [matlab](https://cran.r-project.org/package=matlab/index.html) emulation package contains about 30 simple functions, replicating MATLAB functions, using the respective MATLAB names and being implemented in pure R. (See also [pracma](../packages/pracma) for many more mathematical functions designed with MATLAB in mind.)
+-   Package [R.matlab](https://cran.r-project.org/package=R.matlab) provides tools to read and write MAT files, which is the MATLAB data format. It also enables a one-directional interface with a MATLAB process, sending and retrieving objects through a TCP/IP connection.
+
+Julia is "a high-level, high-performance dynamic programming language for numerical computing", which makes it interesting for optimization problems and other demanding scientific computations in R.
+
+-   The Julia interface of the [XRJulia](https://cran.r-project.org/package=XRJulia) package by John Chambers provides direct analogues to Julia function calls. A 'juliaExamples' package is available on Github.
 -   [JuliaCall](https://cran.r-project.org/package=JuliaCall) provides seamless integration between R and Julia. Using the high-level interface, the user can call any Julia function just like an R function with automatic type conversion. With the low-level interface the user interfaces directly with C-level SEXPs while enjoying the convenience of using a high-level programming language like Julia.
+
+The commercial programs SAS and Mathematica do have facilities to call R functions. Here is another Computer Algebra System (CAS) in Pure Mathematics that can be called from R.
+
+-   Package [m2r](https://cran.r-project.org/package=m2r) provides a persistent interface to Macauley2, an extended software program supporting research in algebraic geometry and commutative algebra. Macauley2 has to be installed independently, otherwise a Macauley2 process in the cloud will be instantiated.
 
 ### CRAN packages:
 
@@ -180,6 +194,7 @@ Python, through its modules 'NumPy', 'SciPy', 'Matplotlib', 'SymPy', and 'pandas
 -   [ktsolve](https://cran.r-project.org/package=ktsolve)
 -   [lamW](https://cran.r-project.org/package=lamW)
 -   [logOfGamma](https://cran.r-project.org/package=logOfGamma)
+-   [m2r](https://cran.r-project.org/package=m2r)
 -   [magic](https://cran.r-project.org/package=magic)
 -   [MASS](https://cran.r-project.org/package=MASS)
 -   [matlab](https://cran.r-project.org/package=matlab)

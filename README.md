@@ -2,12 +2,11 @@ CRAN Task View: Numerical Mathematics
 -------------------------------------
 
 |                 |                                                        |
-|-----------------|--------------------------------------------------------| 
+|-----------------|--------------------------------------------------------|  
 | **Maintainer:** | Hans W. Borchers                                       | 
 | **Contact:**    | hwb at mailbox.org                                     | 
-| **Version:**    | 2018-05-19                                             | 
+| **Version:**    | 2018-08-12                                             | 
 | **URL:**        | <https://CRAN.R-project.org/view=NumericalMathematics> | 
-
 
 This task view on numerical mathematics lists R packages and functions that are useful for solving numerical problems in linear algebra and analysis. It shows that R is a viable computing environment for implementing and applying numerical methods, also outside the realm of statistics.
 
@@ -68,7 +67,8 @@ Function polyroot() in base R determines all zeros of a polynomial, based on the
 
 -   Package [Deriv](https://cran.r-project.org/package=Deriv) provides an extended solution for symbolic differentiation in R; the user can add custom derivative rules, and the output for a function will be an executable function again.
 -   [numDeriv](https://cran.r-project.org/package=numDeriv) sets the standard for numerical differentiation in R, providing numerical gradients, Jacobians, and Hessians, computed by simple finite differences, Richardson extrapolation, or the highly accurate complex step approach.
--   Package [pracma](https://cran.r-project.org/package=pracma/index.html) contains functions for computing numerical derivatives, including Richardson extrapolation or complex step. `fderiv()` computes numerical derivatives of higher orders. [pracma](../packages/pracma) has several routines for numerical integration: adaptive Lobatto quadrature, Romberg integration, Newton-Cotes formulas, Clenshaw-Curtis quadrature rules. `integral2()` integrates functions in two dimensions, also for domains characterized by polar coordinates or with variable interval limits.
+-   Package [<span class="GitHub">autodiffr</span>](https://github.com/Non-Contradiction/autodiffr/) (on Github) provides an R wrapper for the Julia packages ForwardDiff.jl and ReverseDiff.jl to do automatic differentiation for native R functions. (Works only with Julia v0.6 for the moment)
+-   [pracma](https://cran.r-project.org/package=pracma/index.html) contains functions for computing numerical derivatives, including Richardson extrapolation or complex step. `fderiv()` computes numerical derivatives of higher orders. [pracma](../packages/pracma) has several routines for numerical integration: adaptive Lobatto quadrature, Romberg integration, Newton-Cotes formulas, Clenshaw-Curtis quadrature rules. `integral2()` integrates functions in two dimensions, also for domains characterized by polar coordinates or with variable interval limits.
 -   Package [gaussquad](https://cran.r-project.org/package=gaussquad/index.html) contains a collection of functions to perform Gaussian quadrature, among them Chebyshev, Hermite, Laguerre, and Legendre quadrature rules, explicitly returning nodes and weights in each case. Function `gaussquad()` in package [statmod](../packages/statmod) does a similar job.
 -   Package [fastGHQuad](https://cran.r-project.org/package=fastGHQuad/index.html) provides a fast [Rcpp](../packages/Rcpp) -based implementation of (adaptive) Gauss-Hermite quadrature.
 -   Adaptive multivariate integration over hyper-rectangles in n-dimensional space is available in package [cubature](https://cran.r-project.org/package=cubature) as function `adaptIntegrate()`, based on a C library of the same name. The integrand functions can even be multi-valued.
@@ -88,6 +88,7 @@ Base R provides functions `approx()` for constant and linear interpolation, and 
 -   Package [signal](https://cran.r-project.org/package=signal) contains several *filters* to smooth discrete data, notably `interp1()` for linear, spline, and cubic interpolation, `pchip()` for piecewise cubic Hermite interpolation, and `sgolay()` for Savitzky-Golay smoothing.
 -   Package [pracma](https://cran.r-project.org/package=pracma) provides barycentric Lagrange interpolation (in 1 and 2 dimensions) in `barylag()` resp. `barylag2d()`, 1-dim. akima in `akimaInterp()`, and interpolation and approximation of data with rational functions, i.e. in the presence of singularities, in `ratinterp()` and `rationalfit()`.
 -   The [interp](https://cran.r-project.org/package=interp) package provides bivariate data interpolation on regular and irregular grids, either linear or using splines. Currently the piecewise linear interpolation part is implemented. (It is intended to provide a free replacement for the ACM licensed `akima::interp` and `tripack::tri.mesh` functions.)
+-   Package [chebpol](https://cran.r-project.org/package=chebpol) contains methods for creating multivariate Chebyshev and multilinear interpolation on regular grids, e.g. the Floater-Hormann barycenter method, or polyharmonic splines for scattered data.
 -   [tripack](https://cran.r-project.org/package=tripack) for triangulation of irregularly spaced data is a constrained two-dimensional Delaunay triangulation package providing both triangulation and generation of Voronoi mosaics of irregular spaced data.
 -   `sinterp()` in package [stinepack](https://cran.r-project.org/package=stinepack) realizes interpolation based on piecewise rational functions by applying Stineman's algorithm. The interpolating function will be monotone in regions where the specified points change monotonically.
 -   `Schumaker()` in package [schumaker](https://cran.r-project.org/package=schumaker) implements shape-preserving splines, guaranteed to be monotonic resp. concave or convex if the data is monotonic, concave, or convex.
@@ -110,12 +111,13 @@ Not so many functions are available for computational number theory. Note that i
 -   Package [numbers](https://cran.r-project.org/package=numbers) provides functions for factorization, prime numbers, twin primes, primitive roots, modular inverses, extended GCD, etc. Included are some number-theoretic functions like divisor functions or Euler's Phi function.
 -   [contfrac](https://cran.r-project.org/package=contfrac) contains various utilities for evaluating continued fractions and partial convergents.
 -   [magic](https://cran.r-project.org/package=magic) creates and investigates magical squares and hypercubes, including functions for the manipulation and analysis of arbitrarily dimensioned arrays.
+-   Package [freegroup](https://cran.r-project.org/package=freegroup) provides functionality for manipulating elements of a free group including juxtaposition, inversion, multiplication by a scalar, power operations, and Tietze forms.
 -   The [partitions](https://cran.r-project.org/package=partitions) package enumerates additive partitions of integers, including restricted and unequal partitions.
 -   [permutations](https://cran.r-project.org/package=permutations) treats permutations as invertible functions of finite sets and includes several mathematical operations on them.
 -   Package [combinat](https://cran.r-project.org/package=combinat) generates all permutations or all combinations of a certain length of a set of elements (i.e. a vector); it also computes binomial coefficients.
 -   Package [arrangements](https://cran.r-project.org/package=arrangements) provides generators and iterators for permutations, combinations and partitions. The iterators allow users to generate arrangements in a fast and memory efficient manner. Permutations and combinations can be drawn with/without replacement and support multisets.
 -   [RcppAlgos](https://cran.r-project.org/package=RcppAlgos/index.html) provides flexible functions for generating combinations or permutations of a vector with or without constraints. The extension package [bigIntegerAlgos](../packages/bigIntegerAlgos) features a quadratic sieve algorithm for completely factoring large integers.
--   Package [Zseq](https://cran.r-project.org/package=Zseq) generates well-known integer sequences; the 'gmp' package is adopted for computing with arbitrarily large numbers. Every function has on its help page a hyperlink to the corresponding entry in the On-Line Encyclopedia of Integer Sequences (\[OEIS\](https://oeis.org/)).
+-   Package [Zseq](https://cran.r-project.org/package=Zseq) generates well-known integer sequences; the 'gmp' package is adopted for computing with arbitrarily large numbers. Every function has on its help page a hyperlink to the corresponding entry in the On-Line Encyclopedia of Integer Sequences ( [OEIS](https://oeis.org/)).
 
 **Multi-Precision Arithmetic and Symbolic Mathematics**
 
@@ -140,7 +142,7 @@ Python, through its modules 'NumPy', 'SciPy', 'Matplotlib', 'SymPy', and 'pandas
 
 <!-- -->
 
--   Note that [SageMath](http://www.sagemath.org/) is a free open source mathematics system based on Python, allowing to run R functions, but also providing access to Maxima, GAP, FLINT, and many more math programs. SageMath can be downloaded or used through a Web interface (CoCalc).
+-   Note that [SageMath](http://www.sagemath.org/) is a free open source mathematics system based on Python, allowing to run R functions, but also providing access to Maxima, GAP, FLINT, and many more math programs. SageMath can be downloaded or used through a Web interface at [CoCalc](https://cocalc.com/).
 
 **MATLAB, Octave, Julia, and other Interfaces**
 
@@ -152,7 +154,7 @@ Interfaces to numerical computation software such as MATLAB (commercial) or Octa
 Julia is "a high-level, high-performance dynamic programming language for numerical computing", which makes it interesting for optimization problems and other demanding scientific computations in R.
 
 -   The Julia interface of the [XRJulia](https://cran.r-project.org/package=XRJulia) package by John Chambers provides direct analogues to Julia function calls. A 'juliaExamples' package is available on Github.
--   [JuliaCall](https://cran.r-project.org/package=JuliaCall) provides seamless integration between R and Julia. Using the high-level interface, the user can call any Julia function just like an R function with automatic type conversion. With the low-level interface the user interfaces directly with C-level SEXPs while enjoying the convenience of using a high-level programming language like Julia.
+-   [JuliaCall](https://cran.r-project.org/package=JuliaCall) provides seamless integration between R and Julia. Using the high-level interface, the user can call any Julia function just like an R function with automatic type conversion.
 
 The commercial programs SAS and Mathematica do have facilities to call R functions. Here is another Computer Algebra System (CAS) in Pure Mathematics that can be called from R.
 
@@ -168,6 +170,7 @@ The commercial programs SAS and Mathematica do have facilities to call R functio
 -   [Bessel](https://cran.r-project.org/package=Bessel)
 -   [bigIntegerAlgos](https://cran.r-project.org/package=bigIntegerAlgos)
 -   [Brobdingnag](https://cran.r-project.org/package=Brobdingnag)
+-   [chebpol](https://cran.r-project.org/package=chebpol)
 -   [combinat](https://cran.r-project.org/package=combinat)
 -   [conicfit](https://cran.r-project.org/package=conicfit)
 -   [contfrac](https://cran.r-project.org/package=contfrac)
@@ -183,6 +186,7 @@ The commercial programs SAS and Mathematica do have facilities to call R functio
 -   [findpython](https://cran.r-project.org/package=findpython)
 -   [FixedPoint](https://cran.r-project.org/package=FixedPoint)
 -   [fourierin](https://cran.r-project.org/package=fourierin)
+-   [freegroup](https://cran.r-project.org/package=freegroup)
 -   [gaussquad](https://cran.r-project.org/package=gaussquad)
 -   [geigen](https://cran.r-project.org/package=geigen)
 -   [gmp](https://cran.r-project.org/package=gmp)

@@ -556,7 +556,6 @@
     <pkg>Rserve</pkg>
     <pkg>RSpectra</pkg>
     <pkg>rSymPy</pkg>
-    <pkg>Ryacas</pkg>
     <pkg>schumaker</pkg>
     <pkg>signal</pkg>
     <pkg>SimplicialCubature</pkg>

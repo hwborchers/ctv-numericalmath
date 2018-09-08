@@ -5,7 +5,7 @@ CRAN Task View: Numerical Mathematics
 |-----------------|--------------------------------------------------------|  
 | **Maintainer:** | Hans W. Borchers                                       | 
 | **Contact:**    | hwb at mailbox.org                                     | 
-| **Version:**    | 2018-08-12                                             | 
+| **Version:**    | 2018-09-06                                             | 
 | **URL:**        | <https://CRAN.R-project.org/view=NumericalMathematics> | 
 
 This task view on numerical mathematics lists R packages and functions that are useful for solving numerical problems in linear algebra and analysis. It shows that R is a viable computing environment for implementing and applying numerical methods, also outside the realm of statistics.

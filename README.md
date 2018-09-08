@@ -126,7 +126,6 @@ Not so many functions are available for computational number theory. Note that i
 -   [Brobdingnag](https://cran.r-project.org/package=Brobdingnag) handles very large numbers by holding their logarithm plus a flag indicating their sign. (An excellent vignette explains how this is done using S4 methods.)
 -   [VeryLargeIntegers](https://cran.r-project.org/package=VeryLargeIntegers) implements a multi-precision library that allows to store and manage arbitrarily big integers; it includes probabilistic primality tests and factorization algorithms.
 -   Package [rSymPy](https://cran.r-project.org/package=rSymPy) accesses the symbolic algebra system 'SymPy' (written in Python) from R. It supports arbitrary precision computations, linear algebra and calculus, solving equations, discrete mathematics, and much more.
--   Package [Ryacas](https://cran.r-project.org/package=Ryacas) interfaces the computer algebra system 'Yacas'. It supports symbolic and arbitrary precision computations in calculus and linear algebra.
 
 **Python Interfaces**
 
@@ -240,7 +239,6 @@ The commercial programs SAS and Mathematica do have facilities to call R functio
 -   [Rserve](https://cran.r-project.org/package=Rserve)
 -   [RSpectra](https://cran.r-project.org/package=RSpectra)
 -   [rSymPy](https://cran.r-project.org/package=rSymPy)
--   [Ryacas](https://cran.r-project.org/package=Ryacas)
 -   [schumaker](https://cran.r-project.org/package=schumaker)
 -   [signal](https://cran.r-project.org/package=signal)
 -   [SimplicialCubature](https://cran.r-project.org/package=SimplicialCubature)

@@ -375,9 +375,6 @@
         (written in Python) from R. 
         It supports arbitrary precision computations, linear algebra and 
         calculus, solving equations, discrete mathematics, and much more.</li>
-    <li>Package <pkg>Ryacas</pkg> interfaces the computer algebra system 
-        'Yacas'. It supports symbolic and arbitrary precision computations 
-        in calculus and linear algebra.</li>
     </ul>
 
 

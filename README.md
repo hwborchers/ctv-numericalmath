@@ -5,7 +5,7 @@ CRAN Task View: Numerical Mathematics
 |-----------------|--------------------------------------------------------|  
 | **Maintainer:** | Hans W. Borchers                                       | 
 | **Contact:**    | hwb at mailbox.org                                     | 
-| **Version:**    | 2018-09-06                                             | 
+| **Version:**    | 2018-09-30                                             | 
 | **URL:**        | <https://CRAN.R-project.org/view=NumericalMathematics> | 
 
 This task view on numerical mathematics lists R packages and functions that are useful for solving numerical problems in linear algebra and analysis. It shows that R is a viable computing environment for implementing and applying numerical methods, also outside the realm of statistics.
@@ -24,7 +24,6 @@ As statistics is based to a large extent on linear algebra, many numerical linea
 -   [SparseM](https://cran.r-project.org/package=SparseM) provides classes and methods for sparse matrices and for solving linear and least-squares problems in sparse linear algebra
 -   Package [rmumps](https://cran.r-project.org/package=rmumps) provides a wrapper for the MUMPS library, solving large linear systems of equations applying a parallel sparse direct solver
 -   [Rlinsolve](https://cran.r-project.org/package=Rlinsolve) is a collection of iterative solvers for sparse linear system of equations. Stationary iterative solvers such as Jacobi or Gauss-Seidel, as well as nonstationary (Krylov subspace) methods are provided.
--   [SolveLS](https://cran.r-project.org/package=SolveLS) provides basic stationary iterative solvers such as Jacobi, Gauss-Seidel, Successive Over-Relaxation and SSOR methods. Nonstationary, also known as Krylov subspace, methods are provided. Sparse matrix computation is supported through the 'Matrix' and 'RcppArmadillo' packages.
 -   [svd](https://cran.r-project.org/package=svd/index.html) provides R bindings to state-of-the-art implementations of singular value decomposition (SVD) and eigenvalue/eigenvector computations. Package [ssvd](../packages/ssvd/index.html) will obtain sparse SVDs using an iterative thresholding method, while [irlba](../packages/irlba) will compute approximate singular values/vectors of large matrices.
 -   Package [PRIMME](https://cran.r-project.org/package=PRIMME) interfaces PRIMME, a C library for computing eigenvalues and corresponding eigenvectors of real symmetric or complex Hermitian matrices. It can find largest, smallest, or interior eigen-/singular values and will apply preconditioning to accelerate convergence.
 -   The packages [geigen](https://cran.r-project.org/package=geigen/index.html) and [QZ](../packages/QZ) compute generalized eigenvalues and -vectors for pairs of matrices, and QZ (generalized Schur) decompositions.
@@ -125,6 +124,7 @@ Not so many functions are available for computational number theory. Note that i
 -   Multiple precision floating point operations and functions are provided through package [Rmpfr](https://cran.r-project.org/package=Rmpfr) using the MPFR and GMP libraries. Special numbers and some special functions are included, as well as routines for root finding, integration, and optimization in arbitrary precision.
 -   [Brobdingnag](https://cran.r-project.org/package=Brobdingnag) handles very large numbers by holding their logarithm plus a flag indicating their sign. (An excellent vignette explains how this is done using S4 methods.)
 -   [VeryLargeIntegers](https://cran.r-project.org/package=VeryLargeIntegers) implements a multi-precision library that allows to store and manage arbitrarily big integers; it includes probabilistic primality tests and factorization algorithms.
+-   Package [Ryacas](https://cran.r-project.org/package=Ryacas) interfaces the computer algebra system 'Yacas'. It supports symbolic and arbitrary precision computations	in calculus and linear algebra.
 -   Package [rSymPy](https://cran.r-project.org/package=rSymPy) accesses the symbolic algebra system 'SymPy' (written in Python) from R. It supports arbitrary precision computations, linear algebra and calculus, solving equations, discrete mathematics, and much more.
 
 **Python Interfaces**
@@ -239,11 +239,11 @@ The commercial programs SAS and Mathematica do have facilities to call R functio
 -   [Rserve](https://cran.r-project.org/package=Rserve)
 -   [RSpectra](https://cran.r-project.org/package=RSpectra)
 -   [rSymPy](https://cran.r-project.org/package=rSymPy)
+-   [Ryacas](https://cran.r-project.org/package=Ryacas)
 -   [schumaker](https://cran.r-project.org/package=schumaker)
 -   [signal](https://cran.r-project.org/package=signal)
 -   [SimplicialCubature](https://cran.r-project.org/package=SimplicialCubature)
 -   [SnakeCharmR](https://cran.r-project.org/package=SnakeCharmR)
--   [SolveLS](https://cran.r-project.org/package=SolveLS)
 -   [SparseGrid](https://cran.r-project.org/package=SparseGrid)
 -   [SparseM](https://cran.r-project.org/package=SparseM)
 -   [SphericalCubature](https://cran.r-project.org/package=SphericalCubature)

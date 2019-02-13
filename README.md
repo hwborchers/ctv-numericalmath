@@ -58,6 +58,7 @@ Function polyroot() in base R determines all zeros of a polynomial, based on the
 -   Package [MonoPoly](https://cran.r-project.org/package=MonoPoly) fits univariate polynomials to given data, applying different algorithms.
 -   For multivariate polynomials, package [multipol](https://cran.r-project.org/package=multipol) provides various tools to manipulate and combine these polynomials of several variables.
 -   Package [mpoly](https://cran.r-project.org/package=mpoly) facilitates symbolic manipulations on multivariate polynomials, including basic differential calculus operations on polynomials, plus some Groebner basis calculations.
+-   [mvp](https://cran.r-project.org/package=mvp) enables fast manipulation of symbolic multivariate polynomials, using print and coercion methods from the 'mpoly' package, but offers speed improvements.
 -   Package [orthopolynom](https://cran.r-project.org/package=orthopolynom) consists of a collection of functions to construct orthogonal polynomials and their recurrence relations, among them Chebyshev, Hermite, and Legendre polynomials, as well as spherical and ultraspherical polynomials. There are functions to operate on these polynomials.
 
 **Differentiation and Integration**
@@ -206,6 +207,7 @@ The commercial programs SAS and Mathematica do have facilities to call R functio
 -   [MonoPoly](https://cran.r-project.org/package=MonoPoly)
 -   [mpoly](https://cran.r-project.org/package=mpoly)
 -   [multipol](https://cran.r-project.org/package=multipol)
+-   [mvp](https://cran.r-project.org/package=mvp)
 -   [mvQuad](https://cran.r-project.org/package=mvQuad)
 -   [nleqslv](https://cran.r-project.org/package=nleqslv)
 -   [numbers](https://cran.r-project.org/package=numbers)

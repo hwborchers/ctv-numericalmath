@@ -54,7 +54,7 @@ Many special mathematical functions are present in R, especially logarithms and 
 
 Function polyroot() in base R determines all zeros of a polynomial, based on the Jenkins-Traub algorithm. Linear regression function lm() can perform polynomial fitting when using `poly()` in the model formula (with option `raw = TRUE`).
 
--   Packages [polynom](https://cran.r-project.org/package=polynom/index.html) and [PolynomF](../packages/PolynomF) provide similar functionality for manipulating univariate polynomials, like evaluating polynomials (Horner scheme), differentiating or integrating them, or solving polynomials, i.e. finding all roots (based on an eigenvalue computation).
+-   Packages [PolynomF](https://cran.r-project.org/package=PolynomF) (recommended) and [polynom](https://cran.r-project.org/package=polynom) provide similar functionality for manipulating univariate polynomials, like evaluating polynomials (Horner scheme), or finding all roots (based on an eigenvalue computation). [PolynomF](https://cran.r-project.org/package=PolynomF) can generate orthogonal polynomials and provides graphical display features.
 -   Package [MonoPoly](https://cran.r-project.org/package=MonoPoly) fits univariate polynomials to given data, applying different algorithms.
 -   For multivariate polynomials, package [multipol](https://cran.r-project.org/package=multipol) provides various tools to manipulate and combine these polynomials of several variables.
 -   Package [mpoly](https://cran.r-project.org/package=mpoly) facilitates symbolic manipulations on multivariate polynomials, including basic differential calculus operations on polynomials, plus some Groebner basis calculations.
@@ -67,7 +67,7 @@ Function polyroot() in base R determines all zeros of a polynomial, based on the
 
 -   Package [Deriv](https://cran.r-project.org/package=Deriv) provides an extended solution for symbolic differentiation in R; the user can add custom derivative rules, and the output for a function will be an executable function again.
 -   [numDeriv](https://cran.r-project.org/package=numDeriv) sets the standard for numerical differentiation in R, providing numerical gradients, Jacobians, and Hessians, computed by simple finite differences, Richardson extrapolation, or the highly accurate complex step approach.
--   Package [<span class="GitHub">autodiffr</span>](https://github.com/Non-Contradiction/autodiffr/) (on Github) provides an R wrapper for the Julia packages ForwardDiff.jl and ReverseDiff.jl to do automatic differentiation for native R functions. (Works only with Julia v0.6 for the moment)
+-   Package [<span class="GitHub">autodiffr</span>](https://github.com/Non-Contradiction/autodiffr/) (on Github) provides an R wrapper for the Julia packages ForwardDiff.jl and ReverseDiff.jl to do automatic differentiation for native R functions.
 -   [pracma](https://cran.r-project.org/package=pracma/index.html) contains functions for computing numerical derivatives, including Richardson extrapolation or complex step. `fderiv()` computes numerical derivatives of higher orders. [pracma](../packages/pracma) has several routines for numerical integration: adaptive Lobatto quadrature, Romberg integration, Newton-Cotes formulas, Clenshaw-Curtis quadrature rules. `integral2()` integrates functions in two dimensions, also for domains characterized by polar coordinates or with variable interval limits.
 -   Package [gaussquad](https://cran.r-project.org/package=gaussquad/index.html) contains a collection of functions to perform Gaussian quadrature, among them Chebyshev, Hermite, Laguerre, and Legendre quadrature rules, explicitly returning nodes and weights in each case. Function `gaussquad()` in package [statmod](../packages/statmod) does a similar job.
 -   Package [fastGHQuad](https://cran.r-project.org/package=fastGHQuad/index.html) provides a fast [Rcpp](../packages/Rcpp) -based implementation of (adaptive) Gauss-Hermite quadrature.
@@ -220,8 +220,8 @@ The commercial programs SAS and Mathematica do have facilities to call R functio
 -   [partitions](https://cran.r-project.org/package=partitions)
 -   [permutations](https://cran.r-project.org/package=permutations)
 -   [polyCub](https://cran.r-project.org/package=polyCub)
--   [polynom](https://cran.r-project.org/package=polynom) (core)
--   [PolynomF](https://cran.r-project.org/package=PolynomF)
+-   [polynom](https://cran.r-project.org/package=polynom)
+-   [PolynomF](https://cran.r-project.org/package=PolynomF) (core)
 -   [pracma](https://cran.r-project.org/package=pracma) (core)
 -   [PRIMME](https://cran.r-project.org/package=PRIMME)
 -   [PythonInR](https://cran.r-project.org/package=PythonInR)
@@ -268,11 +268,12 @@ The commercial programs SAS and Mathematica do have facilities to call R functio
 -   CRAN Task View: [Optimization](Optimization.html)
 -   CRAN Task View: [TimeSeries](TimeSeries.html)
 -   CRAN Task View: [HighPerformanceComputing](HighPerformanceComputing.html)
--   <span> Textbook: [Hands-On Matrix Algebra Using R](http://www.worldscientific.com/worldscibooks/10.1142/7814) </span>
--   <span> Textbook: [Introduction to Scientific Programming and Simulation Using R](http://www.ms.unimelb.edu.au/~apro@unimelb/spuRs/index.html) </span>
--   <span> Textbook: [Numerical Methods in Science and Engineering Using R](http://www.crcpress.com/product/isbn/9781439884485) </span>
--   <span> Textbook: [Computational Methods for Numerical Analysis with R](https://www.crcpress.com/Computational-Methods-for-Numerical-Analysis-with-R/II/p/book/9781498723633) </span>
--   [R and MATLAB](http://www.math.umaine.edu/~hiebeler/comp/matlabR.html)
+-   Textbook: [Hands-On Matrix Algebra Using R](http://www.worldscientific.com/worldscibooks/10.1142/7814)
+-   Textbook: [Introduction to Scientific Programming and Simulation Using R](http://www.ms.unimelb.edu.au/~apro@unimelb/spuRs/index.html)
+-   Textbook: [Numerical Methods in Science and Engineering Using R](http://www.crcpress.com/product/isbn/9781439884485)
+-   Textbook: [Computational Methods for Numerical Analysis with R](https://www.crcpress.com/Computational-Methods-for-Numerical-Analysis-with-R/II/p/book/9781498723633)
+-   [R for Science](http://www.rforreference.com) (Nioz, Netherlands)
+-   [MATLAB / R Reference](http://www.math.umaine.edu/~hiebeler/comp/matlabR.html) (D. Hiebeler)
 -   [Abramowitz and Stegun. Handbook of Mathematical Functions](http://www.nr.com/aands/)
 -   [Numerical Recipes: The Art of Numerical Computing](http://www.nrbook.com/a/bookcpdf.php)
 -   [E. Weisstein's Wolfram MathWorld](http://mathworld.wolfram.com/)

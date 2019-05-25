@@ -272,7 +272,7 @@ The commercial programs SAS and Mathematica do have facilities to call R functio
 -   Textbook: [Introduction to Scientific Programming and Simulation Using R](http://www.ms.unimelb.edu.au/~apro@unimelb/spuRs/index.html)
 -   Textbook: [Numerical Methods in Science and Engineering Using R](http://www.crcpress.com/product/isbn/9781439884485)
 -   Textbook: [Computational Methods for Numerical Analysis with R](https://www.crcpress.com/Computational-Methods-for-Numerical-Analysis-with-R/II/p/book/9781498723633)
--   [R for Science](http://www.rforreference.com) (Nioz, Netherlands)
+-   [R for Science](http://www.rforscience.com/) (Institute for Sea Research, Netherlands)
 -   [MATLAB / R Reference](http://www.math.umaine.edu/~hiebeler/comp/matlabR.html) (D. Hiebeler)
 -   [Abramowitz and Stegun. Handbook of Mathematical Functions](http://www.nr.com/aands/)
 -   [Numerical Recipes: The Art of Numerical Computing](http://www.nrbook.com/a/bookcpdf.php)

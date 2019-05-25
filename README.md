@@ -5,7 +5,7 @@ CRAN Task View: Numerical Mathematics
 |-----------------|--------------------------------------------------------|  
 | **Maintainer:** | Hans W. Borchers                                       | 
 | **Contact:**    | hwb at mailbox.org                                     | 
-| **Version:**    | 2019-02-17                                             | 
+| **Version:**    | 2019-05-25                                             | 
 | **URL:**        | <https://CRAN.R-project.org/view=NumericalMathematics> | 
 
 This task view on numerical mathematics lists R packages and functions that are useful for solving numerical problems in linear algebra and analysis. It shows that R is a viable computing environment for implementing and applying numerical methods, also outside the realm of statistics.
@@ -99,6 +99,7 @@ Base R provides functions `approx()` for constant and linear interpolation, and 
 
 `uniroot()`, implementing the Brent-Decker algorithm, is the basic routine in R to find roots of univariate functions. There are implementations of the bisection algorithm in several contributed packages. For root finding with higher precision there is function `unirootR()` in the multi-precision package [Rmpfr](https://cran.r-project.org/package=Rmpfr). And for finding roots of multivariate functions see the following two packages:
 
+-   Package [rootSolve](https://cran.r-project.org/package=rootSolve) includes function `multiroot()` for finding roots of systems of nonlinear (and linear) equations; it also contains an extension `uniroot.all()` that attempts to find all zeros of a univariate function in an intervall (excepting quadratic zeros).
 -   For solving nonlinear systems of equations the [BB](https://cran.r-project.org/package=BB) package provides (non-monotone) Barzilai-Borwein spectral methods in `sane()`, including a derivative-free variant in `dfsane()`, and multi-start features with sensitivity analysis.
 -   Package [nleqslv](https://cran.r-project.org/package=nleqslv) solves nonlinear systems of equations using alternatively the Broyden or Newton method, supported by strategies such as line searches or trust regions.
 -   [ktsolve](https://cran.r-project.org/package=ktsolve) defines a common interface for solving a set of equations with `BB` or `nleqslv`.
@@ -237,6 +238,7 @@ The commercial programs SAS and Mathematica do have facilities to call R functio
 -   [Rmpfr](https://cran.r-project.org/package=Rmpfr)
 -   [rmumps](https://cran.r-project.org/package=rmumps)
 -   [RootsExtremaInflections](https://cran.r-project.org/package=RootsExtremaInflections)
+-   [rootSolve](https://cran.r-project.org/package=rootSolve)
 -   [rPython](https://cran.r-project.org/package=rPython)
 -   [Rserve](https://cran.r-project.org/package=Rserve)
 -   [RSpectra](https://cran.r-project.org/package=RSpectra)

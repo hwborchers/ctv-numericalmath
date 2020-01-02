@@ -5,7 +5,7 @@ CRAN Task View: Numerical Mathematics
 |-----------------|--------------------------------------------------------|  
 | **Maintainer:** | Hans W. Borchers                                       | 
 | **Contact:**    | hwb at mailbox.org                                     | 
-| **Version:**    | 2019-11-22                                             | 
+| **Version:**    | 2020-01-02                                             | 
 | **URL:**        | <https://CRAN.R-project.org/view=NumericalMathematics> | 
 
 This task view on numerical mathematics lists R packages and functions
@@ -403,6 +403,10 @@ Note that integers in double precision can be represented exactly up to
     partitions. The iterators allow users to generate arrangements in a
     fast and memory efficient manner. Permutations and combinations can
     be drawn with/without replacement and support multisets.
+-   Package [set6](https://cran.r-project.org/package=set6) implements (as R6
+    classes) many forms of mathematical sets (sets, tuples, intervals)
+    and allows for standard operations on them (unions, products,
+    differences).
 -   [RcppAlgos](https://cran.r-project.org/package=RcppAlgos) provides flexible
     functions for generating combinations or permutations of a vector
     with or without constraints. The extension package
@@ -413,6 +417,11 @@ Note that integers in double precision can be represented exactly up to
     arbitrarily large numbers. Every function has on its help page a
     hyperlink to the corresponding entry in the On-Line Encyclopedia of
     Integer Sequences ( [OEIS](https://oeis.org/) ).
+-   Package [primes](https://cran.r-project.org/package=primes) provides quite fast
+    (Rcpp) functions for identifying and generating prime numbers. And
+    [primefactr](https://cran.r-project.org/package=primefactr) uses prime
+    factorization for computations such as reducing ratios of large
+    factorials.
 
 **Multi-Precision Arithmetic and Symbolic Mathematics**
 
@@ -457,8 +466,6 @@ available.
 -   R package [rPython](https://cran.r-project.org/package=rPython) permits calls
     from R to Python, while [RPy](http://sourceforge.net/projects/rpy/)
     (with Python module 'rpy2') interfaces R from Python.
-    [SnakeCharmR](https://cran.r-project.org/package=SnakeCharmR) is a fork of
-    'rPython' with several fixes and improvements.
 -   [PythonInR](https://cran.r-project.org/package=PythonInR) is another package to
     interact with Python from within R. It provides Python classes for
     vectors, matrices and data.frames which allow an easy conversion
@@ -604,6 +611,8 @@ Mathematics that can be called from R.
 -   [polynom](https://cran.r-project.org/package=polynom)
 -   [PolynomF](https://cran.r-project.org/package=PolynomF) (core)
 -   [pracma](https://cran.r-project.org/package=pracma) (core)
+-   [primefactr](https://cran.r-project.org/package=primefactr)
+-   [primes](https://cran.r-project.org/package=primes)
 -   [PRIMME](https://cran.r-project.org/package=PRIMME)
 -   [PythonInR](https://cran.r-project.org/package=PythonInR)
 -   [QZ](https://cran.r-project.org/package=QZ)
@@ -625,9 +634,9 @@ Mathematics that can be called from R.
 -   [rSymPy](https://cran.r-project.org/package=rSymPy)
 -   [Ryacas](https://cran.r-project.org/package=Ryacas)
 -   [schumaker](https://cran.r-project.org/package=schumaker)
+-   [set6](https://cran.r-project.org/package=set6)
 -   [signal](https://cran.r-project.org/package=signal)
 -   [SimplicialCubature](https://cran.r-project.org/package=SimplicialCubature)
--   [SnakeCharmR](https://cran.r-project.org/package=SnakeCharmR)
 -   [SparseGrid](https://cran.r-project.org/package=SparseGrid)
 -   [SparseM](https://cran.r-project.org/package=SparseM)
 -   [SphericalCubature](https://cran.r-project.org/package=SphericalCubature)

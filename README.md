@@ -5,7 +5,7 @@ CRAN Task View: Numerical Mathematics
 |-----------------|--------------------------------------------------------|  
 | **Maintainer:** | Hans W. Borchers                                       | 
 | **Contact:**    | hwb at mailbox.org                                     | 
-| **Version:**    | 2020-01-02                                             | 
+| **Version:**    | 2020-01-17                                             | 
 | **URL:**        | <https://CRAN.R-project.org/view=NumericalMathematics> | 
 
 This task view on numerical mathematics lists R packages and functions

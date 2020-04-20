@@ -5,7 +5,7 @@ CRAN Task View: Numerical Mathematics
 |-----------------|--------------------------------------------------------|  
 | **Maintainer:** | Hans W. Borchers                                       | 
 | **Contact:**    | hwb at mailbox.org                                     | 
-| **Version:**    | 2020-01-17                                             | 
+| **Version:**    | 2020-04-20                                             | 
 | **URL:**        | <https://CRAN.R-project.org/view=NumericalMathematics> | 
 
 This task view on numerical mathematics lists R packages and functions
@@ -207,8 +207,7 @@ domains to a certain extent.
     Jacobians, and Hessians, computed by simple finite differences,
     Richardson extrapolation, or the highly accurate complex step
     approach.
--   Package [<span
-    class="GitHub">autodiffr</span>](https://github.com/Non-Contradiction/autodiffr/)
+-   Package [autodiffr](https://github.com/Non-Contradiction/autodiffr/)
     (on Github) provides an R wrapper for the Julia packages
     ForwardDiff.jl and ReverseDiff.jl to do automatic differentiation
     for native R functions.
@@ -409,9 +408,9 @@ Note that integers in double precision can be represented exactly up to
     differences).
 -   [RcppAlgos](https://cran.r-project.org/package=RcppAlgos) provides flexible
     functions for generating combinations or permutations of a vector
-    with or without constraints. The extension package
-    [bigIntegerAlgos](https://cran.r-project.org/package=bigIntegerAlgos) features a
-    quadratic sieve algorithm for completely factoring large integers.
+    with or without constraints. Extension package
+    [RcppBigIntAlgos](https://github.com/jwood000/RcppBigIntAlgos) features
+    a quadratic sieve algorithm for completely factoring large integers.
 -   Package [Zseq](https://cran.r-project.org/package=Zseq) generates well-known
     integer sequences; the 'gmp' package is adopted for computing with
     arbitrarily large numbers. Every function has on its help page a

@@ -493,18 +493,15 @@ the moment there is no package allowing to call Octave functions from within R.
 -   The [matlab](https://cran.r-project.org/package=matlab) emulation package
     contains about 30 simple functions, replicating MATLAB functions,
     using the respective MATLAB names and being implemented in pure R.
-    (See also [pracma](https://cran.r-project.org/package=pracma) for many more
-    mathematical functions designed with MATLAB in mind.)
 -   Packages [rmatio](https://cran.r-project.org/package=rmatio) and
     [R.matlab](https://cran.r-project.org/package=R.matlab) have functions
     to read and write MAT files (the MATLAB data format) for versions 4 and 5.
     'R.matlab' also enables a one-directional interface with a MATLAB process,
-    sending and retrieving objects through a TCP/IP connection.
+    sending and retrieving objects through a TCP connection.
 
 Julia is "a high-level, high-performance dynamic programming language for
 numerical computing", which makes it interesting for optimization problems and
 other demanding scientific computations in R.
-
 
 -   [JuliaCall](https://cran.r-project.org/package=JuliaCall)
     provides seamless integration between R and Julia; the user can call Julia

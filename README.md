@@ -486,10 +486,9 @@ SageMath can be freely used through a Web interface at [CoCalc](https://cocalc.c
 
 **MATLAB, Octave, Julia, and other Interfaces**
 
-Interfaces to numerical computation software such as MATLAB (commercial)
-or Octave (free) will be important when solving difficult numerical problems.
-Unfortunately, at the moment there is no package allowing to call octave functions
-from within R.
+Interfaces to mathematical software such as MATLAB (commercial) or Octave (free)
+will be important when solving difficult numerical problems. Unfortunately, at
+the moment there is no package allowing to call Octave functions from within R.
 
 -   The [matlab](https://cran.r-project.org/package=matlab) emulation package
     contains about 30 simple functions, replicating MATLAB functions,
@@ -501,24 +500,31 @@ from within R.
     also enables a one-directional interface with a MATLAB process,
     sending and retrieving objects through a TCP/IP connection.
 
-Julia is "a high-level, high-performance dynamic programming language
-for numerical computing", which makes it interesting for optimization
-problems and other demanding scientific computations in R.
+Julia is "a high-level, high-performance dynamic programming language for
+numerical computing", which makes it interesting for optimization problems and
+other demanding scientific computations in R.
 
--   The Julia interface of the [XRJulia](https://cran.r-project.org/package=XRJulia)
-    package by John Chambers provides direct analogues to Julia function
-    calls. A 'juliaExamples' package is available on Github.
--   [JuliaCall](https://cran.r-project.org/package=JuliaCall) provides seamless
-    integration between R and Julia. Using the high-level interface, the
-    user can call any Julia function just like an R function with
-    automatic type conversion.
+
+-   [JuliaCall](https://cran.r-project.org/package=JuliaCall)
+    provides seamless integration between R and Julia; the user can call Julia
+    functions just like any R functions, and R functions can be called in the
+    Julia environment, both with reasonable automatic type conversion.
+
+-   [JuliaConnectoR](https://cran.r-project.org/package=JuliaConnectoR)
+    provides a functionally oriented interface for integrating Julia with R;
+    imported Julia functions can be called just like R functions; data structures
+    are converted automatically.
+    
+-   [XRJulia](https://cran.r-project.org/package=XRJulia)
+    provides an interface from R to computations in the Julia language, based on
+    the interface structure described in the book "Extending R" by John Chambers.
 
 Java Math functions can be employed through the 'rjava' or 'rscala' interfaces.
 Then package [commonsMath](https://cran.r-project.org/package=commonsMath) provides
 Java JAR files for the Apache Commons Mathematics Library, a specialized library
 for all aspects of numerics, optimization, and differential equations.
 
-Here is a Computer Algebra System (CAS) that can be called from R.
+Here is a Computer Algebra System (CAS) that can be called from R:
 
 -   Package [m2r](https://cran.r-project.org/package=m2r) provides a persistent
     interface to Macauley2, an extended software program supporting research in
@@ -526,7 +532,7 @@ Here is a Computer Algebra System (CAS) that can be called from R.
     independently, otherwise a Macauley2 process in the cloud will be instantiated.
 
 Please note that commercial programs such as MATLAB, Maple, or Mathematica do have
-facilities to call R functions (if R is installed on your computer).
+facilities to call R functions.
 
 ### Related links:
 

@@ -532,11 +532,10 @@ facilities to call R functions.
 
 ### Related links:
 
--   CRAN Task View: [DifferentialEquations](DifferentialEquations.html)
--   CRAN Task View: [Optimization](Optimization.html)
--   CRAN Task View: [TimeSeries](TimeSeries.html)
--   CRAN Task View:
-    [HighPerformanceComputing](HighPerformanceComputing.html)
+-   CRAN Task View: [DifferentialEquations](https://CRAN.R-project.org/view=DifferentialEquations)
+-   CRAN Task View: [Optimization](https://CRAN.R-project.org/view=Optimization)
+-   CRAN Task View: [TimeSeries](https://CRAN.R-project.org/view=TimeSeries)
+-   CRAN Task View: [HighPerformanceComputing](	https://CRAN.R-project.org/view=HighPerformanceComputing)
 -   Textbook: [Hands-On Matrix Algebra Using
     R](http://www.worldscientific.com/worldscibooks/10.1142/7814)
 -   Textbook: [Introduction to Scientific Programming and Simulation

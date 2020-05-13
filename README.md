@@ -495,9 +495,10 @@ the moment there is no package allowing to call Octave functions from within R.
     using the respective MATLAB names and being implemented in pure R.
     (See also [pracma](https://cran.r-project.org/package=pracma) for many more
     mathematical functions designed with MATLAB in mind.)
--   Package [R.matlab](https://cran.r-project.org/package=R.matlab) provides tools
-    to read and write MAT files, which is the MATLAB data format. It
-    also enables a one-directional interface with a MATLAB process,
+-   Packages [rmatio](https://cran.r-project.org/package=rmatio) and
+    [R.matlab](https://cran.r-project.org/package=R.matlab) have functions
+    to read and write MAT files (the MATLAB data format) for versions 4 and 5.
+    'R.matlab' also enables a one-directional interface with a MATLAB process,
     sending and retrieving objects through a TCP/IP connection.
 
 Julia is "a high-level, high-performance dynamic programming language for

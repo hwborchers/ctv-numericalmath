@@ -479,19 +479,17 @@ available.
     his "Extending R" book and allow for a very structured integration
     of R with Python resp. Julia.
 
-<!-- -->
-
--   [SageMath](http://www.sagemath.org/) is an open source mathematics system
-    based on Python and licensed under the GLP, allowing to run R functions, but
-    also providing access to systems like Maxima, GAP, FLINT, and many more
-    math programs. SageMath can be freely used through a Web interface at
-    [CoCalc](https://cocalc.com/) .
+[SageMath](http://www.sagemath.org/) is an open source mathematics system based
+on Python and licensed under the GLP, allowing to run R functions, but also
+providing access to systems like Maxima, GAP, FLINT, and many more math programs.
+SageMath can be freely used through a Web interface at [CoCalc](https://cocalc.com/) .
 
 **MATLAB, Octave, Julia, and other Interfaces**
 
 Interfaces to numerical computation software such as MATLAB (commercial)
-or Octave (free) will be important when solving difficult numerical
-problems.
+or Octave (free) will be important when solving difficult numerical problems.
+Unfortunately, at the moment there is no package allowing to call octave functions
+from within R.
 
 -   The [matlab](https://cran.r-project.org/package=matlab) emulation package
     contains about 30 simple functions, replicating MATLAB functions,
@@ -515,24 +513,20 @@ problems and other demanding scientific computations in R.
     user can call any Julia function just like an R function with
     automatic type conversion.
 
-Java Math functions can be employed through the 'rjava' or 'rscala'
-interfaces. Then the following package will give the user access to a
-specialized Java Mathematics library.
+Java Math functions can be employed through the 'rjava' or 'rscala' interfaces.
+Then package [commonsMath](https://cran.r-project.org/package=commonsMath) provides
+Java JAR files for the Apache Commons Mathematics Library, a specialized library
+for all aspects of numerics, optimization, and differential equations.
 
--   Package [commonsMath](https://cran.r-project.org/package=commonsMath) provides
-    Java JAR files for the Apache Commons Mathematics Library for use by
-    users and other packages. All aspects of numerics, optimization, and
-    differential equations are covered therein.
-
-The commercial programs SAS and Mathematica do have facilities to call R
-functions. Here is another Computer Algebra System (CAS) in Pure
-Mathematics that can be called from R.
+Here is a Computer Algebra System (CAS) that can be called from R.
 
 -   Package [m2r](https://cran.r-project.org/package=m2r) provides a persistent
-    interface to Macauley2, an extended software program supporting
-    research in algebraic geometry and commutative algebra. Macauley2
-    has to be installed independently, otherwise a Macauley2 process in
-    the cloud will be instantiated.
+    interface to Macauley2, an extended software program supporting research in
+    algebraic geometry and commutative algebra. Macauley2 has to be installed
+    independently, otherwise a Macauley2 process in the cloud will be instantiated.
+
+Please note that commercial programs such as MATLAB, Maple, or Mathematica do have
+facilities to call R functions (if R is installed on your computer).
 
 ### Related links:
 

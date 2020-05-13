@@ -509,20 +509,18 @@ other demanding scientific computations in R.
     provides seamless integration between R and Julia; the user can call Julia
     functions just like any R functions, and R functions can be called in the
     Julia environment, both with reasonable automatic type conversion.
-
 -   [JuliaConnectoR](https://cran.r-project.org/package=JuliaConnectoR)
     provides a functionally oriented interface for integrating Julia with R;
     imported Julia functions can be called just like R functions; data structures
     are converted automatically.
-    
 -   [XRJulia](https://cran.r-project.org/package=XRJulia)
     provides an interface from R to computations in the Julia language, based on
     the interface structure described in the book "Extending R" by John Chambers.
 
 Java Math functions can be employed through the 'rjava' or 'rscala' interfaces.
-Then package [commonsMath](https://cran.r-project.org/package=commonsMath) provides
-Java JAR files for the Apache Commons Mathematics Library, a specialized library
-for all aspects of numerics, optimization, and differential equations.
+Then package [commonsMath](https://cran.r-project.org/package=commonsMath) allows
+calling Java JAR files of the Apache Commons Mathematics Library, a specialized
+library for all aspects of numerics, optimization, and differential equations.
 
 Here is a Computer Algebra System (CAS) that can be called from R:
 

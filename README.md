@@ -521,11 +521,10 @@ calling Java JAR files of the Apache Commons Mathematics Library, a specialized
 library for all aspects of numerics, optimization, and differential equations.
 
 Here is a Computer Algebra System (CAS) that can be called from R:
-
--   Package [m2r](https://cran.r-project.org/package=m2r) provides a persistent
-    interface to Macauley2, an extended software program supporting research in
-    algebraic geometry and commutative algebra. Macauley2 has to be installed
-    independently, otherwise a Macauley2 process in the cloud will be instantiated.
+Package [m2r](https://cran.r-project.org/package=m2r) provides a persistent
+interface to Macauley2, an extended software program supporting research in
+algebraic geometry and commutative algebra. Macauley2 has to be installed
+independently, otherwise a Macauley2 process in the cloud will be instantiated.
 
 Please note that commercial programs such as MATLAB, Maple, or Mathematica do have
 facilities to call R functions.

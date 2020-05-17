@@ -424,16 +424,14 @@ Note that integers in double precision can be represented exactly up to
 
 **Multi-Precision Arithmetic and Symbolic Mathematics**
 
--   Multiple precision arithmetic is available in R through package
-    [gmp](https://cran.r-project.org/package=gmp) that interfaces to the GMP C
-    library. Examples are factorization of integers, a probabilistic
-    prime number test, or operations on big rationals -- for which
-    linear systems of equations can be solved.
--   Multiple precision floating point operations and functions are
-    provided through package [Rmpfr](https://cran.r-project.org/package=Rmpfr) using
-    the MPFR and GMP libraries. Special numbers and some special
-    functions are included, as well as routines for root finding,
-    integration, and optimization in arbitrary precision.
+-   Package [gmp](https://cran.r-project.org/package=gmp) 
+    makes multiple precision arithmetic (for 'big' integers and rationals) available 
+    by interfacing the GNU MP C-library; examples are factorization of large integers 
+    or operations on big rationals for which linear systems of equations can be solved.
+-   Package [Rmpfr](https://cran.r-project.org/package=Rmpfr)
+    provides multiple precision floating point operations and functions through the 
+    GNU MPFR and GMP libraries. Special numbers and some special functions are included, 
+    as well as routines for root finding, integration, and optimization in high precision.
 -   [Brobdingnag](https://cran.r-project.org/package=Brobdingnag) handles very large
     numbers by holding their logarithm plus a flag indicating their
     sign. (An excellent vignette explains how this is done using S4
@@ -442,13 +440,18 @@ Note that integers in double precision can be represented exactly up to
     implements a multi-precision library that allows to store and manage
     arbitrarily big integers; it includes probabilistic primality tests
     and factorization algorithms.
--   Package [Ryacas](https://cran.r-project.org/package=Ryacas) interfaces the
-    computer algebra system 'Yacas'. It supports symbolic and arbitrary
+-   [Ryacas](https://cran.r-project.org/package=Ryacas) interfaces the
+    computer algebra system 'Yacas'; it supports symbolic and arbitrary
     precision computations in calculus and linear algebra.
--   Package [rSymPy](https://cran.r-project.org/package=rSymPy) accesses the
-    symbolic algebra system 'SymPy' (written in Python) from R. It
+-   [rSymPy](https://cran.r-project.org/package=rSymPy) accesses the
+    symbolic algebra system 'SymPy' (written in Python) from R; it
     supports arbitrary precision computations, linear algebra and
     calculus, solving equations, discrete mathematics, and much more.
+-   Package [symengine](https://cran.r-project.org/package=symengine) 
+    provides an R interface to 'SymEngine', an award-winning C++ library for fast
+    symbolic calculations, like manipulating mathematical expressions, finding exact 
+    derivatives, solving polynomial equations or systems of linear equations, 
+    symbolic matrix computations, etc.
 
 **Python Interfaces**
 

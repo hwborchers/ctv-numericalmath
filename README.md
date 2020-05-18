@@ -5,7 +5,7 @@ CRAN Task View: Numerical Mathematics
 |-----------------|--------------------------------------------------------|  
 | **Maintainer:** | Hans W. Borchers                                       | 
 | **Contact:**    | hwb at mailbox.org                                     | 
-| **Version:**    | 2020-05-15                                             | 
+| **Version:**    | 2020-05-20                                             | 
 | **URL:**        | <https://CRAN.R-project.org/view=NumericalMathematics> | 
 
 This task view on numerical mathematics lists R packages and functions
@@ -431,7 +431,7 @@ Note that integers in double precision can be represented exactly up to
 -   Package [Rmpfr](https://cran.r-project.org/package=Rmpfr)
     provides multiple precision floating point operations and functions through the 
     GNU MPFR and GMP libraries. Special numbers and some special functions are included, 
-    as well as routines for root finding, integration, and optimization in high precision.
+    as well as routines for root finding, integration, and optimization with high precision.
 -   [Brobdingnag](https://cran.r-project.org/package=Brobdingnag) handles very large
     numbers by holding their logarithm plus a flag indicating their
     sign. (An excellent vignette explains how this is done using S4
@@ -446,12 +446,12 @@ Note that integers in double precision can be represented exactly up to
 -   [rSymPy](https://cran.r-project.org/package=rSymPy) accesses the
     symbolic algebra system 'SymPy' (written in Python) from R; it
     supports arbitrary precision computations, linear algebra and
-    calculus, solving equations, discrete mathematics, and much more.
+    calculus, solving equations, discrete mathematics tasks, and much more.
 -   Package [symengine](https://cran.r-project.org/package=symengine) 
     provides an R interface to 'SymEngine', an award-winning C++ library for fast
     symbolic calculations, like manipulating mathematical expressions, finding exact 
     derivatives, solving polynomial equations, symbolic matrix computations, or 
-    numerically solving ordinary differential equations.
+    solving ordinary differential equations.
 
 **Python Interfaces**
 
@@ -482,10 +482,10 @@ available.
     his "Extending R" book and allow for a very structured integration
     of R with Python resp. Julia.
 
-[SageMath](http://www.sagemath.org/) is an open source mathematics system based
-on Python and licensed under the GLP, allowing to run R functions, but also
-providing access to systems like Maxima, GAP, FLINT, and many more math programs.
-SageMath can be freely used through a Web interface at [CoCalc](https://cocalc.com/) .
+<p>[SageMath](http://www.sagemath.org/) is an open source mathematics system based on
+Python and licensed under the GLP, allowing to run R functions, but also providing
+access to systems like Maxima, GAP, FLINT, and many more math programs. SageMath
+can be freely used through a Web interface at [CoCalc](https://cocalc.com/) .</p>
 
 **MATLAB, Octave, Julia, and other Interfaces**
 

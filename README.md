@@ -482,10 +482,10 @@ available.
     his "Extending R" book and allow for a very structured integration
     of R with Python resp. Julia.
 
-<p>[SageMath](http://www.sagemath.org/) is an open source mathematics system based on
+<p>[SageMath](http://www.sagemath.org) is an open source mathematics system based on
 Python and licensed under the GLP, allowing to run R functions, but also providing
 access to systems like Maxima, GAP, FLINT, and many more math programs. SageMath
-can be freely used through a Web interface at [CoCalc](https://cocalc.com/) .</p>
+can be freely used through a Web interface at [CoCalc](https://cocalc.com) .</p>
 
 **MATLAB, Octave, Julia, and other Interfaces**
 

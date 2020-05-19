@@ -550,7 +550,7 @@ facilities to call R functions.
 -   [MATLAB / R Reference (D.
     Hiebeler)](http://www.math.umaine.edu/~hiebeler/comp/matlabR.html)
 -   [Abramowitz and Stegun. Handbook of Mathematical
-    Functions](http://www.nr.com/aands/)
+    Functions](http://nrbook.com/abramowitz_and_stegun.html/aands/)
 -   [Numerical Recipes: The Art of Numerical
     Computing](http://www.nrbook.com/a/bookcpdf.php)
 -   [E. Weisstein's Wolfram MathWorld](http://mathworld.wolfram.com/)

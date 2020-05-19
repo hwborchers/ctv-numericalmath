@@ -139,6 +139,8 @@ contributed packages.
     [elliptic](https://cran.r-project.org/package=elliptic), including the
     Weierstrass P function and Jacobi's theta functions. There are tools
     for visualizing complex functions.
+-   [Carlson](https://cran.r-project.org/package=Carlson) evaluates Carlson elliptic
+    and incomplete elliptic integrals (with compex arguments).
 -   Package [expint](https://cran.r-project.org/package=expint) wraps C-functions
     from the GNU Scientific Library to calculate exponential integrals
     and the incomplete Gamma function, including negative values for its

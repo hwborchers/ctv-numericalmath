@@ -484,11 +484,6 @@ available.
     his "Extending R" book and allow for a very structured integration
     of R with Python resp. Julia.
 
--   [SageMath](http://www.sagemath.org) is an open source mathematics system based
-    on Python and licensed under the GLP, allowing to run R functions, but also providing
-    access to systems like Maxima, GAP, FLINT, and many more math programs. SageMath
-    can be freely used through a Web interface at [CoCalc](https://cocalc.com).
-
 **MATLAB, Octave, Julia, and other Interfaces**
 
 Interfaces to mathematical software such as MATLAB (commercial) or Octave (free)
@@ -525,7 +520,11 @@ Then package [commonsMath](https://cran.r-project.org/package=commonsMath) allow
 calling Java JAR files of the Apache Commons Mathematics Library, a specialized
 library for all aspects of numerics, optimization, and differential equations.
 
-Here is a Computer Algebra System (CAS) that can be called from R:
+[SageMath](http://www.sagemath.org) is an open source mathematics system based
+on Python and licensed under the GLP, allowing to run R functions, but also providing
+access to systems like Maxima, GAP, FLINT, and many more math programs. SageMath
+can be freely used through a Web interface at [CoCalc](https://cocalc.com).
+
 Package [m2r](https://cran.r-project.org/package=m2r) provides a persistent
 interface to Macauley2, an extended software program supporting research in
 algebraic geometry and commutative algebra. Macauley2 has to be installed

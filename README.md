@@ -448,10 +448,10 @@ Note that integers in double precision can be represented exactly up to
     supports arbitrary precision computations, linear algebra and
     calculus, solving equations, discrete mathematics tasks, and much more.
 -   Package [symengine](https://cran.r-project.org/package=symengine) 
-    provides an R interface to 'SymEngine', an award-winning C++ library for fast
-    symbolic calculations, like manipulating mathematical expressions, finding exact 
-    derivatives, solving polynomial equations, symbolic matrix computations, or 
-    solving ordinary differential equations.
+    provides an interface to 'SymEngine', a C++ library for fast symbolic
+    calculations, such as manipulating mathematical expressions, finding exact
+    derivatives, solving polynomial equations, performing symbolic matrix
+    computations, or solving ordinary differential equations.
 
 **Python Interfaces**
 

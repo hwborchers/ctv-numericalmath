@@ -462,19 +462,16 @@ Python, through its modules 'NumPy', 'SciPy', 'Matplotlib', 'SymPy', and
 available.
 
 -   [reticulate](https://cran.r-project.org/package=reticulate) is an R interface to
-    Python modules, classes, and functions. When calling Python in R
-    data types are automatically converted to their equivalent Python
-    types; when values are returned from Python to R they are converted
-    back to R types. This package from the RStudio team is a kind of
-    standard for calling Python from R.
+    Python modules, classes, and functions. When calling Python in R data types are
+    automatically converted to their equivalent Python types; when values are returned
+    from Python to R they are converted back to R types. This package from the RStudio
+    team is a kind of standard for calling Python from R.
 -   [PythonInR](https://cran.r-project.org/package=PythonInR) is another package to
-    interact with Python from within R. It provides Python classes for
-    vectors, matrices and data.frames which allow an easy conversion
-    from R to Python and back.
+    interact with Python from within R. It provides Python classes for vectors,
+    matrices and data.frames which allow an easy conversion from R to Python and back.
 -   [feather](https://cran.r-project.org/package=feather) provides bindings to read
-    and write feather files, a lightweight binary data store designed
-    for maximum speed. This storage format can also be accessed in
-    Python, Julia, or Scala.
+    and write feather files, a lightweight binary data store designed for maximum
+    speed. This storage format can also be accessed in Python, Julia, or Scala.
 -   'pyRserve' is a Python module for connecting Python to an R process
     running [Rserve](https://cran.r-project.org/package=Rserve) as an RPC gateway.
     This R process can run on a remote machine, variable access and

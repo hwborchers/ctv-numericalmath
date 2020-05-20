@@ -540,13 +540,11 @@ facilities to call R functions.
     R](http://www.worldscientific.com/worldscibooks/10.1142/7814)
 -   Textbook: [Introduction to Scientific Programming and Simulation
     Using
-    R](http://www.ms.unimelb.edu.au/~apro@unimelb/spuRs/index.html)
+    R](https://www.routledge.com/Introduction-to-Scientific-Programming-and-Simulation-Using-R/Jones-Maillardet-Robinson/p/book/9781466569997)
 -   Textbook: [Numerical Methods in Science and Engineering Using
-    R](http://www.crcpress.com/product/isbn/9781439884485)
+    R](https://www.routledge.com/Using-R-for-Numerical-Analysis-in-Science-and-Engineering/Bloomfield/p/book/9781439884485)
 -   Textbook: [Computational Methods for Numerical Analysis with
     R](https://www.crcpress.com/Computational-Methods-for-Numerical-Analysis-with-R/II/p/book/9781498723633)
--   [R for Science (Institute for Sea Research,
-    Netherlands)](http://www.rforscience.com/)
 -   [MATLAB / R Reference (D.
     Hiebeler)](http://www.math.umaine.edu/~hiebeler/comp/matlabR.html)
 -   [Abramowitz and Stegun. Handbook of Mathematical

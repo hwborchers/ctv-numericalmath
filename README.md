@@ -546,9 +546,9 @@ facilities to call R functions.
 -   Textbook: [Computational Methods for Numerical Analysis with
     R](https://www.crcpress.com/Computational-Methods-for-Numerical-Analysis-with-R/II/p/book/9781498723633)
 -   [MATLAB / R Reference (D.
-    Hiebeler)](http://www.math.umaine.edu/~hiebeler/comp/matlabR.html)
+    Hiebeler)](https://umaine.edu/mathematics/david-hiebeler/computing-software/matlab-r-reference/)
 -   [Abramowitz and Stegun. Handbook of Mathematical
-    Functions](http://nrbook.com/abramowitz_and_stegun.html/aands/)
+    Functions](http://people.math.sfu.ca/~cbm/aands/)
 -   [Numerical Recipes: The Art of Numerical
-    Computing](http://www.nrbook.com/a/bookcpdf.php)
+    Computing](http://numerical.recipes/)
 -   [E. Weisstein's Wolfram MathWorld](http://mathworld.wolfram.com/)

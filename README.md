@@ -445,10 +445,12 @@ Note that integers in double precision can be represented exactly up to
 -   [Ryacas](https://cran.r-project.org/package=Ryacas) interfaces the
     computer algebra system 'Yacas'; it supports symbolic and arbitrary
     precision computations in calculus and linear algebra.
--   [rSymPy](https://cran.r-project.org/package=rSymPy) accesses the
-    symbolic algebra system 'SymPy' (written in Python) from R; it
-    supports arbitrary precision computations, linear algebra and
-    calculus, solving equations, discrete mathematics tasks, and much more.
+-   Packages [caracas](https://cran.r-project.org/package=caracas)
+    (based on 'reticulate') and [rSymPy](https://cran.r-project.org/package=rSymPy)
+    (based on 'rjava') both access the symbolic algebra system 'SymPy';
+    supported are symbolic operations in linear algebra and calculus
+    (eigenvalues, derivatives, integrals, limits, ...), special functions,
+    or solving equations algebraically.
 -   Package [symengine](https://cran.r-project.org/package=symengine) 
     provides an interface to 'SymEngine', a C++ library for fast symbolic
     calculations, such as manipulating mathematical expressions, finding exact

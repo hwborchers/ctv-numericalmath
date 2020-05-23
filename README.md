@@ -448,14 +448,14 @@ Note that integers in double precision can be represented exactly up to
 -   Packages [caracas](https://cran.r-project.org/package=caracas)
     (based on 'reticulate') and [rSymPy](https://cran.r-project.org/package=rSymPy)
     (based on 'rjava') both access the symbolic algebra system 'SymPy';
-    supported are symbolic operations in linear algebra and calculus
-    (eigenvalues, derivatives, integrals, limits, ...), special functions,
+    supported are symbolic operations in linear algebra and calculus, such as
+    eigenvalues, derivatives, integrals, limits, etc., computing special functions,
     or solving equations algebraically.
 -   Package [symengine](https://cran.r-project.org/package=symengine) 
     provides an interface to 'SymEngine', a C++ library for fast symbolic
     calculations, such as manipulating mathematical expressions, finding exact
-    derivatives, solving polynomial equations, performing symbolic matrix
-    computations, or solving ordinary differential equations.
+    derivatives, performing symbolic matrix computations,
+    or solving ordinary differential equations (numerically).
 
 **Python Interfaces**
 

@@ -69,11 +69,6 @@ approximation.
     iterative thresholding method, while
     [irlba](https://cran.r-project.org/package=irlba) will compute approximate
     singular values/vectors of large matrices.
--   Package [PRIMME](https://cran.r-project.org/package=PRIMME) interfaces PRIMME, a
-    C library for computing eigenvalues and corresponding eigenvectors
-    of real symmetric or complex Hermitian matrices. It can find
-    largest, smallest, or interior eigen-/singular values and will apply
-    preconditioning to accelerate convergence.
 -   The packages [geigen](https://cran.r-project.org/package=geigen) and
     [QZ](https://cran.r-project.org/package=QZ) compute generalized eigenvalues and
     -vectors for pairs of matrices, and QZ (generalized Schur)
@@ -265,9 +260,6 @@ domains to a certain extent.
     including accurate higher-order derivatives, Taylor series
     expansion, differential operators, and Monte-Carlo integration in
     orthogonal coordinate systems.
--   Package [wedge](https://cran.r-project.org/package=wedge) provides functionality
-    for working with differentials, k-forms, wedge products, Stokes's
-    theorem, and related concepts from the exterior calculus.
 -   [features](https://cran.r-project.org/package=features) extracts features from
     functional data, such as first and second derivatives, or curvature
     at critical points, while

@@ -5,7 +5,7 @@ CRAN Task View: Numerical Mathematics
 |-----------------|--------------------------------------------------------|  
 | **Maintainer:** | Hans W. Borchers                                       | 
 | **Contact:**    | hwb at mailbox.org                                     | 
-| **Version:**    | 2020-10-10                                             | 
+| **Version:**    | 2020-11-25                                             | 
 | **URL:**        | <https://CRAN.R-project.org/view=NumericalMathematics> | 
 
 This task view on numerical mathematics lists R packages and functions
@@ -69,6 +69,10 @@ approximation.
     iterative thresholding method, while
     [irlba](https://cran.r-project.org/package=irlba) will compute approximate
     singular values/vectors of large matrices.
+-   The [PRIMME](https://cran.r-project.org/package=PRIMME) package
+    interfaces PRIMME, a C library for computing eigenvalues and eigenvectors of real
+    symmetric or complex Hermitian matrices. It will find largest, smallest, or interior
+    eigen-/singular values and will apply preconditioning to accelerate convergence.
 -   The packages [geigen](https://cran.r-project.org/package=geigen) and
     [QZ](https://cran.r-project.org/package=QZ) compute generalized eigenvalues and
     -vectors for pairs of matrices, and QZ (generalized Schur)

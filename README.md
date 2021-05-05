@@ -5,7 +5,7 @@ CRAN Task View: Numerical Mathematics
 |-----------------|--------------------------------------------------------|  
 | **Maintainer:** | Hans W. Borchers                                       | 
 | **Contact:**    | hwb at mailbox.org                                     | 
-| **Version:**    | 2020-11-25                                             | 
+| **Version:**    | 2021-05-05                                             | 
 | **URL:**        | <https://CRAN.R-project.org/view=NumericalMathematics> | 
 
 This task view on numerical mathematics lists R packages and functions
@@ -49,8 +49,8 @@ approximation.
     generalized (Penrose) inverses and null spaces of matrices.
 -   [expm](https://cran.r-project.org/package=expm) computes the exponential,
     logarithm, and square root of square matrices, but also powers of
-    matrices or the Frechet derivative. `expm()` is to be preferred to
-    the function with the same name in
+    matrices or the Frechet derivative. expm() is to be preferred to the
+    function with the same name in
     [Matrix](https://cran.r-project.org/package=Matrix).
 -   [SparseM](https://cran.r-project.org/package=SparseM) provides classes and
     methods for sparse matrices and for solving linear and least-squares
@@ -58,8 +58,12 @@ approximation.
 -   Package [rmumps](https://cran.r-project.org/package=rmumps) provides a wrapper
     for the MUMPS library, solving large linear systems of equations
     applying a parallel sparse direct solver
+-   [sanic](https://cran.r-project.org/package=sanic) supports routines for solving
+    (dense and sparse) large systems of linear equations; direct and
+    iterative solvers from the Eigen C++ library are made available,
+    including Cholesky, LU, QR, and Krylov subspace methods.
 -   [Rlinsolve](https://cran.r-project.org/package=Rlinsolve) is a collection of
-    iterative solvers for sparse linear system of equations. Stationary
+    iterative solvers for sparse linear system of equations; stationary
     iterative solvers such as Jacobi or Gauss-Seidel, as well as
     nonstationary (Krylov subspace) methods are provided.
 -   [svd](https://cran.r-project.org/package=svd) provides R bindings to
@@ -69,10 +73,11 @@ approximation.
     iterative thresholding method, while
     [irlba](https://cran.r-project.org/package=irlba) will compute approximate
     singular values/vectors of large matrices.
--   The [PRIMME](https://cran.r-project.org/package=PRIMME) package
-    interfaces PRIMME, a C library for computing eigenvalues and eigenvectors of real
-    symmetric or complex Hermitian matrices. It will find largest, smallest, or interior
-    eigen-/singular values and will apply preconditioning to accelerate convergence.
+-   Package [PRIMME](https://cran.r-project.org/package=PRIMME) interfaces PRIMME, a
+    C library for computing eigenvalues and eigenvectors of real
+    symmetric or complex Hermitian matrices. It will find largest,
+    smallest, or interior eigen-/singular values and will apply
+    preconditioning to accelerate convergence.
 -   The packages [geigen](https://cran.r-project.org/package=geigen) and
     [QZ](https://cran.r-project.org/package=QZ) compute generalized eigenvalues and
     -vectors for pairs of matrices, and QZ (generalized Schur)
@@ -102,6 +107,10 @@ approximation.
     manipulating quaternions and octonians (normed division algebras
     over the real numbers); quaternions can be useful for handling
     rotations in three-dimensional space.
+-   [clifford](https://cran.r-project.org/package=clifford) provides a suite of
+    routines for arbitrary dimensional Clifford algebras and discusses
+    special cases such as Lorentz transforms or quaternion
+    multiplication.
 -   Packages [RcppArmadillo](https://cran.r-project.org/package=RcppArmadillo) and
     [RcppEigen](https://cran.r-project.org/package=RcppEigen) enable the integration
     of the C++ template libraries 'Armadillo' resp. 'Eigen' for linear
@@ -157,8 +166,8 @@ contributed packages.
 
 Function polyroot() in base R determines all zeros of a polynomial,
 based on the Jenkins-Traub algorithm. Linear regression function lm()
-can perform polynomial fitting when using `poly()` in the model formula
-(with option `raw = TRUE`).
+can perform polynomial fitting when using poly() in the model formula
+(with option raw = TRUE).
 
 -   Packages [PolynomF](https://cran.r-project.org/package=PolynomF) (recommended)
     and [polynom](https://cran.r-project.org/package=polynom) provide similar
@@ -166,6 +175,9 @@ can perform polynomial fitting when using `poly()` in the model formula
     evaluating polynomials (Horner scheme), or finding their roots.
     'PolynomF' generates orthogonal polynomials and provides graphical
     display features.
+-   [polyMatrix](https://cran.r-project.org/package=polyMatrix) (based on 'polynom')
+    implements basic matrix operations and provides thus an
+    infrastructure for the manipulation of polynomial matrices.
 -   Package [MonoPoly](https://cran.r-project.org/package=MonoPoly) fits univariate
     polynomials to given data, applying different algorithms.
 -   For multivariate polynomials, package
@@ -193,8 +205,8 @@ can perform polynomial fitting when using `poly()` in the model formula
 
 **Differentiation and Integration**
 
-`D()` and `deriv()` in base R compute derivatives of simple expressions
-symbolically. Function `integrate()` implements an approach for
+D() and deriv() in base R compute derivatives of simple expressions
+symbolically. Function integrate() implements an approach for
 numerically integrating univariate functions in R. It applies adaptive
 Gauss-Kronrod quadrature and can handle singularities and unbounded
 domains to a certain extent.
@@ -208,24 +220,29 @@ domains to a certain extent.
     Jacobians, and Hessians, computed by simple finite differences,
     Richardson extrapolation, or the highly accurate complex step
     approach.
--   Package [autodiffr](https://github.com/Non-Contradiction/autodiffr/)
+-   Package [dual](https://cran.r-project.org/package=dual) achieves automatic
+    differentiation (for univariate functions) by employing dual
+    numbers; for a mathematical function its value and its exact first
+    derivative are returned.
+-   Package [<span
+    class="GitHub">autodiffr</span>](https://github.com/Non-Contradiction/autodiffr/)
     (on Github) provides an R wrapper for the Julia packages
     ForwardDiff.jl and ReverseDiff.jl to do automatic differentiation
     for native R functions.
 -   [pracma](https://cran.r-project.org/package=pracma) contains functions for
     computing numerical derivatives, including Richardson extrapolation
-    or complex step. `fderiv()` computes numerical derivatives of higher
+    or complex step. fderiv() computes numerical derivatives of higher
     orders. [pracma](https://cran.r-project.org/package=pracma) has several routines
     for numerical integration: adaptive Lobatto quadrature, Romberg
     integration, Newton-Cotes formulas, Clenshaw-Curtis quadrature
-    rules. `integral2()` integrates functions in two dimensions, also
-    for domains characterized by polar coordinates or with variable
-    interval limits.
+    rules. integral2() integrates functions in two dimensions, also for
+    domains characterized by polar coordinates or with variable interval
+    limits.
 -   Package [gaussquad](https://cran.r-project.org/package=gaussquad) contains a
     collection of functions to perform Gaussian quadrature, among them
     Chebyshev, Hermite, Laguerre, and Legendre quadrature rules,
     explicitly returning nodes and weights in each case. Function
-    `gaussquad()` in package [statmod](https://cran.r-project.org/package=statmod)
+    gaussquad() in package [statmod](https://cran.r-project.org/package=statmod)
     does a similar job.
 -   Package [fastGHQuad](https://cran.r-project.org/package=fastGHQuad) provides a
     fast [Rcpp](https://cran.r-project.org/package=Rcpp) -based implementation of
@@ -233,9 +250,9 @@ domains to a certain extent.
 -   Adaptive multivariate integration over hyper-rectangles in
     n-dimensional space is available in package
     [cubature](https://cran.r-project.org/package=cubature) as function
-    `adaptIntegrate()`, based on a C library of the same name. The
+    adaptIntegrate(), based on a C library of the same name. The
     integrand functions can even be multi-valued.
--   `vegas()` includes an approach to Monte Carlo integration based on
+-   vegas() includes an approach to Monte Carlo integration based on
     importance sampling.
 -   [mvQuad](https://cran.r-project.org/package=mvQuad) provides methods for
     generating multivariate grids that can be used for multivariate
@@ -273,52 +290,52 @@ domains to a certain extent.
 
 **Interpolation and Approximation**
 
-Base R provides functions `approx()` for constant and linear
-interpolation, and `spline()` for cubic (Hermite) spline interpolation,
-while `smooth.spline()` performs cubic spline approximation. Base
-package splines creates periodic interpolation splines in function
-`periodicSpline()`.
+Base R provides functions approx() for constant and linear
+interpolation, and spline() for cubic (Hermite) spline interpolation,
+while smooth.spline() performs cubic spline approximation. Base package
+splines creates periodic interpolation splines in function
+periodicSpline().
 
 -   Interpolation of irregularly spaced data is possible with the
-    [akima](https://cran.r-project.org/package=akima) package: `aspline()` for
-    univariate data, `bicubic()` or `interp()` for data on a 2D
-    rectangular domain. (This package is distributed under ACM license
-    and not available for commercial use.)
+    [akima](https://cran.r-project.org/package=akima) package: aspline() for
+    univariate data, bicubic() or interp() for data on a 2D rectangular
+    domain. (This package is distributed under ACM license and not
+    available for commercial use.)
 -   Package [signal](https://cran.r-project.org/package=signal) contains several
-    *filters* to smooth discrete data, notably `interp1()` for linear,
-    spline, and cubic interpolation, `pchip()` for piecewise cubic
-    Hermite interpolation, and `sgolay()` for Savitzky-Golay smoothing.
+    *filters* to smooth discrete data, notably interp1() for linear,
+    spline, and cubic interpolation, pchip() for piecewise cubic Hermite
+    interpolation, and sgolay() for Savitzky-Golay smoothing.
 -   Package [pracma](https://cran.r-project.org/package=pracma) provides barycentric
-    Lagrange interpolation (in 1 and 2 dimensions) in `barylag()` resp.
-    `barylag2d()`, 1-dim. akima in `akimaInterp()`, and interpolation
-    and approximation of data with rational functions, i.e. in the
-    presence of singularities, in `ratinterp()` and `rationalfit()`.
+    Lagrange interpolation (in 1 and 2 dimensions) in barylag() resp.
+    barylag2d(), 1-dim. akima in akimaInterp(), and interpolation and
+    approximation of data with rational functions, i.e. in the presence
+    of singularities, in ratinterp() and rationalfit().
 -   The [interp](https://cran.r-project.org/package=interp) package provides
     bivariate data interpolation on regular and irregular grids, either
     linear or using splines. Currently the piecewise linear
     interpolation part is implemented. (It is intended to provide a free
-    replacement for the ACM licensed `akima::interp` and
-    `tripack::tri.mesh` functions.)
+    replacement for the ACM licensed akima::interp and tripack::tri.mesh
+    functions.)
 -   Package [chebpol](https://cran.r-project.org/package=chebpol) contains methods
     for creating multivariate Chebyshev and other multilinear
     interpolations on regular grids, e.g. the Floater-Hormann barycenter
     method, or polyharmonic splines for scattered data.
 -   Package [kubik](https://cran.r-project.org/package=kubik) provides (constructs,
     plots and evaluates) constrained cubic Hermite splines and computes
-    their derivatives, indefinite integrals, or approximations of higher
-    derivatives.
+    their derivatives, indefinite integrals, as well as roots, optima,
+    or inflection points.
 -   [tripack](https://cran.r-project.org/package=tripack) for triangulation of
     irregularly spaced data is a constrained two-dimensional Delaunay
     triangulation package providing both triangulation and generation of
     Voronoi mosaics of irregular spaced data.
--   `sinterp()` in package [stinepack](https://cran.r-project.org/package=stinepack)
+-   sinterp() in package [stinepack](https://cran.r-project.org/package=stinepack)
     realizes interpolation based on piecewise rational functions by
     applying Stineman's algorithm. The interpolating function will be
     monotone in regions where the specified points change monotonically.
--   `Schumaker()` in package
-    [schumaker](https://cran.r-project.org/package=schumaker) implements
-    shape-preserving splines, guaranteed to be monotonic resp. concave
-    or convex if the data is monotonic, concave, or convex.
+-   Schumaker() in package [schumaker](https://cran.r-project.org/package=schumaker)
+    implements shape-preserving splines, guaranteed to be monotonic
+    resp. concave or convex if the data is monotonic, concave, or
+    convex.
 -   [ADPF](https://cran.r-project.org/package=ADPF) uses least-squares polynomial
     regression and statistical testing to improve Savitzky-Golay
     smoothing.
@@ -328,29 +345,28 @@ package splines creates periodic interpolation splines in function
 
 **Root Finding and Fixed Points**
 
-`uniroot()`, implementing the Brent-Decker algorithm, is the basic
-routine in R to find roots of univariate functions. There are
-implementations of the bisection algorithm in several contributed
-packages. For root finding with higher precision there is function
-`unirootR()` in the multi-precision package
-[Rmpfr](https://cran.r-project.org/package=Rmpfr). And for finding roots of
-multivariate functions see the following packages:
+uniroot(), implementing the Brent-Decker algorithm, is the basic routine
+in R to find roots of univariate functions. There are implementations of
+the bisection algorithm in several contributed packages. For root
+finding with higher precision there is function unirootR() in the
+multi-precision package [Rmpfr](https://cran.r-project.org/package=Rmpfr). And for
+finding roots of multivariate functions see the following packages:
 
 -   Package [rootSolve](https://cran.r-project.org/package=rootSolve) includes
-    function `multiroot()` for finding roots of systems of nonlinear
-    (and linear) equations; it also contains an extension
-    `uniroot.all()` that attempts to find all zeros of a univariate
-    function in an intervall (excepting quadratic zeros).
+    function multiroot() for finding roots of systems of nonlinear (and
+    linear) equations; it also contains an extension uniroot.all() that
+    attempts to find all zeros of a univariate function in an intervall
+    (excepting quadratic zeros).
 -   For solving nonlinear systems of equations the
     [BB](https://cran.r-project.org/package=BB) package provides Barzilai-Borwein
-    spectral methods in `sane()`, including a derivative-free variant in
-    `dfsane()`, and multi-start features with sensitivity analysis.
+    spectral methods in sane(), including a derivative-free variant in
+    dfsane(), and multi-start features with sensitivity analysis.
 -   Package [nleqslv](https://cran.r-project.org/package=nleqslv) solves nonlinear
     systems of equations using alternatively the Broyden or Newton
     method, supported by strategies such as line searches or trust
     regions.
 -   [ktsolve](https://cran.r-project.org/package=ktsolve) defines a common interface
-    for solving a set of equations with `BB` or `nleqslv`.
+    for solving a set of equations with BB or nleqslv.
 -   Package [FixedPoint](https://cran.r-project.org/package=FixedPoint) provides
     algorithms for finding fixed point vectors. These algorithms include
     Anderson acceleration, epsilon extrapolation methods, and minimal
@@ -368,7 +384,7 @@ multivariate functions see the following packages:
 
 Not so many functions are available for computational number theory.
 Note that integers in double precision can be represented exactly up to
-`2^53 - 1`, above that limit a multi-precision package such as
+2^53 - 1, above that limit a multi-precision package such as
 [gmp](https://cran.r-project.org/package=gmp) is needed, see below.
 
 -   Package [numbers](https://cran.r-project.org/package=numbers) provides functions
@@ -406,9 +422,9 @@ Note that integers in double precision can be represented exactly up to
     differences).
 -   [RcppAlgos](https://cran.r-project.org/package=RcppAlgos) provides flexible
     functions for generating combinations or permutations of a vector
-    with or without constraints. Extension package
-    [RcppBigIntAlgos](https://github.com/jwood000/RcppBigIntAlgos) features
-    a quadratic sieve algorithm for completely factoring large integers.
+    with or without constraints; the extension package
+    [RcppBigIntAlgos](https://cran.r-project.org/package=RcppBigIntAlgos) features a
+    quadratic sieve algorithm for completely factoring large integers.
 -   Package [Zseq](https://cran.r-project.org/package=Zseq) generates well-known
     integer sequences; the 'gmp' package is adopted for computing with
     arbitrarily large numbers. Every function has on its help page a
@@ -422,14 +438,16 @@ Note that integers in double precision can be represented exactly up to
 
 **Multi-Precision Arithmetic and Symbolic Mathematics**
 
--   Package [gmp](https://cran.r-project.org/package=gmp) 
-    makes multiple precision arithmetic (for 'big' integers and rationals) available 
-    by interfacing the GNU MP C-library; examples are factorization of large integers 
-    or operations on big rationals for which linear systems of equations can be solved.
--   Package [Rmpfr](https://cran.r-project.org/package=Rmpfr)
-    provides multiple precision floating point operations and functions through the 
-    GNU MPFR and GMP libraries. Special numbers and some special functions are included, 
-    as well as routines for root finding, integration, and optimization with high precision.
+-   Multiple precision arithmetic is available in R through package
+    [gmp](https://cran.r-project.org/package=gmp) that interfaces to the GMP C
+    library. Examples are factorization of integers, a probabilistic
+    prime number test, or operations on big rationals -- for which
+    linear systems of equations can be solved.
+-   Multiple precision floating point operations and functions are
+    provided through package [Rmpfr](https://cran.r-project.org/package=Rmpfr) using
+    the MPFR and GMP libraries. Special numbers and some special
+    functions are included, as well as routines for root finding,
+    integration, and optimization in arbitrary precision.
 -   [Brobdingnag](https://cran.r-project.org/package=Brobdingnag) handles very large
     numbers by holding their logarithm plus a flag indicating their
     sign. (An excellent vignette explains how this is done using S4
@@ -438,20 +456,20 @@ Note that integers in double precision can be represented exactly up to
     implements a multi-precision library that allows to store and manage
     arbitrarily big integers; it includes probabilistic primality tests
     and factorization algorithms.
--   [Ryacas](https://cran.r-project.org/package=Ryacas) interfaces the
+-   Package [Ryacas](https://cran.r-project.org/package=Ryacas) interfaces the
     computer algebra system 'Yacas'; it supports symbolic and arbitrary
     precision computations in calculus and linear algebra.
--   Packages [caracas](https://cran.r-project.org/package=caracas)
-    (based on 'reticulate') and [rSymPy](https://cran.r-project.org/package=rSymPy)
-    (based on 'rjava') both access the symbolic algebra system 'SymPy';
-    supported are symbolic operations in linear algebra and calculus, such as
-    eigenvalues, derivatives, integrals, limits, etc., computing special functions,
-    or solving equations algebraically.
--   Package [symengine](https://cran.r-project.org/package=symengine) 
-    provides an interface to 'SymEngine', a C++ library for fast symbolic
-    calculations, such as manipulating mathematical expressions, finding exact
-    derivatives, performing symbolic matrix computations,
-    or solving ordinary differential equations (numerically).
+-   Packages [caracas](https://cran.r-project.org/package=caracas) (based on
+    'reticulate') and [rSymPy](https://cran.r-project.org/package=rSymPy) (based on
+    'rjava') both access the symbolic algebra system 'SymPy'; supported
+    are symbolic operations in linear algebra and calculus, such as
+    eigenvalues, derivatives, integrals, limits, etc., computing special
+    functions, or solving systems of equations.
+-   Package [symengine](https://cran.r-project.org/package=symengine) provides an
+    interface to 'SymEngine', a C++ library for fast symbolic
+    calculations, such as manipulating mathematical expressions, finding
+    exact derivatives, performing symbolic matrix computations, or
+    solving ordinary differential equations (numerically).
 
 **Python Interfaces**
 
@@ -460,85 +478,216 @@ Python, through its modules 'NumPy', 'SciPy', 'Matplotlib', 'SymPy', and
 available.
 
 -   [reticulate](https://cran.r-project.org/package=reticulate) is an R interface to
-    Python modules, classes, and functions. When calling Python in R data types are
-    automatically converted to their equivalent Python types; when values are returned
-    from Python to R they are converted back to R types. This package from the RStudio
-    team is a kind of standard for calling Python from R.
+    Python modules, classes, and functions. When calling Python in R
+    data types are automatically converted to their equivalent Python
+    types; when values are returned from Python to R they are converted
+    back to R types. This package from the RStudio team is a kind of
+    standard for calling Python from R.
 -   [feather](https://cran.r-project.org/package=feather) provides bindings to read
-    and write feather files, a lightweight binary data store designed for maximum
-    speed. This storage format can also be accessed in Python, Julia, or Scala.
+    and write feather files, a lightweight binary data store designed
+    for maximum speed. This storage format can also be accessed in
+    Python, Julia, or Scala.
 -   'pyRserve' is a Python module for connecting Python to an R process
     running [Rserve](https://cran.r-project.org/package=Rserve) as an RPC gateway.
     This R process can run on a remote machine, variable access and
     function calls will be delegated through the network.
 -   [XRPython](https://cran.r-project.org/package=XRPython) (and 'XRJulia') are
     based on John Chambers' [XR](https://cran.r-project.org/package=XR) package and
-    his "Extending R" book and allow for a very structured integration
-    of R with Python resp. Julia.
+    his "Extending R" book and allow for a structured integration of R
+    with Python resp. Julia.
 
 **MATLAB, Octave, Julia, and other Interfaces**
 
-Interfaces to mathematical software such as MATLAB (commercial) or Octave (free)
-will be important when solving difficult numerical problems. Unfortunately, at
-the moment there is no package allowing to call Octave functions from within R.
+Interfaces to numerical computation software such as MATLAB (commercial)
+or Octave (free) will be important when solving difficult numerical
+problems. Unfortunately, at the moment there is no package allowing to
+call Octave functions from within R.
 
 -   The [matlab](https://cran.r-project.org/package=matlab) emulation package
     contains about 30 simple functions, replicating MATLAB functions,
     using the respective MATLAB names and being implemented in pure R.
 -   Packages [rmatio](https://cran.r-project.org/package=rmatio) and
-    [R.matlab](https://cran.r-project.org/package=R.matlab) have functions
-    to read and write MAT files (the MATLAB data format) for versions 4 and 5.
-    'R.matlab' also enables a one-directional interface with a MATLAB process,
-    sending and retrieving objects through a TCP connection.
+    [R.matlab](https://cran.r-project.org/package=R.matlab) provides tools to read
+    and write MAT files (the MATLAB data format) for versions 4 and 5.
+    'R.matlab' also enables a one-directional interface with a MATLAB v6
+    process, sending and retrieving objects through a TCP connection.
 
-Julia is "a high-level, high-performance dynamic programming language for
-numerical computing", which makes it interesting for optimization problems and
-other demanding scientific computations in R.
+Julia is "a high-level, high-performance dynamic programming language
+for numerical computing", which makes it interesting for optimization
+problems and other demanding scientific computations in R.
 
--   [JuliaCall](https://cran.r-project.org/package=JuliaCall)
-    provides seamless integration between R and Julia; the user can call Julia
-    functions just like any R functions, and R functions can be called in the
-    Julia environment, both with reasonable automatic type conversion.
--   [JuliaConnectoR](https://cran.r-project.org/package=JuliaConnectoR)
-    provides a functionally oriented interface for integrating Julia with R;
-    imported Julia functions can be called just like R functions; data structures
-    are converted automatically.
--   [XRJulia](https://cran.r-project.org/package=XRJulia)
-    provides an interface from R to computations in the Julia language, based on
-    the interface structure described in the book "Extending R" by John Chambers.
+-   [JuliaCall](https://cran.r-project.org/package=JuliaCall) provides seamless
+    integration between R and Julia; the user can call Julia functions
+    just like any R function, and R functions can be called in the Julia
+    environment, both with reasonable automatic type conversion. [Notes
+    on Julia Call](https://hwborchers.github.io/) provides an
+    introduction of how to apply Julia functions with 'JuliaCall'.
+-   [JuliaConnectoR](https://cran.r-project.org/package=JuliaConnectoR) provides a
+    functionally oriented interface for integrating Julia with R;
+    imported Julia functions can be called as R functions; data
+    structures are converted automatically.
+-   Package [XRJulia](https://cran.r-project.org/package=XRJulia) provides an
+    interface from R to computations in the Julia language, based on the
+    interface structure described in the book "Extending R" by John M.
+    Chambers.
 
-Java Math functions can be employed through the 'rjava' or 'rscala' interfaces.
-Then package [commonsMath](https://cran.r-project.org/package=commonsMath) allows
-calling Java JAR files of the Apache Commons Mathematics Library, a specialized
-library for all aspects of numerics, optimization, and differential equations.
+Java Math functions can be employed through the 'rjava' or 'rscala'
+interfaces. Then package
+[commonsMath](https://cran.r-project.org/package=commonsMath) allows calling Java
+JAR files of the Apache Commons Mathematics Library, a specialized
+library for all aspects of numerics, optimization, and differential
+equations.
 
-[SageMath](http://www.sagemath.org) is an open source mathematics system based
-on Python and licensed under the GLP, allowing to run R functions, but also providing
-access to systems like Maxima, GAP, FLINT, and many more math programs. SageMath
-can be freely used through a Web interface at [CoCalc](https://cocalc.com).
+[SageMath](http://www.sagemath.org/) is an open source mathematics
+system based on Python, allowing to run R functions, but also providing
+access to systems like Maxima, GAP, FLINT, and many more math programs.
+SageMath can be freely used through a Web interface at
+[CoCalc](https://cocalc.com/) .
 
 Package [m2r](https://cran.r-project.org/package=m2r) provides a persistent
-interface to Macauley2, an extended software program supporting research in
-algebraic geometry and commutative algebra. Macauley2 has to be installed
-independently, otherwise a Macauley2 process in the cloud will be instantiated.
+interface to Macauley2, an extended software program supporting research
+in algebraic geometry and commutative algebra. Macauley2 has to be
+installed independently, otherwise a Macauley2 process in the cloud will
+be instantiated.
 
-Please note that commercial programs such as MATLAB, Maple, or Mathematica do have
-facilities to call R functions.
+Please note that commercial programs such as MATLAB, Maple, or
+Mathematica have facilities to call R functions.
+
+</div>
+
+### CRAN packages:
+
+-   [ADPF](https://cran.r-project.org/package=ADPF)
+-   [akima](https://cran.r-project.org/package=akima)
+-   [arrangements](https://cran.r-project.org/package=arrangements)
+-   [BB](https://cran.r-project.org/package=BB)
+-   [Bessel](https://cran.r-project.org/package=Bessel)
+-   [Brobdingnag](https://cran.r-project.org/package=Brobdingnag)
+-   [calculus](https://cran.r-project.org/package=calculus)
+-   [caracas](https://cran.r-project.org/package=caracas)
+-   [Carlson](https://cran.r-project.org/package=Carlson)
+-   [chebpol](https://cran.r-project.org/package=chebpol)
+-   [clifford](https://cran.r-project.org/package=clifford)
+-   [combinat](https://cran.r-project.org/package=combinat)
+-   [commonsMath](https://cran.r-project.org/package=commonsMath)
+-   [conicfit](https://cran.r-project.org/package=conicfit)
+-   [contfrac](https://cran.r-project.org/package=contfrac)
+-   [cubature](https://cran.r-project.org/package=cubature)
+-   [daarem](https://cran.r-project.org/package=daarem)
+-   [Deriv](https://cran.r-project.org/package=Deriv) (core)
+-   [dual](https://cran.r-project.org/package=dual)
+-   [eigeninv](https://cran.r-project.org/package=eigeninv)
+-   [elliptic](https://cran.r-project.org/package=elliptic)
+-   [expint](https://cran.r-project.org/package=expint)
+-   [expm](https://cran.r-project.org/package=expm)
+-   [fastGHQuad](https://cran.r-project.org/package=fastGHQuad)
+-   [feather](https://cran.r-project.org/package=feather)
+-   [features](https://cran.r-project.org/package=features)
+-   [FixedPoint](https://cran.r-project.org/package=FixedPoint)
+-   [fourierin](https://cran.r-project.org/package=fourierin)
+-   [freealg](https://cran.r-project.org/package=freealg)
+-   [freegroup](https://cran.r-project.org/package=freegroup)
+-   [gaussquad](https://cran.r-project.org/package=gaussquad)
+-   [geigen](https://cran.r-project.org/package=geigen)
+-   [gmp](https://cran.r-project.org/package=gmp)
+-   [gsl](https://cran.r-project.org/package=gsl)
+-   [hypergeo](https://cran.r-project.org/package=hypergeo)
+-   [HypergeoMat](https://cran.r-project.org/package=HypergeoMat)
+-   [interp](https://cran.r-project.org/package=interp)
+-   [irlba](https://cran.r-project.org/package=irlba)
+-   [jack](https://cran.r-project.org/package=jack)
+-   [JuliaCall](https://cran.r-project.org/package=JuliaCall)
+-   [JuliaConnectoR](https://cran.r-project.org/package=JuliaConnectoR)
+-   [ktsolve](https://cran.r-project.org/package=ktsolve)
+-   [kubik](https://cran.r-project.org/package=kubik)
+-   [lamW](https://cran.r-project.org/package=lamW)
+-   [logOfGamma](https://cran.r-project.org/package=logOfGamma)
+-   [m2r](https://cran.r-project.org/package=m2r)
+-   [magic](https://cran.r-project.org/package=magic)
+-   [MASS](https://cran.r-project.org/package=MASS)
+-   [matlab](https://cran.r-project.org/package=matlab)
+-   [matlib](https://cran.r-project.org/package=matlib)
+-   [Matrix](https://cran.r-project.org/package=Matrix) (core)
+-   [matrixcalc](https://cran.r-project.org/package=matrixcalc)
+-   [mbend](https://cran.r-project.org/package=mbend)
+-   [MonoPoly](https://cran.r-project.org/package=MonoPoly)
+-   [mpoly](https://cran.r-project.org/package=mpoly)
+-   [multipol](https://cran.r-project.org/package=multipol)
+-   [mvp](https://cran.r-project.org/package=mvp)
+-   [mvQuad](https://cran.r-project.org/package=mvQuad)
+-   [nleqslv](https://cran.r-project.org/package=nleqslv)
+-   [numbers](https://cran.r-project.org/package=numbers)
+-   [numDeriv](https://cran.r-project.org/package=numDeriv) (core)
+-   [onion](https://cran.r-project.org/package=onion)
+-   [optR](https://cran.r-project.org/package=optR)
+-   [orthopolynom](https://cran.r-project.org/package=orthopolynom)
+-   [Pade](https://cran.r-project.org/package=Pade)
+-   [partitions](https://cran.r-project.org/package=partitions)
+-   [permutations](https://cran.r-project.org/package=permutations)
+-   [polyCub](https://cran.r-project.org/package=polyCub)
+-   [polyMatrix](https://cran.r-project.org/package=polyMatrix)
+-   [polynom](https://cran.r-project.org/package=polynom)
+-   [PolynomF](https://cran.r-project.org/package=PolynomF) (core)
+-   [pracma](https://cran.r-project.org/package=pracma) (core)
+-   [primefactr](https://cran.r-project.org/package=primefactr)
+-   [primes](https://cran.r-project.org/package=primes)
+-   [PRIMME](https://cran.r-project.org/package=PRIMME)
+-   [QZ](https://cran.r-project.org/package=QZ)
+-   [R.matlab](https://cran.r-project.org/package=R.matlab)
+-   [rARPACK](https://cran.r-project.org/package=rARPACK)
+-   [Rcpp](https://cran.r-project.org/package=Rcpp)
+-   [RcppAlgos](https://cran.r-project.org/package=RcppAlgos)
+-   [RcppArmadillo](https://cran.r-project.org/package=RcppArmadillo)
+-   [RcppBigIntAlgos](https://cran.r-project.org/package=RcppBigIntAlgos)
+-   [RcppEigen](https://cran.r-project.org/package=RcppEigen)
+-   [reticulate](https://cran.r-project.org/package=reticulate)
+-   [Rlinsolve](https://cran.r-project.org/package=Rlinsolve)
+-   [rmatio](https://cran.r-project.org/package=rmatio)
+-   [Rmpfr](https://cran.r-project.org/package=Rmpfr)
+-   [rmumps](https://cran.r-project.org/package=rmumps)
+-   [RootsExtremaInflections](https://cran.r-project.org/package=RootsExtremaInflections)
+-   [rootSolve](https://cran.r-project.org/package=rootSolve)
+-   [Rserve](https://cran.r-project.org/package=Rserve)
+-   [RSpectra](https://cran.r-project.org/package=RSpectra)
+-   [rSymPy](https://cran.r-project.org/package=rSymPy)
+-   [Ryacas](https://cran.r-project.org/package=Ryacas)
+-   [sanic](https://cran.r-project.org/package=sanic)
+-   [schumaker](https://cran.r-project.org/package=schumaker)
+-   [set6](https://cran.r-project.org/package=set6)
+-   [signal](https://cran.r-project.org/package=signal)
+-   [SimplicialCubature](https://cran.r-project.org/package=SimplicialCubature)
+-   [SparseGrid](https://cran.r-project.org/package=SparseGrid)
+-   [SparseM](https://cran.r-project.org/package=SparseM)
+-   [SphericalCubature](https://cran.r-project.org/package=SphericalCubature)
+-   [SQUAREM](https://cran.r-project.org/package=SQUAREM)
+-   [ssvd](https://cran.r-project.org/package=ssvd)
+-   [statmod](https://cran.r-project.org/package=statmod)
+-   [stinepack](https://cran.r-project.org/package=stinepack)
+-   [svd](https://cran.r-project.org/package=svd)
+-   [symengine](https://cran.r-project.org/package=symengine)
+-   [tripack](https://cran.r-project.org/package=tripack)
+-   [turboEM](https://cran.r-project.org/package=turboEM)
+-   [VeryLargeIntegers](https://cran.r-project.org/package=VeryLargeIntegers)
+-   [XR](https://cran.r-project.org/package=XR)
+-   [XRJulia](https://cran.r-project.org/package=XRJulia)
+-   [XRPython](https://cran.r-project.org/package=XRPython)
+-   [Zseq](https://cran.r-project.org/package=Zseq)
 
 ### Related links:
 
--   CRAN Task View: [DifferentialEquations](https://CRAN.R-project.org/view=DifferentialEquations)
--   CRAN Task View: [Optimization](https://CRAN.R-project.org/view=Optimization)
--   CRAN Task View: [TimeSeries](https://CRAN.R-project.org/view=TimeSeries)
--   CRAN Task View: [HighPerformanceComputing](	https://CRAN.R-project.org/view=HighPerformanceComputing)
--   Textbook: [Hands-On Matrix Algebra Using
+-   CRAN Task View: [DifferentialEquations](DifferentialEquations.html)
+-   CRAN Task View: [Optimization](Optimization.html)
+-   CRAN Task View: [TimeSeries](TimeSeries.html)
+-   CRAN Task View:
+    [HighPerformanceComputing](HighPerformanceComputing.html)
+-   [Textbook: Hands-On Matrix Algebra Using
     R](http://www.worldscientific.com/worldscibooks/10.1142/7814)
--   Textbook: [Introduction to Scientific Programming and Simulation
+-   [Textbook: Introduction to Scientific Programming and Simulation
     Using
     R](https://www.routledge.com/Introduction-to-Scientific-Programming-and-Simulation-Using-R/Jones-Maillardet-Robinson/p/book/9781466569997)
--   Textbook: [Numerical Methods in Science and Engineering Using
+-   [Textbook: Numerical Methods in Science and Engineering Using
     R](https://www.routledge.com/Using-R-for-Numerical-Analysis-in-Science-and-Engineering/Bloomfield/p/book/9781439884485)
--   Textbook: [Computational Methods for Numerical Analysis with
+-   [Textbook: Computational Methods for Numerical Analysis with
     R](https://www.crcpress.com/Computational-Methods-for-Numerical-Analysis-with-R/II/p/book/9781498723633)
 -   [MATLAB / R Reference (D.
     Hiebeler)](https://umaine.edu/mathematics/david-hiebeler/computing-software/matlab-r-reference/)

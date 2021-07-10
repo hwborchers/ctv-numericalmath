@@ -5,7 +5,7 @@ CRAN Task View: Numerical Mathematics
 |-----------------|--------------------------------------------------------|  
 | **Maintainer:** | Hans W. Borchers                                       | 
 | **Contact:**    | hwb at mailbox.org                                     | 
-| **Version:**    | 2021-05-05                                             | 
+| **Version:**    | 2021-06-09                                             | 
 | **URL:**        | <https://CRAN.R-project.org/view=NumericalMathematics> | 
 
 This task view on numerical mathematics lists R packages and functions
@@ -367,10 +367,6 @@ finding roots of multivariate functions see the following packages:
     regions.
 -   [ktsolve](https://cran.r-project.org/package=ktsolve) defines a common interface
     for solving a set of equations with BB or nleqslv.
--   Package [FixedPoint](https://cran.r-project.org/package=FixedPoint) provides
-    algorithms for finding fixed point vectors. These algorithms include
-    Anderson acceleration, epsilon extrapolation methods, and minimal
-    polynomial methods.
 -   Package [daarem](https://cran.r-project.org/package=daarem) implements the
     DAAREM method for accelerating the convergence of any smooth,
     monotone, slow fixed point iteration.

@@ -320,10 +320,6 @@ periodicSpline().
     for creating multivariate Chebyshev and other multilinear
     interpolations on regular grids, e.g. the Floater-Hormann barycenter
     method, or polyharmonic splines for scattered data.
--   Package [kubik](https://cran.r-project.org/package=kubik) provides (constructs,
-    plots and evaluates) constrained cubic Hermite splines and computes
-    their derivatives, indefinite integrals, as well as roots, optima,
-    or inflection points.
 -   [tripack](https://cran.r-project.org/package=tripack) for triangulation of
     irregularly spaced data is a constrained two-dimensional Delaunay
     triangulation package providing both triangulation and generation of
@@ -595,7 +591,6 @@ Mathematica have facilities to call R functions.
 -   [JuliaCall](https://cran.r-project.org/package=JuliaCall)
 -   [JuliaConnectoR](https://cran.r-project.org/package=JuliaConnectoR)
 -   [ktsolve](https://cran.r-project.org/package=ktsolve)
--   [kubik](https://cran.r-project.org/package=kubik)
 -   [lamW](https://cran.r-project.org/package=lamW)
 -   [logOfGamma](https://cran.r-project.org/package=logOfGamma)
 -   [m2r](https://cran.r-project.org/package=m2r)

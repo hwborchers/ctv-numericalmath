@@ -5,7 +5,7 @@ CRAN Task View: Numerical Mathematics
 |-----------------|--------------------------------------------------------|  
 | **Maintainer:** | Hans W. Borchers                                       | 
 | **Contact:**    | hwb at mailbox.org                                     | 
-| **Version:**    | 2021-06-09                                             | 
+| **Version:**    | 2021-12-15                                             | 
 | **URL:**        | <https://CRAN.R-project.org/view=NumericalMathematics> | 
 
 This task view on numerical mathematics lists R packages and functions
@@ -78,10 +78,9 @@ approximation.
     symmetric or complex Hermitian matrices. It will find largest,
     smallest, or interior eigen-/singular values and will apply
     preconditioning to accelerate convergence.
--   The packages [geigen](https://cran.r-project.org/package=geigen) and
-    [QZ](https://cran.r-project.org/package=QZ) compute generalized eigenvalues and
-    -vectors for pairs of matrices, and QZ (generalized Schur)
-    decompositions.
+-   The packqage [geigen](https://cran.r-project.org/package=geigen) computes 
+    generalized eigenvalues and -vectors for pairs of matrices, and QZ 
+    (generalized Schur) decompositions.
 -   [eigeninv](https://cran.r-project.org/package=eigeninv) generates matrices with
     a given set of eigenvalues ('inverse eigenvalue problem').
 -   Package [rARPACK](https://cran.r-project.org/package=rARPACK), a wrapper for the
@@ -363,6 +362,9 @@ finding roots of multivariate functions see the following packages:
     regions.
 -   [ktsolve](https://cran.r-project.org/package=ktsolve) defines a common interface
     for solving a set of equations with BB or nleqslv.
+-   Package [FixedPoint](https://cran.r-project.org/package=FixedPoint) 
+    provides algorithms for finding fixed point vectors. These algorithms include 
+    Anderson acceleration, epsilon extrapolation methods, and minimal polynomial methods.
 -   Package [daarem](https://cran.r-project.org/package=daarem) implements the
     DAAREM method for accelerating the convergence of any smooth,
     monotone, slow fixed point iteration.
@@ -451,9 +453,8 @@ Note that integers in double precision can be represented exactly up to
 -   Package [Ryacas](https://cran.r-project.org/package=Ryacas) interfaces the
     computer algebra system 'Yacas'; it supports symbolic and arbitrary
     precision computations in calculus and linear algebra.
--   Packages [caracas](https://cran.r-project.org/package=caracas) (based on
-    'reticulate') and [rSymPy](https://cran.r-project.org/package=rSymPy) (based on
-    'rjava') both access the symbolic algebra system 'SymPy'; supported
+-   Package [caracas](https://cran.r-project.org/package=caracas) (based on
+    'reticulate') accesses the symbolic algebra system 'SymPy'; supported
     are symbolic operations in linear algebra and calculus, such as
     eigenvalues, derivatives, integrals, limits, etc., computing special
     functions, or solving systems of equations.
@@ -640,7 +641,6 @@ Mathematica have facilities to call R functions.
 -   [rootSolve](https://cran.r-project.org/package=rootSolve)
 -   [Rserve](https://cran.r-project.org/package=Rserve)
 -   [RSpectra](https://cran.r-project.org/package=RSpectra)
--   [rSymPy](https://cran.r-project.org/package=rSymPy)
 -   [Ryacas](https://cran.r-project.org/package=Ryacas)
 -   [sanic](https://cran.r-project.org/package=sanic)
 -   [schumaker](https://cran.r-project.org/package=schumaker)

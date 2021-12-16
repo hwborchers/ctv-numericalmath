@@ -3,7 +3,7 @@
   <name>NumericalMathematics</name>
   <topic>Numerical Mathematics</topic>
   <maintainer email="hwb@mailbox.org">Hans W. Borchers</maintainer>
-  <version>2020-01-02</version>
+  <version>2021-12-15</version>
   
   <info>
 
@@ -54,8 +54,12 @@
     <li>Package <pkg>rmumps</pkg> provides a wrapper for the MUMPS library,
         solving large linear systems of equations applying a parallel sparse
         direct solver</li>
+    <li><pkg>sanic</pkg> supports routines for solving (dense and sparse) 
+        large systems of linear equations; direct and iterative solvers from 
+        the Eigen C++ library are made available, including Cholesky, LU, QR, 
+        and Krylov subspace methods.</li>
     <li><pkg>Rlinsolve</pkg> is a collection of iterative solvers for sparse 
-        linear system of equations. Stationary iterative solvers such as 
+        linear system of equations; stationary iterative solvers such as 
         Jacobi or Gauss-Seidel, as well as nonstationary (Krylov subspace) 
         methods are provided.</li>
     <li><pkg>svd</pkg> provides R bindings to state-of-the-art implementations 
@@ -64,13 +68,12 @@
         iterative thresholding method, while <pkg>irlba</pkg> will compute 
         approximate singular values/vectors of large matrices.</li>
     <li>Package <pkg>PRIMME</pkg> interfaces PRIMME, a C library for computing 
-        eigenvalues and corresponding eigenvectors of real symmetric or  
-        complex Hermitian matrices. It can find largest, smallest, or interior 
-        eigen-/singular values and will apply preconditioning to accelerate 
-        convergence.</li>
-    <li>The packages <pkg>geigen</pkg> and <pkg>QZ</pkg> compute generalized 
-        eigenvalues and -vectors for pairs of matrices, and QZ (generalized 
-        Schur) decompositions.</li>
+        eigenvalues and eigenvectors of real symmetric or complex Hermitian 
+        matrices. It will find largest, smallest, or interior eigen-/singular 
+        values and will apply preconditioning to accelerate convergence.</li>
+    <li>The <pkg>geigen</pkg> package computes generalized eigenvalues and 
+        -vectors for pairs of matrices and QZ (generalized Schur) 
+        decompositions.</li>
     <li><pkg>eigeninv</pkg> generates matrices with a given set of 
         eigenvalues ('inverse eigenvalue problem').</li>
     <li>Package <pkg>rARPACK</pkg>, a wrapper for the ARPACK library, is 
@@ -85,7 +88,8 @@
         methods.</li>
     <li><pkg>matrixcalc</pkg> contains a collection of functions for matrix 
         calculations, special matrices, and tests for matrix properties, 
-        e.g., (semi-)positive definiteness; mainly used for teaching and research purposes</li>
+        e.g., (semi-)positive definiteness; mainly used for teaching and 
+        research purposes</li>
     <li><pkg>matlib</pkg> contains a collection of matrix functions for 
         teaching and learning matrix linear algebra as used in multivariate 
         statistical methods; mainly for tutorial purposes in learning matrix 
@@ -94,6 +98,9 @@
         quaternions and octonians (normed division algebras over the real 
         numbers); quaternions can be useful for handling rotations in 
         three-dimensional space.</li>
+    <li><pkg>clifford</pkg> provides a suite of routines for arbitrary 
+        dimensional Clifford algebras and discusses special cases such as 
+        Lorentz transforms or quaternion multiplication.</li>
     <li>Packages <pkg>RcppArmadillo</pkg> and <pkg>RcppEigen</pkg> enable the 
         integration of the C++ template libraries 'Armadillo' resp. 'Eigen' 
         for linear algebra applications written in C++ and integrated in R 
@@ -130,6 +137,8 @@
         <pkg>elliptic</pkg>, including the Weierstrass P function and 
         Jacobi's theta functions.
         There are tools for visualizing complex functions.</li>
+    <li><pkg>Carlson</pkg> evaluates Carlson elliptic and incomplete  
+        elliptic integrals (with compex arguments).</li>
     <li>Package <pkg>expint</pkg> wraps C-functions from the GNU Scientific 
         Library to calculate exponential integrals and the incomplete Gamma 
         function, including negative values for its first argument.</li>
@@ -155,6 +164,9 @@
         like evaluating polynomials (Horner scheme), or finding their roots. 
         'PolynomF' generates orthogonal polynomials and provides graphical 
         display features.</li>
+    <li><pkg>polyMatrix</pkg> (based on 'polynom') implements basic matrix
+        operations and provides thus an infrastructure for the manipulation
+        of polynomial matrices.</li>
     <li>Package <pkg>MonoPoly</pkg> fits univariate polynomials to given data, 
         applying different algorithms.</li>
     <li>For multivariate polynomials, package <pkg>multipol</pkg> provides 
@@ -190,12 +202,15 @@
 
     <ul>
     <li>Package <pkg>Deriv</pkg> provides an extended solution for symbolic 
-        differentiation in R; the user can add custom derivative rules, and the 
-        output for a function will be an executable function again.</li>
+        differentiation in R; the user can add custom derivative rules, and
+        the output for a function will be an executable function again.</li>
     <li><pkg>numDeriv</pkg> sets the standard for numerical differentiation 
         in R, providing numerical gradients, Jacobians, and Hessians, computed 
         by simple finite differences, Richardson extrapolation, or the highly 
         accurate complex step approach.</li>
+    <li>Package <pkg>dual</pkg> achieves automatic differentiation (for 
+        univariate functions) by employing dual numbers; for a mathematical 
+        function its value and its exact first derivative are returned.</li>
     <li>Package <github>Non-Contradiction/autodiffr</github> (on Github) 
         provides an R wrapper for the Julia packages ForwardDiff.jl and 
         ReverseDiff.jl to do automatic differentiation for native R functions. 
@@ -213,6 +228,8 @@
         and Legendre quadrature rules, explicitly returning nodes and weights 
         in each case. Function <code>gaussquad()</code> in package 
         <pkg>statmod</pkg> does a similar job.</li>
+    <li><pkg>GramQuad</pkg> allows for numerical integration based on Gram 
+        polynomials.</li>
     <li>Package <pkg>fastGHQuad</pkg> provides a fast <pkg>Rcpp</pkg>-based
         implementation of (adaptive) Gauss-Hermite quadrature.</li>
     <li>Adaptive multivariate integration over hyper-rectangles in 
@@ -240,9 +257,8 @@
         coefficients of sufficient length.</li>
     <li><pkg>calculus</pkg> provides efficient functions for high-dimensional 
         numerical and symbolic calculus, including accurate higher-order 
-        derivatives, Taylor series expansion, differential operators, and Monte-Carlo integration in orthogonal coordinate systems.</li>
-    <li>Package <pkg>wedge</pkg> provides functionality for working with 
-        differentials, k-forms, wedge products, Stokes's theorem, and related concepts from the exterior calculus.</li>
+        derivatives, Taylor series expansion, differential operators, and 
+        Monte-Carlo integration in orthogonal coordinate systems.</li>
     <li><pkg>features</pkg> extracts features from functional data, such as 
         first and second derivatives, or curvature at critical points, while
         <pkg>RootsExtremaInflections</pkg> finds roots, extrema and 
@@ -285,9 +301,6 @@
         Chebyshev and other multilinear interpolations on regular grids, e.g.
         the Floater-Hormann barycenter method, or polyharmonic splines for 
         scattered data.</li>
-    <li>Package <pkg>kubik</pkg> provides (constructs, plots and evaluates) 
-        constrained cubic Hermite splines and computes their derivatives, 
-        indefinite integrals, or approximations of higher derivatives.</li>
     <li><pkg>tripack</pkg> for triangulation of irregularly spaced data is a 
         constrained two-dimensional Delaunay triangulation package providing 
         both triangulation and generation of Voronoi mosaics of irregular 
@@ -331,9 +344,9 @@
         strategies such as line searches or trust regions.</li>
     <li><pkg>ktsolve</pkg> defines a common interface for solving a set of
         equations with <code>BB</code> or <code>nleqslv</code>.</li>
-    <li>Package <pkg>FixedPoint</pkg> provides algorithms for finding fixed 
-        point vectors. These algorithms include Anderson acceleration, 
-        epsilon extrapolation methods, and minimal polynomial methods.</li>
+    <li><pkg>FixedPoint</pkg> provides algorithms for finding fixed point 
+        vectors of functions, including Anderson acceleration, epsilon 
+        extrapolation methods, or minimal polynomial methods .</li>
     <li>Package <pkg>daarem</pkg> implements the DAAREM method for accelerating 
         the convergence of any smooth, monotone, slow fixed point iteration.</li>
     <li>Algorithms for accelerating the convergence of slow, monotone 
@@ -379,9 +392,9 @@
         mathematical sets (sets, tuples, intervals) and allows for standard 
         operations on them (unions, products, differences).</li>
     <li><pkg>RcppAlgos</pkg> provides flexible functions for generating 
-        combinations or permutations of a vector with or without constraints. 
-        The extension package <pkg>bigIntegerAlgos</pkg> features a quadratic 
-        sieve algorithm for completely factoring large integers.</li>
+        combinations or permutations of a vector with or without constraints;
+        the extension package <pkg>RcppBigIntAlgos</pkg> features a 
+        quadratic sieve algorithm for completely factoring large integers.</li>
     <li>Package <pkg>Zseq</pkg> generates well-known integer sequences; the 
         'gmp' package is adopted for computing with arbitrarily large numbers. 
         Every function has on its help page a hyperlink to the corresponding 
@@ -413,13 +426,22 @@
     <li><pkg>VeryLargeIntegers</pkg> implements a multi-precision library that 
         allows to store and manage arbitrarily big integers; it includes 
         probabilistic primality tests and factorization algorithms.</li>
+    <li><pkg>bignum</pkg> is a package for arbitrary-precision integer and 
+        floating-point numbers of 50 decimal digits of precision. The package 
+        utilizes the 'Boost.Multiprecision' C++ library and is specifically 
+        designed to work with the 'tidyverse' collection of R packages.</li>
     <li>Package <pkg>Ryacas</pkg> interfaces the computer algebra system    
-        'Yacas'. It supports symbolic and arbitrary precision computations  
+        'Yacas'; it supports symbolic and arbitrary precision computations  
         in calculus and linear algebra.</li>
-    <li>Package <pkg>rSymPy</pkg> accesses the symbolic algebra system 'SymPy' 
-        (written in Python) from R. 
-        It supports arbitrary precision computations, linear algebra and 
-        calculus, solving equations, discrete mathematics, and much more.</li>
+    <li>Package <pkg>caracas</pkg> 
+        (based on 'reticulate') accesses the symbolic algebra system 
+        'SymPy'; supported are symbolic operations in linear algebra and 
+        calculus, such as eigenvalues, derivatives, integrals, limits, etc.,
+        computing special functions, or solving systems of equations.</li>
+    <li>Package <pkg>symengine</pkg> provides an interface to 'SymEngine',
+        a C++ library for fast symbolic calculations, such as manipulating
+        mathematical expressions, finding exact derivatives, performing 
+        symbolic matrix computations, or solving ordinary differential equations (numerically).</li>
     </ul>
 
 
@@ -436,20 +458,9 @@
         from Python to R they are converted back to R types. This package from 
         the RStudio team is a kind of standard for calling Python from R.
     </li>
-    <li>R package <pkg>rPython</pkg> permits calls from R to Python, while 
-        <a href="http://sourceforge.net/projects/rpy/">RPy</a> (with Python 
-        module 'rpy2') interfaces R from Python.
-    </li>
-    <li><pkg>PythonInR</pkg> is another package to interact with Python from 
-        within R. It provides Python classes for vectors, matrices and 
-        data.frames which allow an easy conversion from R to Python and back.
-    </li>
     <li><pkg>feather</pkg> provides bindings to read and write feather files, 
         a lightweight binary data store designed for maximum speed.
         This storage format can also be accessed in Python, Julia, or Scala.
-    </li>
-    <li><pkg>findpython</pkg> is a package designed to find an acceptable
-        Python binary in the path, incl. minimum version or required modules.
     </li>
     <li>'pyRserve' is a Python module for connecting Python to an R process 
         running <pkg>Rserve</pkg> as an RPC gateway. This R process can run on 
@@ -457,16 +468,8 @@
         through the network.
     </li>
     <li><pkg>XRPython</pkg> (and 'XRJulia') are based on John Chambers' 
-        <pkg>XR</pkg> package and his "Extending R" book and allow for a very 
+        <pkg>XR</pkg> package and his "Extending R" book and allow for a 
         structured integration of R with Python resp. Julia.
-    </li>
-    </ul>
-    <ul>
-    <li>Note that <a href="http://www.sagemath.org/">SageMath</a> is a free open
-    source mathematics system based on Python, allowing to run R functions, but 
-    also providing access to Maxima, GAP, FLINT, and many more math programs. 
-    SageMath can be downloaded or used through a Web interface at
-    <a href="https://cocalc.com/">CoCalc</a>.
     </li>
     </ul>
 
@@ -475,62 +478,68 @@
 
     <p>Interfaces to numerical computation software such as MATLAB 
     (commercial) or Octave (free) will be important when solving difficult 
-    numerical problems.</p>
+    numerical problems. Unfortunately, at the moment there is no package 
+    allowing to call Octave functions from within R.</p>
 
     <ul>
     <li>The <pkg>matlab</pkg> emulation package contains about 30 simple 
         functions, replicating MATLAB functions, using the respective MATLAB 
-        names and being implemented in pure R. (See also <pkg>pracma</pkg> 
-        for many more mathematical functions designed with MATLAB in mind.)
+        names and being implemented in pure R.
     </li>
-    <li>Package <pkg>R.matlab</pkg> provides tools to read and write MAT 
-        files, which is the MATLAB data format. It also enables a 
-        one-directional interface with a MATLAB process, sending and 
-        retrieving objects through a TCP/IP connection.
+    <li>Packages <pkg>rmatio</pkg> and <pkg>R.matlab</pkg> provides tools to
+        read and write MAT files (the MATLAB data format) for versions 4 and 5.
+        'R.matlab' also enables a one-directional interface with a MATLAB v6
+        process, sending and retrieving objects through a TCP connection.
     </li>
     </ul>
 
     <p>Julia is "a high-level, high-performance dynamic programming language 
        for numerical computing", which makes it interesting for optimization 
        problems and other demanding scientific computations in R.</p>
-
     <ul>
-    <li>The Julia interface of the <pkg>XRJulia</pkg> package by John Chambers 
-        provides direct analogues to Julia function calls. A 'juliaExamples' 
-        package is available on Github.
+    <li><pkg>JuliaCall</pkg> provides seamless integration between R and Julia; 
+        the user can call Julia functions just like any R function, and R 
+        functions can be called in the Julia environment, both with reasonable 
+        automatic type conversion. 
+        <a href="https://hwborchers.github.io/">Notes on Julia Call</a> 
+        provides an introduction of how to apply Julia functions with 
+        'JuliaCall'.
     </li>
-    <li><pkg>JuliaCall</pkg> provides seamless integration between R and Julia. 
-        Using the high-level interface, the user can call any Julia function 
-        just like an R function with automatic type conversion.
+    <li><pkg>JuliaConnectoR</pkg> provides a functionally oriented interface 
+        for integrating Julia with R; imported Julia functions can be called 
+        as R functions; data structures are converted automatically.
+    </li>
+    <li>Package <pkg>XRJulia</pkg> provides an interface from R to computations 
+        in the Julia language, based on the interface structure described in 
+        the book "Extending R" by John M. Chambers.
     </li>
     </ul>
 
     <p>Java Math functions can be employed through the 'rjava' or 'rscala' 
-       interfaces. Then the following package will give the user access to 
-       a specialized Java Mathematics library.</p>
+    interfaces. Then package <pkg>commonsMath</pkg> allows calling Java JAR 
+    files of the Apache Commons Mathematics Library, a specialized library for 
+    all aspects of numerics, optimization, and differential equations.</p>
 
-    <ul>
-    <li>Package <pkg>commonsMath</pkg> provides Java JAR files for the Apache 
-        Commons Mathematics Library for use by users and other packages. All 
-        aspects of numerics, optimization, and differential equations are 
-        covered therein.
-    </li>
-    </ul>
+    <p><a href="http://www.sagemath.org/">SageMath</a> is an open source
+    mathematics system based on Python, allowing to run R functions, but 
+    also providing access to systems like Maxima, GAP, FLINT, and many more 
+    math programs. SageMath can be freely used through a Web interface at
+    <a href="https://cocalc.com/">CoCalc</a>.</p>
 
-    <p>The commercial programs SAS and Mathematica do have facilities  
-       to call R functions. Here is another Computer Algebra System (CAS) 
-       in Pure Mathematics that can be called from R.</p>
+    <p>Package <pkg>rim</pkg> provides an interface to the free and powerful 
+    computer algebra system 'Maxima'. Results can be output in 'LaTeX' or 
+    'MathML' and 2D and 3D plots will be displayed directly. 'Maxima' code 
+    chunks can be included in 'RMarkdown' documents.</p>
 
-    <ul>
-    <li>Package <pkg>m2r</pkg> provides a persistent interface to Macauley2, 
-        an extended software program supporting research in algebraic geometry 
-        and commutative algebra. Macauley2 has to be installed independently,
-        otherwise a Macauley2 process in the cloud will be instantiated.
-    </li>
-    </ul>
-        
+    <p>Package <pkg>m2r</pkg> provides a persistent interface to Macauley2, 
+    an extended software program supporting research in algebraic geometry 
+    and commutative algebra. Macauley2 has to be installed independently,
+    otherwise a Macauley2 process in the cloud will be instantiated.</p>
+
+    <p>Please note that commercial programs such as MATLAB, Maple, or 
+    Mathematica have facilities to call R functions.</p>
+
   </info>
-
 
   <packagelist>
     <pkg>ADPF</pkg>
@@ -538,10 +547,13 @@
     <pkg>arrangements</pkg>
     <pkg>BB</pkg>
     <pkg>Bessel</pkg>
-    <pkg>bigIntegerAlgos</pkg>
+    <pkg>bignum</pkg>
     <pkg>Brobdingnag</pkg>
     <pkg>calculus</pkg>
+    <pkg>caracas</pkg>
+    <pkg>Carlson</pkg>
     <pkg>chebpol</pkg>
+    <pkg>clifford</pkg>
     <pkg>combinat</pkg>
     <pkg>commonsMath</pkg>
     <pkg>conicfit</pkg>
@@ -549,6 +561,7 @@
     <pkg>cubature</pkg>
     <pkg>daarem</pkg>
     <pkg priority="core">Deriv</pkg>
+    <pkg>dual</pkg>
     <pkg>eigeninv</pkg>
     <pkg>elliptic</pkg>
     <pkg>expint</pkg>
@@ -556,7 +569,6 @@
     <pkg>fastGHQuad</pkg>
     <pkg>feather</pkg>
     <pkg>features</pkg>
-    <pkg>findpython</pkg>
     <pkg>FixedPoint</pkg>
     <pkg>fourierin</pkg>
     <pkg>freealg</pkg>
@@ -564,6 +576,7 @@
     <pkg>gaussquad</pkg>
     <pkg>geigen</pkg>
     <pkg>gmp</pkg>
+    <pkg>GramQuad</pkg>
     <pkg>gsl</pkg>
     <pkg>hypergeo</pkg>
     <pkg>HypergeoMat</pkg>
@@ -571,8 +584,8 @@
     <pkg>irlba</pkg>
     <pkg>jack</pkg>
     <pkg>JuliaCall</pkg>
+    <pkg>JuliaConnectoR</pkg>
     <pkg>ktsolve</pkg>
-    <pkg>kubik</pkg>
     <pkg>lamW</pkg>
     <pkg>logOfGamma</pkg>
     <pkg>m2r</pkg>
@@ -598,31 +611,32 @@
     <pkg>partitions</pkg>
     <pkg>permutations</pkg>
     <pkg>polyCub</pkg>
+    <pkg>polyMatrix</pkg>
     <pkg>polynom</pkg>
     <pkg priority="core">PolynomF</pkg>
     <pkg priority="core">pracma</pkg>
     <pkg>primefactr</pkg>
     <pkg>primes</pkg>
     <pkg>PRIMME</pkg>
-    <pkg>PythonInR</pkg>
-    <pkg>QZ</pkg>
     <pkg>R.matlab</pkg>
     <pkg>rARPACK</pkg>
     <pkg>Rcpp</pkg>
     <pkg>RcppAlgos</pkg>
     <pkg>RcppArmadillo</pkg>
+    <pkg>RcppBigIntAlgos</pkg>
     <pkg>RcppEigen</pkg>
     <pkg>reticulate</pkg>
+    <pkg>rim</pkg>
     <pkg>Rlinsolve</pkg>
+    <pkg>rmatio</pkg>
     <pkg>Rmpfr</pkg>
     <pkg>rmumps</pkg>
     <pkg>RootsExtremaInflections</pkg>
     <pkg>rootSolve</pkg>
-    <pkg>rPython</pkg>
     <pkg>Rserve</pkg>
     <pkg>RSpectra</pkg>
-    <pkg>rSymPy</pkg>
     <pkg>Ryacas</pkg>
+    <pkg>sanic</pkg>
     <pkg>schumaker</pkg>
     <pkg>set6</pkg>
     <pkg>signal</pkg>
@@ -635,46 +649,29 @@
     <pkg>stinepack</pkg>
     <pkg>ssvd</pkg>
     <pkg>svd</pkg>
+    <pkg>symengine</pkg>
     <pkg>tripack</pkg>
     <pkg>turboEM</pkg>
     <pkg>VeryLargeIntegers</pkg>
-    <pkg>wedge</pkg>
     <pkg>XR</pkg>
     <pkg>XRJulia</pkg>
     <pkg>XRPython</pkg>
     <pkg>Zseq</pkg>
   </packagelist>
 
-
   <links>
     <view>DifferentialEquations</view>
     <view>Optimization</view>
     <view>TimeSeries</view>
     <view>HighPerformanceComputing</view>
-
-    <span>Textbook:
-    <a href="http://www.worldscientific.com/worldscibooks/10.1142/7814">
-        Hands-On Matrix Algebra Using R</a></span>
-    <span>Textbook: 
-    <a href="http://www.ms.unimelb.edu.au/~apro@unimelb/spuRs/index.html">
-        Introduction to Scientific Programming and Simulation Using R</a>
-    </span>
-    <span>Textbook:
-    <a href="http://www.crcpress.com/product/isbn/9781439884485">
-    Numerical Methods in Science and Engineering Using R</a></span>
-    <span>Textbook:
-    <a href="https://www.crcpress.com/Computational-Methods-for-Numerical-Analysis-with-R/II/p/book/9781498723633">
-    Computational Methods for Numerical Analysis with R</a></span>
-
-    <a href="http://www.rforscience.com/">R for Science (Institute for Sea Research, Netherlands)</a>
-    <a href="http://www.math.umaine.edu/~hiebeler/comp/matlabR.html">
-    MATLAB / R Reference (D. Hiebeler)</a>
-    <a href="http://www.nr.com/aands/">Abramowitz and Stegun. 
-        Handbook of Mathematical Functions</a>
-    <a href="http://www.nrbook.com/a/bookcpdf.php">Numerical Recipes:
-        The Art of Numerical Computing</a>
-    <a href="http://mathworld.wolfram.com/">E. Weisstein's 
-        Wolfram MathWorld</a>
+    <a href="http://www.worldscientific.com/worldscibooks/10.1142/7814">Textbook: Hands-On Matrix Algebra Using R</a>
+    <a href="https://www.routledge.com/Introduction-to-Scientific-Programming-and-Simulation-Using-R/Jones-Maillardet-Robinson/p/book/9781466569997">Textbook: Introduction to Scientific Programming and Simulation Using R</a>
+    <a href="https://www.routledge.com/Using-R-for-Numerical-Analysis-in-Science-and-Engineering/Bloomfield/p/book/9781439884485">Textbook: Numerical Methods in Science and Engineering Using R</a>
+    <a href="https://www.crcpress.com/Computational-Methods-for-Numerical-Analysis-with-R/II/p/book/9781498723633">Textbook: Computational Methods for Numerical Analysis with R</a>
+    <a href="https://umaine.edu/mathematics/david-hiebeler/computing-software/matlab-r-reference/">MATLAB / R Reference (D. Hiebeler)</a>
+    <a href="http://people.math.sfu.ca/~cbm/aands/">Abramowitz and Stegun. Handbook of Mathematical Functions</a>
+    <a href="http://numerical.recipes/">Numerical Recipes: The Art of Numerical Computing</a>
+    <a href="http://mathworld.wolfram.com/">E. Weisstein's Wolfram MathWorld</a>
   </links>
 
 </CRANTaskView>

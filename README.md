@@ -247,13 +247,10 @@ domains to a certain extent.
 -   Package [fastGHQuad](https://cran.r-project.org/package=fastGHQuad) provides a
     fast [Rcpp](https://cran.r-project.org/package=Rcpp) -based implementation of
     (adaptive) Gauss-Hermite quadrature.
--   Adaptive multivariate integration over hyper-rectangles in
-    n-dimensional space is available in package
-    [cubature](https://cran.r-project.org/package=cubature) as function
-    `adaptIntegrate()`, based on a C library of the same name. The
-    integrand functions can even be multi-valued.
--   `vegas()` includes an approach to Monte Carlo integration based on
-    importance sampling.
+-   [cubature](https://cran.r-project.org/package=cubature) is a package for
+    adaptive multivariate integration, based on the C-library 'cubature', resp.
+    for deterministic and Monte-Carlo integration based on library 'Cuba'.
+    Function 'cubintegrate()' wraps all the integration methods provided.
 -   [mvQuad](https://cran.r-project.org/package=mvQuad) provides methods for
     generating multivariate grids that can be used for multivariate
     integration. These grids will be based on different quadrature rules
@@ -574,7 +571,7 @@ have facilities to call R functions.
   [commonsMath](https://cran.r-project.org/package=commonsMath)
   [conicfit](https://cran.r-project.org/package=conicfit)
   [contfrac](https://cran.r-project.org/package=contfrac)
-  [cubature](https://cran.r-project.org/package=cubature)
+  [cubature](https://cran.r-project.org/package=cubature) (core)
   [daarem](https://cran.r-project.org/package=daarem)
   [Deriv](https://cran.r-project.org/package=Deriv) (core)
   [dual](https://cran.r-project.org/package=dual)
@@ -630,7 +627,7 @@ have facilities to call R functions.
   [polyMatrix](https://cran.r-project.org/package=polyMatrix)
   [polynom](https://cran.r-project.org/package=polynom)
   [PolynomF](https://cran.r-project.org/package=PolynomF) (core)
-  [pracma](https://cran.r-project.org/package=pracma) (core)
+  [pracma](https://cran.r-project.org/package=pracma)
   [primefactr](https://cran.r-project.org/package=primefactr)
   [primes](https://cran.r-project.org/package=primes)
   [PRIMME](https://cran.r-project.org/package=PRIMME)

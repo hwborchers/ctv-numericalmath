@@ -236,6 +236,11 @@ domains to a certain extent.
     rules. `integral2()` integrates functions in two dimensions, also
     for domains characterized by polar coordinates or with variable
     interval limits.
+-   [cubature](https://cran.r-project.org/package=cubature) is a package for
+    adaptive multivariate integration over hypercubes in n-dimensional space,
+    based on the C-library 'cubature', resp. for deterministic and Monte-Carlo
+    integration based on library 'Cuba'. The integrand functions can be multi-valued. 
+    Function 'cubintegrate()' wraps all the integration methods provided.
 -   Package [gaussquad](https://cran.r-project.org/package=gaussquad) contains a
     collection of functions to perform Gaussian quadrature, among them
     Chebyshev, Hermite, Laguerre, and Legendre quadrature rules,
@@ -247,10 +252,6 @@ domains to a certain extent.
 -   Package [fastGHQuad](https://cran.r-project.org/package=fastGHQuad) provides a
     fast [Rcpp](https://cran.r-project.org/package=Rcpp) -based implementation of
     (adaptive) Gauss-Hermite quadrature.
--   [cubature](https://cran.r-project.org/package=cubature) is a package for
-    adaptive multivariate integration, based on the C-library 'cubature', resp.
-    for deterministic and Monte-Carlo integration based on library 'Cuba'.
-    Function 'cubintegrate()' wraps all the integration methods provided.
 -   [mvQuad](https://cran.r-project.org/package=mvQuad) provides methods for
     generating multivariate grids that can be used for multivariate
     integration. These grids will be based on different quadrature rules

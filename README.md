@@ -693,7 +693,7 @@ have facilities to call R functions.
 -   [MATLAB / R Reference (D.
     Hiebeler)](https://umaine.edu/mathematics/david-hiebeler/computing-software/matlab-r-reference/)
 -   [Abramowitz and Stegun. Handbook of Mathematical
-    Functions](http://people.math.sfu.ca/~cbm/aands/)
+    Functions](https://personal.math.ubc.ca/~cbm/aands/)
 -   [Numerical Recipes: The Art of Numerical
     Computing](http://numerical.recipes/)
 -   [E. Weisstein's Wolfram MathWorld](http://mathworld.wolfram.com/)

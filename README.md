@@ -690,6 +690,8 @@ have facilities to call R functions.
     R](https://www.routledge.com/Using-R-for-Numerical-Analysis-in-Science-and-Engineering/Bloomfield/p/book/9781439884485)
 -   Textbook: [Computational Methods for Numerical Analysis with
     R](https://www.crcpress.com/Computational-Methods-for-Numerical-Analysis-with-R/II/p/book/9781498723633)
+-   Notes on JuliaCall:
+    [A short description of how to use Julia functions from R](https://hwborchers.github.io/)
 -   [MATLAB / R Reference (D.
     Hiebeler)](https://umaine.edu/mathematics/david-hiebeler/computing-software/matlab-r-reference/)
 -   [Abramowitz and Stegun. Handbook of Mathematical

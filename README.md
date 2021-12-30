@@ -1,5 +1,4 @@
-CRAN Task View: Numerical Mathematics
--------------------------------------
+## CRAN Task View: Numerical Mathematics
 
 |                 |                                                        |
 |-----------------|--------------------------------------------------------|  
@@ -31,7 +30,7 @@ The task view has been created to provide an overview of the topic. If
 some packages are missing or certain topics in numerical math should be
 treated in more detail, please let the maintainer know.
 
-**Numerical Linear Algebra**
+### Numerical Linear Algebra
 
 As statistics is based to a large extent on linear algebra, many
 numerical linear algebra routines are present in R, and some only
@@ -116,7 +115,7 @@ approximation.
     algebra applications written in C++ and integrated in R using
     [Rcpp](https://cran.r-project.org/package=Rcpp) for performance and ease of use.
 
-**Special Functions**
+### Special Functions
 
 Many special mathematical functions are present in R, especially
 logarithms and exponentials, trigonometric and hyperbolic functions, or
@@ -161,7 +160,7 @@ contributed packages.
 -   Package [lamW](https://cran.r-project.org/package=lamW) implements both
     real-valued branches of the Lambert W function (using Rcpp).
 
-**Polynomials**
+### Polynomials
 
 Function polyroot() in base R determines all zeros of a polynomial,
 based on the Jenkins-Traub algorithm. Linear regression function lm()
@@ -202,7 +201,7 @@ can perform polynomial fitting when using `poly()` in the model formula
     [freealg](https://cran.r-project.org/package=freealg) handles multivariate
     polynomials with non-commuting indeterminates.
 
-**Differentiation and Integration**
+### Differentiation and Integration
 
 `D()` and `deriv()` in base R compute derivatives of simple expressions
 symbolically. Function `integrate()` implements an approach for
@@ -289,7 +288,7 @@ domains to a certain extent.
     finds roots, extrema and inflection points of curves defined by
     discrete points.
 
-**Interpolation and Approximation**
+### Interpolation and Approximation
 
 Base R provides functions `approx()` for constant and linear
 interpolation, and `spline()` for cubic (Hermite) spline interpolation,
@@ -340,7 +339,7 @@ package splines creates periodic interpolation splines in function
     (geometric and algebraic) algorithms for fitting circles, ellipses,
     and conics in general.
 
-**Root Finding and Fixed Points**
+### Root Finding and Fixed Points
 
 `uniroot()`, implementing the Brent-Decker algorithm, is the basic
 routine in R to find roots of univariate functions. There are
@@ -378,7 +377,7 @@ multivariate functions see the following packages:
     [SQUAREM](https://cran.r-project.org/package=SQUAREM) resp.
     [turboEM](https://cran.r-project.org/package=turboEM).
 
-**Discrete Mathematics and Number Theory**
+### Discrete Mathematics and Number Theory
 
 Not so many functions are available for computational number theory.
 Note that integers in double precision can be represented exactly up to
@@ -434,7 +433,7 @@ Note that integers in double precision can be represented exactly up to
     factorization for computations such as reducing ratios of large
     factorials.
 
-**Multi-Precision Arithmetic and Symbolic Mathematics**
+### Multi-Precision Arithmetic and Symbolic Mathematics
 
 -   Multiple precision arithmetic is available in R through package
     [gmp](https://cran.r-project.org/package=gmp) that interfaces to the GMP C
@@ -473,7 +472,7 @@ Note that integers in double precision can be represented exactly up to
     exact derivatives, performing symbolic matrix computations, or
     solving ordinary differential equations (numerically).
 
-**Python Interfaces**
+### Python Interfaces
 
 Python, through its modules 'NumPy', 'SciPy', 'Matplotlib', 'SymPy', and
 'pandas', has elaborate and efficient numerical and graphical tools
@@ -498,7 +497,7 @@ available.
     his "Extending R" book and allow for a structured integration of R
     with Python resp. Julia.
 
-**MATLAB, Octave, Julia, and other Interfaces**
+### MATLAB, Octave, Julia, and other Interfaces
 
 Interfaces to numerical computation software such as MATLAB (commercial)
 or Octave (free) will be important when solving difficult numerical
@@ -562,121 +561,121 @@ Mathematica have facilities to call R functions.
 
 ### CRAN packages:
 
--   [ADPF](https://cran.r-project.org/package=ADPF)
--   [akima](https://cran.r-project.org/package=akima)
--   [arrangements](https://cran.r-project.org/package=arrangements)
--   [BB](https://cran.r-project.org/package=BB)
--   [Bessel](https://cran.r-project.org/package=Bessel)
--   [bignum](https://cran.r-project.org/package=bignum)
--   [Brobdingnag](https://cran.r-project.org/package=Brobdingnag)
--   [calculus](https://cran.r-project.org/package=calculus)
--   [caracas](https://cran.r-project.org/package=caracas)
--   [Carlson](https://cran.r-project.org/package=Carlson)
--   [chebpol](https://cran.r-project.org/package=chebpol)
--   [clifford](https://cran.r-project.org/package=clifford)
--   [combinat](https://cran.r-project.org/package=combinat)
--   [commonsMath](https://cran.r-project.org/package=commonsMath)
--   [conicfit](https://cran.r-project.org/package=conicfit)
--   [contfrac](https://cran.r-project.org/package=contfrac)
--   [cubature](https://cran.r-project.org/package=cubature)
--   [daarem](https://cran.r-project.org/package=daarem)
--   [Deriv](https://cran.r-project.org/package=Deriv) (core)
--   [dual](https://cran.r-project.org/package=dual)
--   [eigeninv](https://cran.r-project.org/package=eigeninv)
--   [elliptic](https://cran.r-project.org/package=elliptic)
--   [expint](https://cran.r-project.org/package=expint)
--   [expm](https://cran.r-project.org/package=expm)
--   [fastGHQuad](https://cran.r-project.org/package=fastGHQuad)
--   [feather](https://cran.r-project.org/package=feather)
--   [features](https://cran.r-project.org/package=features)
--   [FixedPoint](https://cran.r-project.org/package=FixedPoint)
--   [fourierin](https://cran.r-project.org/package=fourierin)
--   [freealg](https://cran.r-project.org/package=freealg)
--   [freegroup](https://cran.r-project.org/package=freegroup)
--   [gaussquad](https://cran.r-project.org/package=gaussquad)
--   [geigen](https://cran.r-project.org/package=geigen)
--   [gmp](https://cran.r-project.org/package=gmp)
--   [GramQuad](https://cran.r-project.org/package=GramQuad)
--   [gsl](https://cran.r-project.org/package=gsl)
--   [hypergeo](https://cran.r-project.org/package=hypergeo)
--   [HypergeoMat](https://cran.r-project.org/package=HypergeoMat)
--   [interp](https://cran.r-project.org/package=interp)
--   [irlba](https://cran.r-project.org/package=irlba)
--   [jack](https://cran.r-project.org/package=jack)
--   [JuliaCall](https://cran.r-project.org/package=JuliaCall)
--   [JuliaConnectoR](https://cran.r-project.org/package=JuliaConnectoR)
--   [ktsolve](https://cran.r-project.org/package=ktsolve)
--   [lamW](https://cran.r-project.org/package=lamW)
--   [logOfGamma](https://cran.r-project.org/package=logOfGamma)
--   [m2r](https://cran.r-project.org/package=m2r)
--   [magic](https://cran.r-project.org/package=magic)
--   [MASS](https://cran.r-project.org/package=MASS)
--   [matlab](https://cran.r-project.org/package=matlab)
--   [matlib](https://cran.r-project.org/package=matlib)
--   [Matrix](https://cran.r-project.org/package=Matrix) (core)
--   [matrixcalc](https://cran.r-project.org/package=matrixcalc)
--   [mbend](https://cran.r-project.org/package=mbend)
--   [MonoPoly](https://cran.r-project.org/package=MonoPoly)
--   [mpoly](https://cran.r-project.org/package=mpoly)
--   [multipol](https://cran.r-project.org/package=multipol)
--   [mvp](https://cran.r-project.org/package=mvp)
--   [mvQuad](https://cran.r-project.org/package=mvQuad)
--   [nleqslv](https://cran.r-project.org/package=nleqslv)
--   [numbers](https://cran.r-project.org/package=numbers)
--   [numDeriv](https://cran.r-project.org/package=numDeriv) (core)
--   [onion](https://cran.r-project.org/package=onion)
--   [optR](https://cran.r-project.org/package=optR)
--   [orthopolynom](https://cran.r-project.org/package=orthopolynom)
--   [Pade](https://cran.r-project.org/package=Pade)
--   [partitions](https://cran.r-project.org/package=partitions)
--   [permutations](https://cran.r-project.org/package=permutations)
--   [polyCub](https://cran.r-project.org/package=polyCub)
--   [polyMatrix](https://cran.r-project.org/package=polyMatrix)
--   [polynom](https://cran.r-project.org/package=polynom)
--   [PolynomF](https://cran.r-project.org/package=PolynomF) (core)
--   [pracma](https://cran.r-project.org/package=pracma) (core)
--   [primefactr](https://cran.r-project.org/package=primefactr)
--   [primes](https://cran.r-project.org/package=primes)
--   [PRIMME](https://cran.r-project.org/package=PRIMME)
--   [R.matlab](https://cran.r-project.org/package=R.matlab)
--   [rARPACK](https://cran.r-project.org/package=rARPACK)
--   [Rcpp](https://cran.r-project.org/package=Rcpp)
--   [RcppAlgos](https://cran.r-project.org/package=RcppAlgos)
--   [RcppArmadillo](https://cran.r-project.org/package=RcppArmadillo)
--   [RcppBigIntAlgos](https://cran.r-project.org/package=RcppBigIntAlgos)
--   [RcppEigen](https://cran.r-project.org/package=RcppEigen)
--   [reticulate](https://cran.r-project.org/package=reticulate)
--   [rim](https://cran.r-project.org/package=rim)
--   [Rlinsolve](https://cran.r-project.org/package=Rlinsolve)
--   [rmatio](https://cran.r-project.org/package=rmatio)
--   [Rmpfr](https://cran.r-project.org/package=Rmpfr)
--   [rmumps](https://cran.r-project.org/package=rmumps)
--   [RootsExtremaInflections](https://cran.r-project.org/package=RootsExtremaInflections)
--   [rootSolve](https://cran.r-project.org/package=rootSolve)
--   [Rserve](https://cran.r-project.org/package=Rserve)
--   [RSpectra](https://cran.r-project.org/package=RSpectra)
--   [Ryacas](https://cran.r-project.org/package=Ryacas)
--   [sanic](https://cran.r-project.org/package=sanic)
--   [schumaker](https://cran.r-project.org/package=schumaker)
--   [set6](https://cran.r-project.org/package=set6)
--   [signal](https://cran.r-project.org/package=signal)
--   [SimplicialCubature](https://cran.r-project.org/package=SimplicialCubature)
--   [SparseGrid](https://cran.r-project.org/package=SparseGrid)
--   [SparseM](https://cran.r-project.org/package=SparseM)
--   [SphericalCubature](https://cran.r-project.org/package=SphericalCubature)
--   [SQUAREM](https://cran.r-project.org/package=SQUAREM)
--   [ssvd](https://cran.r-project.org/package=ssvd)
--   [statmod](https://cran.r-project.org/package=statmod)
--   [stinepack](https://cran.r-project.org/package=stinepack)
--   [svd](https://cran.r-project.org/package=svd)
--   [symengine](https://cran.r-project.org/package=symengine)
--   [tripack](https://cran.r-project.org/package=tripack)
--   [turboEM](https://cran.r-project.org/package=turboEM)
--   [VeryLargeIntegers](https://cran.r-project.org/package=VeryLargeIntegers)
--   [XR](https://cran.r-project.org/package=XR)
--   [XRJulia](https://cran.r-project.org/package=XRJulia)
--   [XRPython](https://cran.r-project.org/package=XRPython)
--   [Zseq](https://cran.r-project.org/package=Zseq)
+  [ADPF](https://cran.r-project.org/package=ADPF)
+  [akima](https://cran.r-project.org/package=akima)
+  [arrangements](https://cran.r-project.org/package=arrangements)
+  [BB](https://cran.r-project.org/package=BB)
+  [Bessel](https://cran.r-project.org/package=Bessel)
+  [bignum](https://cran.r-project.org/package=bignum)
+  [Brobdingnag](https://cran.r-project.org/package=Brobdingnag)
+  [calculus](https://cran.r-project.org/package=calculus)
+  [caracas](https://cran.r-project.org/package=caracas)
+  [Carlson](https://cran.r-project.org/package=Carlson)
+  [chebpol](https://cran.r-project.org/package=chebpol)
+  [clifford](https://cran.r-project.org/package=clifford)
+  [combinat](https://cran.r-project.org/package=combinat)
+  [commonsMath](https://cran.r-project.org/package=commonsMath)
+  [conicfit](https://cran.r-project.org/package=conicfit)
+  [contfrac](https://cran.r-project.org/package=contfrac)
+  [cubature](https://cran.r-project.org/package=cubature)
+  [daarem](https://cran.r-project.org/package=daarem)
+  [Deriv](https://cran.r-project.org/package=Deriv) (core)
+  [dual](https://cran.r-project.org/package=dual)
+  [eigeninv](https://cran.r-project.org/package=eigeninv)
+  [elliptic](https://cran.r-project.org/package=elliptic)
+  [expint](https://cran.r-project.org/package=expint)
+  [expm](https://cran.r-project.org/package=expm)
+  [fastGHQuad](https://cran.r-project.org/package=fastGHQuad)
+  [feather](https://cran.r-project.org/package=feather)
+  [features](https://cran.r-project.org/package=features)
+  [FixedPoint](https://cran.r-project.org/package=FixedPoint)
+  [fourierin](https://cran.r-project.org/package=fourierin)
+  [freealg](https://cran.r-project.org/package=freealg)
+  [freegroup](https://cran.r-project.org/package=freegroup)
+  [gaussquad](https://cran.r-project.org/package=gaussquad)
+  [geigen](https://cran.r-project.org/package=geigen)
+  [gmp](https://cran.r-project.org/package=gmp)
+  [GramQuad](https://cran.r-project.org/package=GramQuad)
+  [gsl](https://cran.r-project.org/package=gsl)
+  [hypergeo](https://cran.r-project.org/package=hypergeo)
+  [HypergeoMat](https://cran.r-project.org/package=HypergeoMat)
+  [interp](https://cran.r-project.org/package=interp)
+  [irlba](https://cran.r-project.org/package=irlba)
+  [jack](https://cran.r-project.org/package=jack)
+  [JuliaCall](https://cran.r-project.org/package=JuliaCall)
+  [JuliaConnectoR](https://cran.r-project.org/package=JuliaConnectoR)
+  [ktsolve](https://cran.r-project.org/package=ktsolve)
+  [lamW](https://cran.r-project.org/package=lamW)
+  [logOfGamma](https://cran.r-project.org/package=logOfGamma)
+  [m2r](https://cran.r-project.org/package=m2r)
+  [magic](https://cran.r-project.org/package=magic)
+  [MASS](https://cran.r-project.org/package=MASS)
+  [matlab](https://cran.r-project.org/package=matlab)
+  [matlib](https://cran.r-project.org/package=matlib)
+  [Matrix](https://cran.r-project.org/package=Matrix) (core)
+  [matrixcalc](https://cran.r-project.org/package=matrixcalc)
+  [mbend](https://cran.r-project.org/package=mbend)
+  [MonoPoly](https://cran.r-project.org/package=MonoPoly)
+  [mpoly](https://cran.r-project.org/package=mpoly)
+  [multipol](https://cran.r-project.org/package=multipol)
+  [mvp](https://cran.r-project.org/package=mvp)
+  [mvQuad](https://cran.r-project.org/package=mvQuad)
+  [nleqslv](https://cran.r-project.org/package=nleqslv)
+  [numbers](https://cran.r-project.org/package=numbers)
+  [numDeriv](https://cran.r-project.org/package=numDeriv) (core)
+  [onion](https://cran.r-project.org/package=onion)
+  [optR](https://cran.r-project.org/package=optR)
+  [orthopolynom](https://cran.r-project.org/package=orthopolynom)
+  [Pade](https://cran.r-project.org/package=Pade)
+  [partitions](https://cran.r-project.org/package=partitions)
+  [permutations](https://cran.r-project.org/package=permutations)
+  [polyCub](https://cran.r-project.org/package=polyCub)
+  [polyMatrix](https://cran.r-project.org/package=polyMatrix)
+  [polynom](https://cran.r-project.org/package=polynom)
+  [PolynomF](https://cran.r-project.org/package=PolynomF) (core)
+  [pracma](https://cran.r-project.org/package=pracma) (core)
+  [primefactr](https://cran.r-project.org/package=primefactr)
+  [primes](https://cran.r-project.org/package=primes)
+  [PRIMME](https://cran.r-project.org/package=PRIMME)
+  [R.matlab](https://cran.r-project.org/package=R.matlab)
+  [rARPACK](https://cran.r-project.org/package=rARPACK)
+  [Rcpp](https://cran.r-project.org/package=Rcpp)
+  [RcppAlgos](https://cran.r-project.org/package=RcppAlgos)
+  [RcppArmadillo](https://cran.r-project.org/package=RcppArmadillo)
+  [RcppBigIntAlgos](https://cran.r-project.org/package=RcppBigIntAlgos)
+  [RcppEigen](https://cran.r-project.org/package=RcppEigen)
+  [reticulate](https://cran.r-project.org/package=reticulate)
+  [rim](https://cran.r-project.org/package=rim)
+  [Rlinsolve](https://cran.r-project.org/package=Rlinsolve)
+  [rmatio](https://cran.r-project.org/package=rmatio)
+  [Rmpfr](https://cran.r-project.org/package=Rmpfr)
+  [rmumps](https://cran.r-project.org/package=rmumps)
+  [RootsExtremaInflections](https://cran.r-project.org/package=RootsExtremaInflections)
+  [rootSolve](https://cran.r-project.org/package=rootSolve)
+  [Rserve](https://cran.r-project.org/package=Rserve)
+  [RSpectra](https://cran.r-project.org/package=RSpectra)
+  [Ryacas](https://cran.r-project.org/package=Ryacas)
+  [sanic](https://cran.r-project.org/package=sanic)
+  [schumaker](https://cran.r-project.org/package=schumaker)
+  [set6](https://cran.r-project.org/package=set6)
+  [signal](https://cran.r-project.org/package=signal)
+  [SimplicialCubature](https://cran.r-project.org/package=SimplicialCubature)
+  [SparseGrid](https://cran.r-project.org/package=SparseGrid)
+  [SparseM](https://cran.r-project.org/package=SparseM)
+  [SphericalCubature](https://cran.r-project.org/package=SphericalCubature)
+  [SQUAREM](https://cran.r-project.org/package=SQUAREM)
+  [ssvd](https://cran.r-project.org/package=ssvd)
+  [statmod](https://cran.r-project.org/package=statmod)
+  [stinepack](https://cran.r-project.org/package=stinepack)
+  [svd](https://cran.r-project.org/package=svd)
+  [symengine](https://cran.r-project.org/package=symengine)
+  [tripack](https://cran.r-project.org/package=tripack)
+  [turboEM](https://cran.r-project.org/package=turboEM)
+  [VeryLargeIntegers](https://cran.r-project.org/package=VeryLargeIntegers)
+  [XR](https://cran.r-project.org/package=XR)
+  [XRJulia](https://cran.r-project.org/package=XRJulia)
+  [XRPython](https://cran.r-project.org/package=XRPython)
+  [Zseq](https://cran.r-project.org/package=Zseq)
 
 ### Related links:
 
@@ -685,14 +684,14 @@ Mathematica have facilities to call R functions.
 -   CRAN Task View: [TimeSeries](TimeSeries.html)
 -   CRAN Task View:
     [HighPerformanceComputing](HighPerformanceComputing.html)
--   [Textbook: Hands-On Matrix Algebra Using
+-   Textbook: [Hands-On Matrix Algebra Using
     R](http://www.worldscientific.com/worldscibooks/10.1142/7814)
--   [Textbook: Introduction to Scientific Programming and Simulation
+-   Textbook: [Introduction to Scientific Programming and Simulation
     Using
     R](https://www.routledge.com/Introduction-to-Scientific-Programming-and-Simulation-Using-R/Jones-Maillardet-Robinson/p/book/9781466569997)
--   [Textbook: Numerical Methods in Science and Engineering Using
+-   Textbook: [Numerical Methods in Science and Engineering Using
     R](https://www.routledge.com/Using-R-for-Numerical-Analysis-in-Science-and-Engineering/Bloomfield/p/book/9781439884485)
--   [Textbook: Computational Methods for Numerical Analysis with
+-   Textbook: [Computational Methods for Numerical Analysis with
     R](https://www.crcpress.com/Computational-Methods-for-Numerical-Analysis-with-R/II/p/book/9781498723633)
 -   [MATLAB / R Reference (D.
     Hiebeler)](https://umaine.edu/mathematics/david-hiebeler/computing-software/matlab-r-reference/)

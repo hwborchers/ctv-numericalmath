@@ -1,10 +1,10 @@
-## CRAN Task View: Numerical Mathematics
+## CRAN Task View: Numerical and Discrete Mathematics
 
 |                 |                                                        |
 |-----------------|--------------------------------------------------------|  
 | **Maintainer:** | Hans W. Borchers                                       | 
 | **Contact:**    | hwb at mailbox.org                                     | 
-| **Version:**    | 2021-12-15                                             | 
+| **Version:**    | 2021-12-30                                             | 
 | **URL:**        | <https://CRAN.R-project.org/view=NumericalMathematics> | 
 
 This task view on numerical mathematics lists R packages and functions
@@ -471,6 +471,16 @@ Note that integers in double precision can be represented exactly up to
     calculations, such as manipulating mathematical expressions, finding
     exact derivatives, performing symbolic matrix computations, or
     solving ordinary differential equations (numerically).
+-   Package [rim](https://cran.r-project.org/package=rim) provides an interface
+    to the free and powerful computer algebra system 'Maxima'. Results can be
+    output in 'LaTeX' or 'MathML' and 2D and 3D plots will be displayed
+    directly. 'Maxima' code chunks can be included in 'RMarkdown' documents.
+-   Package [m2r](https://cran.r-project.org/package=m2r) provides a persistent
+    interface to Macauley2, an extended software program supporting research
+    in algebraic geometry and commutative algebra. Macauley2 has to be
+    installed independently, otherwise a Macauley2 process in the cloud will
+    be instantiated.
+
 
 ### Python Interfaces
 
@@ -496,6 +506,12 @@ available.
     based on John Chambers' [XR](https://cran.r-project.org/package=XR) package and
     his "Extending R" book and allow for a structured integration of R
     with Python resp. Julia.
+
+[SageMath](http://www.sagemath.org/) is an open source mathematics
+system based on Python, allowing to run R functions, but also providing
+access to systems like Maxima, GAP, FLINT, and many more math programs.
+SageMath can be freely used through a Web interface at
+[CoCalc](https://cocalc.com/).
 
 ### MATLAB, Octave, Julia, and other Interfaces
 
@@ -532,32 +548,13 @@ problems and other demanding scientific computations in R.
     interface structure described in the book "Extending R" by John M.
     Chambers.
 
-Java Math functions can be employed through the 'rjava' or 'rscala'
-interfaces. Then package
-[commonsMath](https://cran.r-project.org/package=commonsMath) allows calling Java
-JAR files of the Apache Commons Mathematics Library, a specialized
-library for all aspects of numerics, optimization, and differential
-equations.
+Java Math functions can be employed through the 'rjava' or 'rscala' interfaces.
+Then package [commonsMath](https://cran.r-project.org/package=commonsMath) allows
+calling Java JAR files of the Apache Commons Mathematics Library, a specialized
+library for all aspects of numerics, optimization, and differential equations.
 
-[SageMath](http://www.sagemath.org/) is an open source mathematics
-system based on Python, allowing to run R functions, but also providing
-access to systems like Maxima, GAP, FLINT, and many more math programs.
-SageMath can be freely used through a Web interface at
-[CoCalc](https://cocalc.com/).
-
--   Package [rim](https://cran.r-project.org/package=rim) provides an interface
-    to the free and powerful computer algebra system 'Maxima'. Results can be
-    output in 'LaTeX' or 'MathML' and 2D and 3D plots will be displayed
-    directly. 'Maxima' code chunks can be included in 'RMarkdown' documents.
-
--   Package [m2r](https://cran.r-project.org/package=m2r) provides a persistent
-    interface to Macauley2, an extended software program supporting research
-    in algebraic geometry and commutative algebra. Macauley2 has to be
-    installed independently, otherwise a Macauley2 process in the cloud will
-    be instantiated.
-
-Please note that commercial programs such as MATLAB, Maple, or
-Mathematica have facilities to call R functions.
+Please note that commercial programs such as MATLAB, Maple, or Mathematica
+have facilities to call R functions.
 
 ### CRAN packages:
 

@@ -1,10 +1,10 @@
-## CRAN Task View: Numerical and Discrete Mathematics
+## CRAN Task View: Numerical Mathematics
 
 |                 |                                                        |
 |-----------------|--------------------------------------------------------|  
 | **Maintainer:** | Hans W. Borchers                                       | 
 | **Contact:**    | hwb at mailbox.org                                     | 
-| **Version:**    | 2021-12-30                                             | 
+| **Version:**    | 2022-01-08                                             | 
 | **URL:**        | <https://CRAN.R-project.org/view=NumericalMathematics> | 
 
 This task view on numerical mathematics lists R packages and functions
@@ -55,8 +55,8 @@ approximation.
     methods for sparse matrices and for solving linear and least-squares
     problems in sparse linear algebra
 -   Package [rmumps](https://cran.r-project.org/package=rmumps) provides a wrapper
-    for the MUMPS library, solving large linear systems of equations
-    applying a parallel sparse direct solver
+    for the MUMPS library, solving large linear systems of equations applying a
+    sparse direct solver
 -   [sanic](https://cran.r-project.org/package=sanic) supports routines for solving
     (dense and sparse) large systems of linear equations; direct and
     iterative solvers from the Eigen C++ library are made available,

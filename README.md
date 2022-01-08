@@ -56,7 +56,7 @@ approximation.
     problems in sparse linear algebra
 -   Package [rmumps](https://cran.r-project.org/package=rmumps) provides a wrapper
     for the MUMPS library, solving large linear systems of equations applying a
-    sparse direct solver
+    sparse direct solver.
 -   [sanic](https://cran.r-project.org/package=sanic) supports routines for solving
     (dense and sparse) large systems of linear equations; direct and
     iterative solvers from the Eigen C++ library are made available,

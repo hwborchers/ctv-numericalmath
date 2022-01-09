@@ -574,7 +574,7 @@ have facilities to call R functions.
   [contfrac](https://cran.r-project.org/package=contfrac)
   [cubature](https://cran.r-project.org/package=cubature) (core)
   [daarem](https://cran.r-project.org/package=daarem)
-  [Deriv](https://cran.r-project.org/package=Deriv) (core)
+  [Deriv](https://cran.r-project.org/package=Deriv)
   [dual](https://cran.r-project.org/package=dual)
   [eigeninv](https://cran.r-project.org/package=eigeninv)
   [elliptic](https://cran.r-project.org/package=elliptic)
@@ -677,8 +677,7 @@ have facilities to call R functions.
 -   CRAN Task View: [DifferentialEquations](DifferentialEquations.html)
 -   CRAN Task View: [Optimization](Optimization.html)
 -   CRAN Task View: [TimeSeries](TimeSeries.html)
--   CRAN Task View:
-    [HighPerformanceComputing](HighPerformanceComputing.html)
+-   CRAN Task View: [HighPerformanceComputing](HighPerformanceComputing.html)
 -   Textbook: [Hands-On Matrix Algebra Using
     R](http://www.worldscientific.com/worldscibooks/10.1142/7814)
 -   Textbook: [Introduction to Scientific Programming and Simulation

@@ -26,6 +26,19 @@ available in R for the area of numerical mathematics. The
 task view with its many links for parallel computing may also be of
 interest.
 
+**Contents**
+
+* Numerical Linear Algebra
+* Special Functions
+* Polynomials
+* Differentiation and Integration
+* Interpolation and Approximation
+* Root Finding and Fixed Points
+* Discrete Mathematics and Number Theory
+* Multi-precision Arithmetics and Symbolic Mathematics
+* Python Interfaces
+* MATLAB, Octave, Julia and other Interfaces
+
 The task view has been created to provide an overview of the topic. If
 some packages are missing or certain topics in numerical math should be
 treated in more detail, please let the maintainer know.

@@ -28,16 +28,16 @@ interest.
 
 **Contents**
 
-* Numerical Linear Algebra
-* Special Functions
-* Polynomials
-* Differentiation and Integration
-* Interpolation and Approximation
-* Root Finding and Fixed Points
-* Discrete Mathematics and Number Theory
-* Multi-precision Arithmetics and Symbolic Mathematics
-* Python Interfaces
-* MATLAB, Octave, Julia and other Interfaces
+- Numerical Linear Algebra
+- Special Functions
+- Polynomials
+- Differentiation and Integration
+- Interpolation and Approximation
+- Root Finding and Fixed Points
+- Discrete Mathematics and Number Theory
+- Multi-precision Arithmetics and Symbolic Mathematics
+- Python Interfaces
+- MATLAB, Octave, Julia and other Interfaces
 
 The task view has been created to provide an overview of the topic. If
 some packages are missing or certain topics in numerical math should be

@@ -4,7 +4,7 @@
 |-----------------|--------------------------------------------------------|  
 | **Maintainer:** | Hans W. Borchers                                       | 
 | **Contact:**    | hwb at mailbox.org                                     | 
-| **Version:**    | 2022-01-08                                             | 
+| **Version:**    | 2022-05-05                                             | 
 | **URL:**        | <https://CRAN.R-project.org/view=NumericalMathematics> | 
 
 This task view on numerical mathematics lists R packages and functions
@@ -327,6 +327,11 @@ package splines creates periodic interpolation splines in function
     interpolation part is implemented. (It is intended to provide a free
     replacement for the ACM licensed `akima::interp` and
     `tripack::tri.mesh` functions.)
+-   Package [splines2](https://cran.r-project.org/package=splines2) provides basis
+    matrices of B-splines, M-splines, I-splines, convex splines (C-splines),
+    periodic splines, natural cubic splines, generalized Bernstein polynomials,
+    and their integrals (except C-splines) and derivatives by
+    closed-form recursive formulas.
 -   Package [chebpol](https://cran.r-project.org/package=chebpol) contains methods
     for creating multivariate Chebyshev and other multilinear
     interpolations on regular grids, e.g. the Floater-Hormann barycenter

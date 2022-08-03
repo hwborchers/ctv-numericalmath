@@ -81,8 +81,8 @@ approximation.
 -   [svd](https://cran.r-project.org/package=svd) provides R bindings to
     state-of-the-art implementations of singular value decomposition
     (SVD) and eigenvalue/eigenvector computations. Package
-    [ssvd](https://cran.r-project.org/package=ssvd) will obtain sparse SVDs using an
-    iterative thresholding method, while
+    [ssvd](https://cran.r-project.org/package=ssvd) (archived) will obtain sparse SVDs
+    using an iterative thresholding method, while
     [irlba](https://cran.r-project.org/package=irlba) will compute approximate
     singular values/vectors of large matrices.
 -   Package [PRIMME](https://cran.r-project.org/package=PRIMME) interfaces PRIMME, a
@@ -93,8 +93,8 @@ approximation.
 -   The [geigen](https://cran.r-project.org/package=geigen) package computes
     generalized eigenvalues and -vectors for pairs of matrices and QZ
     (generalized Schur) decompositions.
--   [eigeninv](https://cran.r-project.org/package=eigeninv) generates matrices with
-    a given set of eigenvalues ('inverse eigenvalue problem').
+-   [eigeninv](https://cran.r-project.org/package=eigeninv) (archived) generates
+    matrices with a given set of eigenvalues ('inverse eigenvalue problem').
 -   Package [rARPACK](https://cran.r-project.org/package=rARPACK), a wrapper for the
     ARPACK library, is typically used to compute only a few
     eigenvalues/vectors, e.g., a small number of largest eigenvalues.
@@ -332,8 +332,8 @@ package splines creates periodic interpolation splines in function
     periodic splines, natural cubic splines, generalized Bernstein polynomials,
     and their integrals (except C-splines) and derivatives by
     closed-form recursive formulas.
--   Package [chebpol](https://cran.r-project.org/package=chebpol) contains methods
-    for creating multivariate Chebyshev and other multilinear
+-   Package [chebpol](https://cran.r-project.org/package=chebpol) (archived)
+    contains methods for creating multivariate Chebyshev and other multilinear
     interpolations on regular grids, e.g. the Floater-Hormann barycenter
     method, or polyharmonic splines for scattered data.
 -   [tripack](https://cran.r-project.org/package=tripack) for triangulation of

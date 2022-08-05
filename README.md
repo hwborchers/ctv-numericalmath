@@ -81,8 +81,6 @@ approximation.
 -   [svd](https://cran.r-project.org/package=svd) provides R bindings to
     state-of-the-art implementations of singular value decomposition
     (SVD) and eigenvalue/eigenvector computations. Package
-    [ssvd](https://cran.r-project.org/package=ssvd) (archived) will obtain sparse SVDs
-    using an iterative thresholding method, while
     [irlba](https://cran.r-project.org/package=irlba) will compute approximate
     singular values/vectors of large matrices.
 -   Package [PRIMME](https://cran.r-project.org/package=PRIMME) interfaces PRIMME, a
@@ -93,8 +91,6 @@ approximation.
 -   The [geigen](https://cran.r-project.org/package=geigen) package computes
     generalized eigenvalues and -vectors for pairs of matrices and QZ
     (generalized Schur) decompositions.
--   [eigeninv](https://cran.r-project.org/package=eigeninv) (archived) generates
-    matrices with a given set of eigenvalues ('inverse eigenvalue problem').
 -   Package [rARPACK](https://cran.r-project.org/package=rARPACK), a wrapper for the
     ARPACK library, is typically used to compute only a few
     eigenvalues/vectors, e.g., a small number of largest eigenvalues.
@@ -594,7 +590,6 @@ have facilities to call R functions.
   [daarem](https://cran.r-project.org/package=daarem)
   [Deriv](https://cran.r-project.org/package=Deriv)
   [dual](https://cran.r-project.org/package=dual)
-  [eigeninv](https://cran.r-project.org/package=eigeninv)
   [elliptic](https://cran.r-project.org/package=elliptic)
   [expint](https://cran.r-project.org/package=expint)
   [expm](https://cran.r-project.org/package=expm)
@@ -677,7 +672,6 @@ have facilities to call R functions.
   [SparseM](https://cran.r-project.org/package=SparseM)
   [SphericalCubature](https://cran.r-project.org/package=SphericalCubature)
   [SQUAREM](https://cran.r-project.org/package=SQUAREM)
-  [ssvd](https://cran.r-project.org/package=ssvd)
   [statmod](https://cran.r-project.org/package=statmod)
   [stinepack](https://cran.r-project.org/package=stinepack)
   [svd](https://cran.r-project.org/package=svd)

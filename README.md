@@ -4,7 +4,7 @@
 |-----------------|--------------------------------------------------------|  
 | **Maintainer:** | Hans W. Borchers                                       | 
 | **Contact:**    | hwb at mailbox.org                                     | 
-| **Version:**    | 2022-05-05                                             | 
+| **Version:**    | 2022-12-22                                             | 
 | **URL:**        | <https://CRAN.R-project.org/view=NumericalMathematics> | 
 
 This task view on numerical mathematics lists R packages and functions
@@ -328,10 +328,6 @@ package splines creates periodic interpolation splines in function
     periodic splines, natural cubic splines, generalized Bernstein polynomials,
     and their integrals (except C-splines) and derivatives by
     closed-form recursive formulas.
--   Package [chebpol](https://cran.r-project.org/package=chebpol) (archived)
-    contains methods for creating multivariate Chebyshev and other multilinear
-    interpolations on regular grids, e.g. the Floater-Hormann barycenter
-    method, or polyharmonic splines for scattered data.
 -   [tripack](https://cran.r-project.org/package=tripack) for triangulation of
     irregularly spaced data is a constrained two-dimensional Delaunay
     triangulation package providing both triangulation and generation of

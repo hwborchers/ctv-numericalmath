@@ -421,9 +421,10 @@ Note that integers in double precision can be represented exactly up to
     partitions. The iterators allow users to generate arrangements in a
     fast and memory efficient manner. Permutations and combinations can
     be drawn with/without replacement and support multisets.
--   Package [set6](https://github.com/xoopR/set6) (on Github) an object-oriented
-    interface (as R6 classes) for mathematical sets (sets, tuples, intervals)
-    and allows for standard operations on them (unions, products, differences).
+-   Package [set6](https://github.com/xoopR/set6) (on Github) provides an 
+    object-oriented interface (as R6 classes) for mathematical sets
+    (sets, tuples, intervals) and allows for standard operations on them
+    (unions, products, differences).
 -   [RcppAlgos](https://cran.r-project.org/package=RcppAlgos) provides flexible
     functions for generating combinations or permutations of a vector
     with or without constraints; the extension package

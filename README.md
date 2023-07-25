@@ -4,7 +4,7 @@
 |-----------------|--------------------------------------------------------|  
 | **Maintainer:** | Hans W. Borchers                                       | 
 | **Contact:**    | hwb at mailbox.org                                     | 
-| **Version:**    | 2022-12-22                                             | 
+| **Version:**    | 2023-07-25                                             | 
 | **URL:**        | <https://CRAN.R-project.org/view=NumericalMathematics> | 
 
 This task view on numerical mathematics lists R packages and functions
@@ -192,23 +192,25 @@ can perform polynomial fitting when using `poly()` in the model formula
     to manipulate and combine these polynomials of several variables.
 -   Package [mpoly](https://cran.r-project.org/package=mpoly) facilitates symbolic
     manipulations on multivariate polynomials, including basic
-    differential calculus operations on polynomials, plus some Groebner
-    basis calculations.
+    differential calculus operations on polynomials.
 -   [mvp](https://cran.r-project.org/package=mvp) enables fast manipulation of
     symbolic multivariate polynomials, using print and coercion methods
     from the 'mpoly' package, but offers speed improvements.
 -   Package [orthopolynom](https://cran.r-project.org/package=orthopolynom) consists
     of a collection of functions to construct orthogonal polynomials and
     their recurrence relations, among them Chebyshev, Hermite, and
-    Legendre polynomials, as well as spherical and ultraspherical
-    polynomials. There are functions to operate on these polynomials.
+    Legendre polynomials, as well as spherical and ultraspherical polynomials.
 -   Symbolic calculation and evaluation of the Jack polynomials, zonal
-    polynomials (appear in random matrix theory), and Schur polynomials
-    (appear in combinatorics) is available in package
+    polynomials and Schur polynomials are available in package
     [jack](https://cran.r-project.org/package=jack).
 -   The Free Algebra in R package
     [freealg](https://cran.r-project.org/package=freealg) handles multivariate
     polynomials with non-commuting indeterminates.
+-   Package [spray](https://cran.r-project.org/package=spray) provides functionality
+    for sparse multidimensional arrays, interpreted as multivariate polynomials.
+-   Package [qspray](https://cran.r-project.org/package=qspray) provides symbolic
+    calculation and evaluation of multivariate polynomials with rational coefficients,
+    plus some Groebner basis calculations.
 
 ### Differentiation and Integration
 
@@ -488,6 +490,9 @@ Note that integers in double precision can be represented exactly up to
     in algebraic geometry and commutative algebra. Macauley2 has to be
     installed independently, otherwise a Macauley2 process in the cloud will
     be instantiated.
+-   Package [giacR](https://github.com/stla/giacR) allows to execute Giac commands
+    in R. 'Giac' is an open-source Computer Algebra System (CAS) and powers the
+    graphical interface Xcas and HP and TI pocket calculators.
 
 
 ### Python Interfaces

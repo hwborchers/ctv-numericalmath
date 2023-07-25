@@ -670,6 +670,8 @@ have facilities to call R functions.
   [SparseGrid](https://cran.r-project.org/package=SparseGrid)
   [SparseM](https://cran.r-project.org/package=SparseM)
   [SphericalCubature](https://cran.r-project.org/package=SphericalCubature)
+  [spray](https://cran.r-project.org/package=spray)
+  [qspray](https://cran.r-project.org/package=qspray)
   [SQUAREM](https://cran.r-project.org/package=SQUAREM)
   [statmod](https://cran.r-project.org/package=statmod)
   [stinepack](https://cran.r-project.org/package=stinepack)

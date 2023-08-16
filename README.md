@@ -35,7 +35,7 @@ interest.
 - [Interpolation and Approximation](#interpolation-and-approximation)
 - [Root Finding and Fixed Points](#root-finding-and-fixed-points)
 - [Discrete Mathematics and Number Theory](#discrete-mathematics-and-number-theory)
-- [Multiprecision Arithmetics and Symbolic Mathematics](#multiprecision-arithmetics-and-symbolic-mathematics)
+- [Multiprecision Arithmetic and Symbolic Mathematics](#multiprecision-arithmetic-and-symbolic-mathematics)
 - [Python Interfaces](#python-interfaces)
 - [MATLAB Octave Julia and other Interfaces](#matlab-octave-julia-and-other-interfaces)
 

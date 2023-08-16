@@ -28,16 +28,16 @@ interest.
 
 **Contents**
 
-- Numerical Linear Algebra
-- Special Functions
-- Polynomials
-- Differentiation and Integration
-- Interpolation and Approximation
-- Root Finding and Fixed Points
-- Discrete Mathematics and Number Theory
-- Multi-precision Arithmetics and Symbolic Mathematics
-- Python Interfaces
-- MATLAB, Octave, Julia and other Interfaces
+- [Numerical Linear Algebra](#numerical-linear-algebra)
+- [Special Functions](#special-functions)
+- [Polynomials](#polynomials)
+- [Differentiation and Integration](#differentiation-and-integration)
+- [Interpolation and Approximation](#interpolation-and-approximation)
+- [Root Finding and Fixed Points](#root-finding-and-fixed-points)
+- [Discrete Mathematics and Number Theory](#discrete-mathematics-and-number-theory)
+- [Multiprecision Arithmetics and Symbolic Mathematics](#multiprecision-arithmetics-and-symbolic-mathematics)
+- [Python Interfaces](#python-interfaces)
+- [MATLAB Octave Julia and other Interfaces](#matlab-octave-julia-and-other-interfaces)
 
 The task view has been created to provide an overview of the topic. If
 some packages are missing or certain topics in numerical math should be
@@ -443,7 +443,7 @@ Note that integers in double precision can be represented exactly up to
     factorization for computations such as reducing ratios of large
     factorials.
 
-### Multi-Precision Arithmetic and Symbolic Mathematics
+### Multiprecision Arithmetic and Symbolic Mathematics
 
 -   Multiple precision arithmetic is available in R through package
     [gmp](https://cran.r-project.org/package=gmp) that interfaces to the GMP C
@@ -526,7 +526,7 @@ access to systems like Maxima, GAP, FLINT, and many more math programs.
 SageMath can be freely used through a Web interface at
 [CoCalc](https://cocalc.com/).
 
-### MATLAB, Octave, Julia, and other Interfaces
+### MATLAB Octave Julia and other Interfaces
 
 Interfaces to numerical computation software such as MATLAB (commercial)
 or Octave (free) will be important when solving difficult numerical

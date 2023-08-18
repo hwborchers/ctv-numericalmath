@@ -626,6 +626,7 @@ have facilities to call R functions.
   [Matrix](https://cran.r-project.org/package=Matrix) (core)
   [matrixcalc](https://cran.r-project.org/package=matrixcalc)
   [mbend](https://cran.r-project.org/package=mbend)
+  [minimaxApprox](https://cran.r-project.org/package=minimaxApprox)
   [MonoPoly](https://cran.r-project.org/package=MonoPoly)
   [mpoly](https://cran.r-project.org/package=mpoly)
   [multipol](https://cran.r-project.org/package=multipol)

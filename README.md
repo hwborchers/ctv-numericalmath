@@ -4,7 +4,7 @@
 |-----------------|--------------------------------------------------------|  
 | **Maintainer:** | Hans W. Borchers                                       | 
 | **Contact:**    | hwb at mailbox.org                                     | 
-| **Version:**    | 2023-07-25                                             | 
+| **Version:**    | 2023-08-18                                             | 
 | **URL:**        | <https://CRAN.R-project.org/view=NumericalMathematics> | 
 
 This task view on numerical mathematics lists R packages and functions
@@ -211,6 +211,9 @@ can perform polynomial fitting when using `poly()` in the model formula
 -   Package [qspray](https://cran.r-project.org/package=qspray) provides symbolic
     calculation and evaluation of multivariate polynomials with rational coefficients,
     plus some Groebner basis calculations.
+-   Package [minimaxApprox](https://cran.r-project.org/package=minimaxApprox)
+    implements the algorithm of Remez (1962) for polynomial minimax approximation
+    and that of Cody et al. (1968) for rational minimax approximations.
 
 ### Differentiation and Integration
 

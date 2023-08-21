@@ -35,7 +35,7 @@ interest.
 - [Interpolation and Approximation](#interpolation-and-approximation)
 - [Root Finding and Fixed Points](#root-finding-and-fixed-points)
 - [Discrete Mathematics and Number Theory](#discrete-mathematics-and-number-theory)
-- [Multiprecision Arithmetic Symbolic Mathematics](#multiprecision-arithmetic-symbolic-mathematics)
+- [Multiprecision and Symbolic Calculations](#multiprecision-and-symbolic-calculations)
 - [Python Interfaces](#python-interfaces)
 - [MATLAB Octave Julia and other Interfaces](#matlab-octave-julia-and-other-interfaces)
 
@@ -446,7 +446,7 @@ Note that integers in double precision can be represented exactly up to
     factorization for computations such as reducing ratios of large
     factorials.
 
-### Multiprecision Arithmetic Symbolic Mathematics
+### Multiprecision and Symbolic Calculations
 
 -   Multiple precision arithmetic is available in R through package
     [gmp](https://cran.r-project.org/package=gmp) that interfaces to the GMP C

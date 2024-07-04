@@ -147,9 +147,6 @@ contributed packages.
 -   The hypergeometric (and generalized hypergeometric) function, is
     computed in [hypergeo](https://cran.r-project.org/package=hypergeo), including
     transformation formulas and special values of the parameters.
--   [HypergeoMat](https://cran.r-project.org/package=HypergeoMat) evaluates the
-    hypergeometric functions of a matrix argument through a C++
-    implementation of Koev and Edelman's algorithm.
 -   Elliptic and modular functions are available in package
     [elliptic](https://cran.r-project.org/package=elliptic), including the
     Weierstrass P function and Jacobi's theta functions. There are tools

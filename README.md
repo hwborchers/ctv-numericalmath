@@ -4,7 +4,7 @@
 |-----------------|--------------------------------------------------------|  
 | **Maintainer:** | Hans W. Borchers                                       | 
 | **Contact:**    | hwb at mailbox.org                                     | 
-| **Version:**    | 2023-08-18                                             | 
+| **Version:**    | 2024-07-05                                             | 
 | **URL:**        | <https://CRAN.R-project.org/view=NumericalMathematics> | 
 
 This task view on numerical mathematics lists R packages and functions
@@ -606,7 +606,6 @@ have facilities to call R functions.
   [GramQuad](https://cran.r-project.org/package=GramQuad)
   [gsl](https://cran.r-project.org/package=gsl)
   [hypergeo](https://cran.r-project.org/package=hypergeo)
-  [HypergeoMat](https://cran.r-project.org/package=HypergeoMat)
   [interp](https://cran.r-project.org/package=interp)
   [irlba](https://cran.r-project.org/package=irlba)
   [jack](https://cran.r-project.org/package=jack)

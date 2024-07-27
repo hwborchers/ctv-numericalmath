@@ -4,7 +4,7 @@
 |-----------------|--------------------------------------------------------|  
 | **Maintainer:** | Hans W. Borchers                                       | 
 | **Contact:**    | hwb at mailbox.org                                     | 
-| **Version:**    | 2024-07-05                                             | 
+| **Version:**    | 2024-07-27                                             | 
 | **URL:**        | <https://CRAN.R-project.org/view=NumericalMathematics> | 
 
 This task view on numerical mathematics lists R packages and functions
@@ -64,10 +64,21 @@ approximation.
     matrices or the Frechet derivative. `expm()` is to be preferred to
     the function with the same name in
     [Matrix](https://cran.r-project.org/package=Matrix).
+-   Package [QZ](https://cran.r-project.org/package=QZ)
+    provides generalized eigenvalues and eigenvectors using a generalized 
+    Schur decomposition (QZ decomposition). It is able to compute the 
+    exponential of a matrix quite efficiently.
+-   [EigenR](https://cran.r-project.org/package=EigenR)
+    with complex Linear Algebra functions for determinant, rank, invers, 
+    pseudo-inverse, kernel and image, QR decomposition, Cholesky decomposition,
+    (complex) Schur decomposition, and Hessenberg decomposition.
+-   [geigen](https://cran.r-project.org/package=geigen)
+    calculates Generalized Eigenvalues, the Generalized Schur Decomposition and
+    the Generalized Singular Value Decomposition of a pair of (complex) matrices.
 -   [SparseM](https://cran.r-project.org/package=SparseM) provides classes and
     methods for sparse matrices and for solving linear and least-squares
     problems in sparse linear algebra
--   Package [rmumps](https://cran.r-project.org/package=rmumps) provides a wrapper
+-   [rmumps](https://cran.r-project.org/package=rmumps) provides a wrapper
     for the MUMPS library, solving large linear systems of equations applying a
     sparse direct solver.
 -   [sanic](https://cran.r-project.org/package=sanic) supports routines for solving
@@ -88,9 +99,6 @@ approximation.
     symmetric or complex Hermitian matrices. It will find largest,
     smallest, or interior eigen-/singular values and will apply
     preconditioning to accelerate convergence.
--   The [geigen](https://cran.r-project.org/package=geigen) package computes
-    generalized eigenvalues and -vectors for pairs of matrices and QZ
-    (generalized Schur) decompositions.
 -   Package [rARPACK](https://cran.r-project.org/package=rARPACK), a wrapper for the
     ARPACK library, is typically used to compute only a few
     eigenvalues/vectors, e.g., a small number of largest eigenvalues.

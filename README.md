@@ -418,8 +418,9 @@ Note that integers in double precision can be represented exactly up to
     number-theoretic functions like divisor functions or Euler's Phi
     function.
 -   [contfrac](https://cran.r-project.org/package=contfrac) contains various
-    utilities for evaluating continued fractions and partial
-    convergents.
+    utilities for evaluating continued fractions and partial convergents.
+    [contFracR](https://cran.r-project.org/package=contFracR) converts numbers to
+    continued fractions and back again. A solver for Pell’s Equation is provided.
 -   [magic](https://cran.r-project.org/package=magic) creates and investigates
     magical squares and hypercubes, including functions for the
     manipulation and analysis of arbitrarily dimensioned arrays.

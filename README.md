@@ -321,12 +321,22 @@ package splines creates periodic interpolation splines in function
 -   Package [signal](https://cran.r-project.org/package=signal) contains several
     *filters* to smooth discrete data, notably `interp1()` for linear,
     spline, and cubic interpolation, `pchip()` for piecewise cubic
-    Hermite interpolation, and `sgolay()` for Savitzky-Golay smoothing.
--   Package [pracma](https://cran.r-project.org/package=pracma) provides barycentric
+    Hermite interpolation, and `sgolay()` for Savitzky-Golay smoothing. And
+    Package [control](https://cran.r-project.org/package=control) solves
+    control systems problems relating to time/frequency response, etc.
+    It is ported from the Octave control package.
+-   Package [gsignal](https://cran.r-project.org/package=gsignal) aims to
+    further stimulate the use of R for signal processing tasks. It is ported from
+    the Octave signal package and contains a variety of signal processing tools,
+    such as signal generation and measurement, correlation and convolution,
+    filtering, filter design, filter analysis and conversion,
+    power spectrum analysis, or system identification.
+-   [pracma](https://cran.r-project.org/package=pracma) provides barycentric
     Lagrange interpolation (in 1 and 2 dimensions) in `barylag()` resp.
     `barylag2d()`, 1-dim. akima in `akimaInterp()`, and interpolation
     and approximation of data with rational functions, i.e. in the
-    presence of singularities, in `ratinterp()` and `rationalfit()`.
+    presence of singularities, in `ratinterp()` and `rationalfit()`,
+    or nonlinear least-squares data fitting.
 -   The [interp](https://cran.r-project.org/package=interp) package provides
     bivariate data interpolation on regular and irregular grids, either
     linear or using splines. Currently the piecewise linear

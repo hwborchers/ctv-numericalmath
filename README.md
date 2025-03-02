@@ -237,6 +237,10 @@ domains to a certain extent.
     Jacobians, and Hessians, computed by simple finite differences,
     Richardson extrapolation, or the highly accurate complex step
     approach.
+-   Using the [pnd](https://cran.r-project.org/package=pnd) package,
+    numerical derivatives (of arbitrary order), gradients, Jacobians, and Hessians
+    can be calculated through finite-difference formulae, with optimal step-size
+    selection to improve accuracy; and parallel capabilities included.
 -   Package [dual](https://cran.r-project.org/package=dual) achieves automatic
     differentiation (for univariate functions) by employing dual
     numbers; for a mathematical function its value and its exact first

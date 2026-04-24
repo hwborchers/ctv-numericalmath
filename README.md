@@ -4,7 +4,7 @@
 |-----------------|--------------------------------------------------------|  
 | **Maintainer:** | Hans W. Borchers                                       | 
 | **Contact:**    | hwb at mailbox.org                                     | 
-| **Version:**    | 2024-07-27                                             | 
+| **Version:**    | 2026-04-24                                             | 
 | **URL:**        | <https://CRAN.R-project.org/view=NumericalMathematics> | 
 
 This task view on numerical mathematics lists R packages and functions
@@ -68,7 +68,7 @@ approximation.
     provides generalized eigenvalues and eigenvectors using a generalized 
     Schur decomposition (QZ decomposition). It is able to compute the 
     exponential of a matrix quite efficiently.
--   [EigenR](https://cran.r-project.org/package=EigenR)
+-   [EigenR](https://cran.r-project.org/package=EigenR) (archived)
     with complex Linear Algebra functions for determinant, rank, invers, 
     pseudo-inverse, kernel and image, QR decomposition, Cholesky decomposition,
     (complex) Schur decomposition, and Hessenberg decomposition.
@@ -205,17 +205,11 @@ can perform polynomial fitting when using `poly()` in the model formula
     of a collection of functions to construct orthogonal polynomials and
     their recurrence relations, among them Chebyshev, Hermite, and
     Legendre polynomials, as well as spherical and ultraspherical polynomials.
--   Symbolic calculation and evaluation of the Jack polynomials, zonal
-    polynomials and Schur polynomials are available in package
-    [jack](https://cran.r-project.org/package=jack).
 -   The Free Algebra in R package
     [freealg](https://cran.r-project.org/package=freealg) handles multivariate
     polynomials with non-commuting indeterminates.
 -   Package [spray](https://cran.r-project.org/package=spray) provides functionality
     for sparse multidimensional arrays, interpreted as multivariate polynomials.
--   Package [qspray](https://cran.r-project.org/package=qspray) provides symbolic
-    calculation and evaluation of multivariate polynomials with rational coefficients,
-    plus some Groebner basis calculations.
 -   Package [minimaxApprox](https://cran.r-project.org/package=minimaxApprox)
     implements the algorithm of Remez (1962) for polynomial minimax approximation
     and that of Cody et al. (1968) for rational minimax approximations.
@@ -538,10 +532,6 @@ available.
     running [Rserve](https://cran.r-project.org/package=Rserve) as an RPC gateway.
     This R process can run on a remote machine, variable access and
     function calls will be delegated through the network.
--   [XRPython](https://cran.r-project.org/package=XRPython) (and 'XRJulia') are
-    based on John Chambers' [XR](https://cran.r-project.org/package=XR) package and
-    his "Extending R" book and allow for a structured integration of R
-    with Python resp. Julia.
 
 [SageMath](http://www.sagemath.org/) is an open source mathematics
 system based on Python, allowing to run R functions, but also providing
@@ -579,10 +569,6 @@ problems and other demanding scientific computations in R.
     functionally oriented interface for integrating Julia with R;
     imported Julia functions can be called as R functions; data
     structures are converted automatically.
--   Package [XRJulia](https://cran.r-project.org/package=XRJulia) provides an
-    interface from R to computations in the Julia language, based on the
-    interface structure described in the book "Extending R" by John M.
-    Chambers.
 
 Java Math functions can be employed through the 'rjava' or 'rscala' interfaces.
 Then package [commonsMath](https://cran.r-project.org/package=commonsMath) allows

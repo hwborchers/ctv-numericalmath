@@ -94,11 +94,6 @@ approximation.
     (SVD) and eigenvalue/eigenvector computations. Package
     [irlba](https://cran.r-project.org/package=irlba) will compute approximate
     singular values/vectors of large matrices.
--   Package [PRIMME](https://cran.r-project.org/package=PRIMME) interfaces PRIMME, a
-    C library for computing eigenvalues and eigenvectors of real
-    symmetric or complex Hermitian matrices. It will find largest,
-    smallest, or interior eigen-/singular values and will apply
-    preconditioning to accelerate convergence.
 -   Package [rARPACK](https://cran.r-project.org/package=rARPACK), a wrapper for the
     ARPACK library, is typically used to compute only a few
     eigenvalues/vectors, e.g., a small number of largest eigenvalues.

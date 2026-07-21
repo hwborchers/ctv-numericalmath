@@ -4,7 +4,7 @@
 |-----------------|--------------------------------------------------------|  
 | **Maintainer:** | Hans W. Borchers                                       | 
 | **Contact:**    | hwb at mailbox.org                                     | 
-| **Version:**    | 2026-04-24                                             | 
+| **Version:**    | 2026-07-20                                             | 
 | **URL:**        | <https://CRAN.R-project.org/view=NumericalMathematics> | 
 
 This task view on numerical mathematics lists R packages and functions
